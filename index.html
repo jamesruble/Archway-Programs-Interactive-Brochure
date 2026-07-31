@@ -508,45 +508,6 @@ p{font-size:11px;line-height:1.38}
 
 
 
-/* v37 — navy backdrop across the full three-panel inside spread */
-.inside-spread{
-  background:#093266 !important;
-}
-.inside-spread > .panel{
-  background:#093266 !important;
-  color:#ffffff !important;
-  border-right-color:rgba(255,255,255,.24) !important;
-}
-.inside-spread .section-header h2,
-.inside-spread .inside-story h2,
-.inside-spread .inside-story h2 span{
-  color:#ffffff !important;
-}
-.inside-spread .section-header p,
-.inside-spread .inside-story > p{
-  color:#e7eef7 !important;
-}
-.inside-spread .inside-story .eyebrow{
-  color:#b9cce4 !important;
-}
-.inside-spread .story-section{
-  border-bottom-color:rgba(255,255,255,.18) !important;
-}
-.inside-spread .story-section span{
-  color:#eef3f8 !important;
-}
-.inside-spread .program-card{
-  background:#ffffff !important;
-  border-color:rgba(255,255,255,.55) !important;
-}
-.inside-spread .anniversary-lockup{
-  border-top-color:rgba(255,255,255,.25) !important;
-}
-.inside-spread .anniversary-lockup span{
-  color:#ffffff !important;
-}
-
-
 /* v38 — beige abstract paper texture across the full inside spread */
 .inside-spread{
   background:
@@ -650,8 +611,9 @@ p{font-size:11px;line-height:1.38}
   z-index:1;
 }
 
-</style>
-<style>
+
+
+
 .program-desc{
   font-size:8.2px !important;
   line-height:1.15 !important;
@@ -664,8 +626,9 @@ p{font-size:11px;line-height:1.38}
 .program-desc .sub{
   display:none !important;
 }
-</style>
-<style>
+
+
+
 /* v52 CLEAN FIX — whole About panel is solid Archway Blue */
 .outside-spread{
   background:
@@ -735,7 +698,9 @@ article.about-panel::after{
     center/cover no-repeat,
     linear-gradient(145deg,#0c427f,#071b38) !important;
 }
-</style><style>
+
+
+
 /* v57 — cleaner NeoOffice-style text wrapping around transparent PNGs */
 article.about-panel .clearfix{
   display:block !important;
@@ -772,7 +737,9 @@ article.about-panel img.wrap-photo{
     shape-outside:margin-box !important;
   }
 }
-</style><style>
+
+
+
 /* v60 — move the first half of the lifetime story to the formerly empty back panel */
 .outside-spread > article.back{
   display:block !important;
@@ -852,7 +819,9 @@ article.about-panel img.wrap-photo{
 .inside-story.story-copy .story-section{
   padding:6px 0 !important;
 }
-</style><style>
+
+
+
 /* v61 — transparent program imagery and featured Core Values */
 .outside-spread > article.back{
   padding:.22in !important;
@@ -925,11 +894,15 @@ article.about-panel img.wrap-photo{
   border-radius:0 !important;
   box-shadow:none !important;
 }
-</style><style>
+
+
+
 article.inside-story .story-section::after{content:"";display:block;clear:both;}
 article.inside-story .story-section span{display:block;}
 .core-values-feature{margin-top:10px!important}
-</style><style>
+
+
+
 /* v65 — Adult Day Services and Residential image/text rows */
 .inside-story .service-image-row{
   display:grid !important;
@@ -954,13 +927,17 @@ article.inside-story .story-section span{display:block;}
   display:block !important;
   margin:0 !important;
 }
-</style><style>
+
+
+
 article.inside-story .story-section::after{
   content:"";
   display:block;
   clear:both;
 }
-</style><style>
+
+
+
 /* Larger Early Childhood and Just Kids artwork on the lifetime panel only */
 .lifetime-panel .life-block:has(img.larger-life-image){
   grid-template-columns:92px 1fr !important;
@@ -973,7 +950,9 @@ article.inside-story .story-section::after{
   height:92px !important;
   object-fit:contain !important;
 }
-</style><style>
+
+
+
 /* v70 — remove Core Values and enlarge Early Childhood + Specialized Education art */
 .lifetime-panel .life-block:has(img.life-image-xl){
   grid-template-columns:112px 1fr !important;
@@ -987,7 +966,9 @@ article.inside-story .story-section::after{
   height:112px !important;
   object-fit:contain !important;
 }
-</style><style>
+
+
+
 /* v71 — online services callout beneath Residential & Independent Living */
 .inside-story .learn-more-services{
   display:grid !important;
@@ -1027,14 +1008,18 @@ article.inside-story .story-section::after{
   box-shadow:none !important;
   filter:drop-shadow(0 5px 9px rgba(0,0,0,.16)) !important;
 }
-</style><style>
+
+
+
 /* v72 — lower the online-services callout to align more closely with the 60-year message */
 .inside-story .learn-more-services{
   position:relative !important;
   top:18px !important;
   margin-top:12px !important;
 }
-</style><style>
+
+
+
 /* v73 — match the Lifetime panel wallpaper to the Children’s and Health/Family panels */
 .outside-spread > article.back{
   background:
@@ -1043,7 +1028,9 @@ article.inside-story .story-section::after{
     center center / cover no-repeat !important;
   background-color:transparent !important;
 }
-</style><style>
+
+
+
 /* v74 — larger lifetime-panel imagery */
 .lifetime-panel .life-block:has(img.life-image-xxl){
   grid-template-columns:128px 1fr !important;
@@ -1057,7 +1044,9 @@ article.inside-story .story-section::after{
   height:128px !important;
   object-fit:contain !important;
 }
-</style><style>
+
+
+
 /* v76 — restore blue About panel and add Core Values below Specialized Education */
 .outside-spread > article.about-panel{
   background:#093266 !important;
@@ -1106,7 +1095,9 @@ article.inside-story .story-section::after{
   box-shadow:none !important;
   filter:drop-shadow(0 5px 9px rgba(9,50,102,.14)) !important;
 }
-</style><style>
+
+
+
 .lifetime-panel .core-values-row img{
  width:150px!important;
  height:130px!important;
@@ -1114,7 +1105,9 @@ article.inside-story .story-section::after{
 .lifetime-panel .core-values-row{
  grid-template-columns:minmax(0,1fr) 150px!important;
 }
-</style><style>
+
+
+
 /* v81 - enlarge ArchWear label artwork */
 .about-panel .clearfix img[alt="ArchWear Label"]{
     width:155px !important;
@@ -1124,7 +1117,9 @@ article.inside-story .story-section::after{
     margin:2px 18px 8px 0 !important;
     filter:drop-shadow(0 5px 10px rgba(0,0,0,.18)) !important;
 }
-</style><style>
+
+
+
 /* v85 - improve affiliate layout */
 .about-panel .affiliates{
   grid-template-columns:repeat(4,1fr)!important;
@@ -1138,7 +1133,9 @@ article.inside-story .story-section::after{
   font-size:7.2px!important;
   line-height:1.15!important;
 }
-</style><style>
+
+
+
 /* v87 — exact image-based PDF export + improved contact callout */
 .contact-highlight{
   margin:11px 0 13px !important;
@@ -1185,7 +1182,9 @@ body.exporting .page{
     print-color-adjust:exact !important;
   }
 }
-</style><style>
+
+
+
 /* v88 — preserve image aspect ratios in exact PDF export */
 img{
   max-width:100%;
@@ -1221,8 +1220,9 @@ img{
 body.exporting img{
   image-rendering:auto;
 }
-</style>
-<style>
+
+
+
 /* v92 — native browser print/PDF: preserves vector text instead of screenshotting */
 @page { size: 11in 8.5in; margin: 0; }
 @media print {
@@ -1279,9 +1279,9 @@ body.exporting img{
     print-color-adjust: exact !important;
   }
 }
-</style>
 
-<style>
+
+
 /* v96 — preserve the working v94 layout; only make the cover image printable */
 .cover{
   background:#071b38 !important;
@@ -1318,10 +1318,9 @@ body.exporting img{
     opacity:1 !important;
   }
 }
-</style>
 
 
-<style>
+
 /* v97 — remove every old cover background and force the intended artwork full bleed */
 .outside-spread > article.cover,
 article.cover,
@@ -1368,10 +1367,9 @@ article.cover,
   margin:.33in !important;
   margin-top:auto !important;
 }
-</style>
 
 
-<style>
+
 /* v98 — overscan the cover artwork so it completely fills the panel */
 article.cover{
   position:relative !important;
@@ -1400,10 +1398,9 @@ article.cover .cover-print-overlay{
   width:100% !important;
   height:100% !important;
 }
-</style>
 
 
-<style id="apple-unfold-styles">
+
 html.au-lock,body.au-lock{overflow:hidden!important}
 #auIntro{
   position:fixed;inset:0;z-index:999999;display:grid;place-items:center;overflow:hidden;
@@ -1462,10 +1459,9 @@ html.au-lock,body.au-lock{overflow:hidden!important}
 @media(max-width:760px){.au-stage{width:98vw}.au-kicker{top:3.5vh}.au-skip{top:12px;right:12px}}
 @media(prefers-reduced-motion:reduce){#auIntro{display:none!important}}
 @media print{#auIntro{display:none!important}}
-</style>
 
 
-<style id="v107-lifetime-intro-render-fix">
+
 /* Ensure the heading and opening paragraph on the physical Lifetime flap are
    painted above its textured paper face in Safari and Chromium. */
 #auIntro .au-lifetime-front{
@@ -1513,9 +1509,9 @@ html.au-lock,body.au-lock{overflow:hidden!important}
   position:relative !important;
   z-index:4 !important;
 }
-</style>
 
-<style id="v108-motion-stability">
+
+
 #auIntro .au-world,#auIntro .au-leaf,#auIntro .au-face{
   will-change:transform,opacity;
   -webkit-font-smoothing:antialiased;
@@ -1523,10 +1519,9 @@ html.au-lock,body.au-lock{overflow:hidden!important}
 #auIntro .au-face{
   transform-origin:center center;
 }
-</style>
 
 
-<style id="v114-print-orientation-fix">
+
 /* v114 — duplex-safe brochure orientation.
    The reverse/inside spread is intentionally rotated in print so ordinary
    landscape duplex printing (the common long-edge default) folds right-side-up.
@@ -1537,10 +1532,9 @@ html.au-lock,body.au-lock{overflow:hidden!important}
     transform-origin: center center !important;
   }
 }
-</style>
 
 
-<style id="v115-cross-browser-animation-fix">
+
 /* Chrome/Edge: keep 3D faces in the compositor without opacity-animation dropouts. */
 #auIntro .au-leaf,
 #auIntro .au-paper-base{
@@ -1600,9 +1594,9 @@ html, body{
     background:#fff !important;
   }
 }
-</style>
 
-<style id="archway-gif-intro-styles">
+
+
 /* v117 — play the branded GIF before the brochure-unfold animation. */
 #brandGifIntro{
   position:fixed;
@@ -1642,9 +1636,9 @@ html, body{
 @media print, (prefers-reduced-motion:reduce){
   #brandGifIntro{display:none !important;}
 }
-</style>
 
-<style id="v118-wood-animation-background">
+
+
 /* v118 — keep the same wood surface beneath both the GIF and the brochure animation. */
 #brandGifIntro,
 #auIntro{
@@ -1659,9 +1653,9 @@ html, body{
 @media print{
   #brandGifIntro,#auIntro{display:none !important;}
 }
-</style>
 
-<style id="v119-gif-plays-once">
+
+
 /* v119 — one-shot GIF handoff. The matching wood frame remains underneath,
    so removing the animated image before a second cycle is seamless. */
 #brandGifIntro img{
@@ -1680,9 +1674,9 @@ html, body{
   filter:blur(0);
 }
 @media print{#brandGifIntro{display:none !important;}}
-</style>
 
-<style id="v120-fixed-wood-background">
+
+
 /* v125 — keep the proven wood wallpaper, without a negative-z-index duplicate layer */
 html{
   background-color:#705039 !important;
@@ -1700,10 +1694,9 @@ body{
 @media print{
   html,body{background:#fff !important;}
 }
-</style>
 
 
-<style id="v123-integrated-organization-ticker">
+
 /* v123 — compact, transparent Woods System of Care ticker integrated into the wood surface */
 #organizationTimelineSection{
   width:min(1056px,calc(100vw - 32px));
@@ -1869,9 +1862,9 @@ body{
 @media print{
   #organizationTimelineSection{display:none!important}
 }
-</style>
 
-<style id="v124-toolbar-navigation">
+
+
 /* v124 — branded navigation banner with separate Print and Save controls */
 .toolbar{
   position:sticky !important;
@@ -1985,10 +1978,9 @@ body{
     transform-origin:center center !important;
   }
 }
-</style>
 
 
-<style id="v125-background-handoff-fix">
+
 /* Keep the wood layer still. Blur only the brochure stage during the GIF handoff,
    rather than filtering the entire full-screen background. */
 #auIntro{
@@ -2031,10 +2023,9 @@ body{
 @media print{
   #brandGifIntro,#auIntro{display:none !important;}
 }
-</style>
 
 
-<style id="v126-expanded-navigation">
+
 @media (min-width:981px) and (max-width:1280px){
   .toolbar{
     align-items:flex-start !important;
@@ -2050,10 +2041,9 @@ body{
     font-size:11px !important;
   }
 }
-</style>
 
 
-<style id="v127-refined-top-bar">
+
 .toolbar-brand{
   gap:7px !important;
 }
@@ -2076,10 +2066,9 @@ body{
     flex-wrap:nowrap;
   }
 }
-</style>
 
 
-<style id="v128-centered-top-bar">
+
 .toolbar{
   justify-content:center !important;
   align-items:center !important;
@@ -2174,10 +2163,9 @@ html.is-chromium #auIntro .au-paper-base{
 html.is-chromium #auIntro .au-paper-highlight{
   mix-blend-mode:normal !important;
 }
-</style>
 
 
-<style id="v131-realistic-shadow-blue-affiliate-footer">
+
 /* v131 — stronger paper depth and a solid Archway-blue affiliate footer */
 
 /* Deeper, layered contact shadow while the brochure rises and unfolds. */
@@ -2306,10 +2294,9 @@ html.is-chromium #auIntro .au-paper-highlight{
     box-shadow:none !important;
   }
 }
-</style>
 
 
-<style id="v132-safari-shadow-compositing-fix">
+
 /* Safari can rasterize a filtered preserve-3d container as one large dark rectangle.
    Keep the realistic ground shadow, but remove the unsafe whole-world filter only
    in Safari. Chrome continues using the layered drop shadows from v131. */
@@ -2375,10 +2362,9 @@ html.is-safari #auIntro.au-done .au-ground-shadow{
   opacity:0 !important;
   visibility:hidden !important;
 }
-</style>
 
 
-<style id="v134-safari-shadow-flash-removal">
+
 /* Safari intermittently flashes the blurred ground-shadow compositor after the
    folds settle. Remove that one layer entirely in Safari; panel shadows still
    provide depth and Chrome retains the full ground shadow. */
@@ -2391,10 +2377,9 @@ html.is-safari #auIntro .au-ground-shadow{
   animation:none !important;
   transition:none !important;
 }
-</style>
 
 
-<style id="v135-mobile-optimized">
+
 /* v135 — true mobile reading mode. Desktop and print remain unchanged. */
 @media screen and (max-width:760px){
   html,
@@ -2894,10 +2879,9 @@ html.is-safari #auIntro .au-ground-shadow{
     height:112px !important;
   }
 }
-</style>
 
 
-<style id="v141-cover-dim-removed">
+
 /* Remove only the leftover dark cover overlay. */
 article.cover .cover-print-overlay,
 #auIntro article.cover .cover-print-overlay,
@@ -3299,7 +3283,7 @@ document.querySelectorAll("img").forEach(img=>{
   });
 });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script><script>
+<script>
 async function waitForBrochureImagesNative() {
   const images = Array.from(document.images);
   await Promise.all(images.map(img => {
