@@ -4,8 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Archway Programs — Clean Program Text Trifold</title>
-<style>
+<title>Archway Programs — Clean Program Text Trifold</title><style id="archway-consolidated-styles">
+/* ===== Consolidated source: base ===== */
+
 :root{
   --blue:#093266;
   --navy:#061d3b;
@@ -1560,29 +1561,10 @@ html.au-lock,body.au-lock{overflow:hidden!important}
   visibility:hidden !important;
   pointer-events:none !important;
 }
-</style>
-<script id="v115-safari-cover-loader">
-(function(){
-  const run=()=>{
-    const cover=document.querySelector('.cover-print-image');
-    if(!cover) return;
-    cover.removeAttribute('crossorigin');
-    const original=cover.getAttribute('src');
-    const retry=()=>{
-      if(cover.naturalWidth) return;
-      const sep=original.includes('?')?'&':'?';
-      cover.src=original+sep+'safari_reload=1';
-    };
-    if(cover.complete) retry();
-    else cover.addEventListener('error',retry,{once:true});
-  };
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true});
-  else run();
-})();
-</script>
 
 
-<style id="wood-page-background">
+/* ===== Consolidated source: wood-page-background ===== */
+
 /* v116 — wood wallpaper behind the brochure only */
 html, body{
   background:
@@ -2116,17 +2098,10 @@ body{
     justify-content:center;
   }
 }
-</style>
 
 
-<script id="v130-chromium-detection">
-(function(){
-  const ua=navigator.userAgent;
-  const isChromium=/Chrome|Chromium|Edg\//.test(ua) && !/OPR\//.test(ua);
-  if(isChromium) document.documentElement.classList.add('is-chromium');
-})();
-</script>
-<style id="v130-chrome-correct-physical-faces">
+/* ===== Consolidated source: v130-chrome-correct-physical-faces ===== */
+
 /* Chrome uses the timed physical face handoff instead of asking Blink to
    decide which nested 3D face should paint. Only one side is renderable at
    any moment, so the left and right flaps always show their assigned panels. */
@@ -2336,24 +2311,10 @@ html.is-safari #auIntro.au-done .au-stage{
   filter:none !important;
   -webkit-filter:none !important;
 }
-</style>
-<script id="v132-safari-detection">
-(function(){
-  var ua = navigator.userAgent || "";
-  var vendor = navigator.vendor || "";
-  var isSafari =
-    /Safari/i.test(ua) &&
-    /Apple Computer/i.test(vendor) &&
-    !/Chrome|CriOS|Chromium|Edg|OPR|FxiOS/i.test(ua);
-
-  if (isSafari) {
-    document.documentElement.classList.add("is-safari");
-  }
-})();
-</script>
 
 
-<style id="v133-safari-pre-shine-shadow-fix">
+/* ===== Consolidated source: v133-safari-pre-shine-shadow-fix ===== */
+
 html.is-safari #auIntro .au-ground-shadow{
   will-change:opacity,transform !important;
 }
@@ -2900,66 +2861,148 @@ article.cover .cover-print-image,
   -webkit-filter:none !important;
   opacity:1 !important;
 }
+
+
+/* ===== Consolidated source: v113-safe-depth ===== */
+
+/* v113 — safe depth enhancement. Never applies filter/opacity to 3D leaves or faces. */
+#auIntro .au-ground-shadow{
+  height:10%;
+  bottom:-.5%;
+  background:radial-gradient(ellipse at center,
+    rgba(0,0,0,.56) 0%,
+    rgba(0,0,0,.30) 32%,
+    rgba(0,0,0,.12) 54%,
+    transparent 76%);
+  filter:blur(20px);
+}
+#auIntro .au-fold-shadow{
+  width:56px;
+  filter:blur(5px);
+}
+#auIntro .au-cover-fold-shadow{
+  background:linear-gradient(90deg,
+    transparent 0%,
+    rgba(0,0,0,.035) 28%,
+    rgba(0,0,0,.18) 72%,
+    rgba(0,0,0,.31) 100%);
+}
+#auIntro .au-lifetime-fold-shadow{
+  background:linear-gradient(90deg,
+    rgba(0,0,0,.30) 0%,
+    rgba(0,0,0,.17) 28%,
+    rgba(0,0,0,.035) 72%,
+    transparent 100%);
+}
+#auIntro .au-flex{
+  width:18px;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.22),
+    rgba(9,50,102,.10) 48%,
+    rgba(255,255,255,.14));
+}
+#auIntro .au-edge{
+  width:2px;
+  background:linear-gradient(180deg,
+    rgba(255,255,255,.98),
+    rgba(156,169,183,.70) 48%,
+    rgba(255,255,255,.92));
+  box-shadow:0 0 1px rgba(255,255,255,.75),0 0 3px rgba(0,0,0,.24);
+}
+#auIntro .au-face{
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    inset 0 -1px 0 rgba(9,50,102,.10);
+}
+
 </style>
+
+<script id="v115-safari-cover-loader">
+(function(){
+  const run=()=>{
+    const cover=document.querySelector('.cover-print-image');
+    if(!cover) return;
+    cover.removeAttribute('crossorigin');
+    const original=cover.getAttribute('src');
+    const retry=()=>{
+      if(cover.naturalWidth) return;
+      const sep=original.includes('?')?'&':'?';
+      cover.src=original+sep+'safari_reload=1';
+    };
+    if(cover.complete) retry();
+    else cover.addEventListener('error',retry,{once:true});
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true});
+  else run();
+})();
+</script>
+
+<script id="v130-chromium-detection">
+(function(){
+  const ua=navigator.userAgent;
+  const isChromium=/Chrome|Chromium|Edg\//.test(ua) && !/OPR\//.test(ua);
+  if(isChromium) document.documentElement.classList.add('is-chromium');
+})();
+</script>
+
+<script id="v132-safari-detection">
+(function(){
+  var ua = navigator.userAgent || "";
+  var vendor = navigator.vendor || "";
+  var isSafari =
+    /Safari/i.test(ua) &&
+    /Apple Computer/i.test(vendor) &&
+    !/Chrome|CriOS|Chromium|Edg|OPR|FxiOS/i.test(ua);
+
+  if (isSafari) {
+    document.documentElement.classList.add("is-safari");
+  }
+})();
+</script>
 
 </head>
 <body>
-<div id="brandGifIntro" aria-label="Archway Programs introduction">
-  <img id="brandGifImage" alt="Archway Programs animated introduction" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif">
-  <button class="brand-intro-skip" type="button">Skip Intro</button>
+<div aria-label="Archway Programs introduction" id="brandGifIntro">
+<img alt="Archway Programs animated introduction" decoding="async" fetchpriority="high" id="brandGifImage" loading="eager" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif"/>
+<button class="brand-intro-skip" type="button">Skip Intro</button>
 </div>
-
-
-<div id="auIntro" class="awaiting-brand-intro" aria-label="Archway brochure opening animation">
-  <button class="au-skip" type="button">Skip</button>
-  <div class="au-kicker">Archway Programs</div>
-  <div class="au-stage">
-    <div class="au-ground-shadow"></div>
-    <div class="au-world">
-      <div class="au-paper-base"><div class="au-face au-health-base inside-spread"></div></div>
-      <div class="au-leaf au-lifetime-leaf">
-        <div class="au-face au-lifetime-front outside-spread"></div>
-        <div class="au-face au-lifetime-back inside-spread"></div>
-        <div class="au-edge au-lifetime-edge"></div>
-      </div>
-      <div class="au-leaf au-cover-leaf">
-        <div class="au-face au-cover-front outside-spread"></div>
-        <div class="au-face au-cover-back inside-spread"></div>
-        <div class="au-edge au-cover-edge"></div>
-      </div>
-      <div class="au-fold-shadow au-cover-fold-shadow"></div>
-      <div class="au-fold-shadow au-lifetime-fold-shadow"></div>
-      <div class="au-flex au-flex-left"></div>
-      <div class="au-flex au-flex-right"></div>
-      <div class="au-paper-highlight"></div>
-    </div>
-  </div>
+<div aria-label="Archway brochure opening animation" class="awaiting-brand-intro" id="auIntro">
+<button class="au-skip" type="button">Skip</button>
+<div class="au-kicker">Archway Programs</div>
+<div class="au-stage">
+<div class="au-ground-shadow"></div>
+<div class="au-world">
+<div class="au-paper-base"><div class="au-face au-health-base inside-spread"></div></div>
+<div class="au-leaf au-lifetime-leaf">
+<div class="au-face au-lifetime-front outside-spread"></div>
+<div class="au-face au-lifetime-back inside-spread"></div>
+<div class="au-edge au-lifetime-edge"></div>
 </div>
-
-<div class="toolbar" role="navigation" aria-label="Archway brochure controls">
-  <div class="toolbar-center">
-    <img
-      class="toolbar-logo"
-      src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Logo%20Mini.png"
-      alt="Archway Programs"
-    >
-
-    <a
-      class="toolbar-home-link"
-      href="https://archwayprograms.org/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >archwayprograms.org</a>
-
-    <a href="https://archwayprograms.org/careers/" target="_blank" rel="noopener noreferrer">Careers</a>
-    <a href="https://archwayprograms.org/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us</a>
-    <a href="https://archwayprograms.org/archway-leadership/" target="_blank" rel="noopener noreferrer">Leadership</a>
-    <a href="https://archwayprograms.org/referral-portal/" target="_blank" rel="noopener noreferrer">Referral Portal</a>
-    <a href="https://archwayprograms.org/the-bridge-newsletter/" target="_blank" rel="noopener noreferrer">The Bridge Newsletter</a>
-
-    <button type="button" class="print-button" onclick="printVectorPDF(this, false)">Print</button>
-    <button type="button" class="secondary" onclick="printVectorPDF(this, true)">Save</button>
-  </div>
+<div class="au-leaf au-cover-leaf">
+<div class="au-face au-cover-front outside-spread"></div>
+<div class="au-face au-cover-back inside-spread"></div>
+<div class="au-edge au-cover-edge"></div>
+</div>
+<div class="au-fold-shadow au-cover-fold-shadow"></div>
+<div class="au-fold-shadow au-lifetime-fold-shadow"></div>
+<div class="au-flex au-flex-left"></div>
+<div class="au-flex au-flex-right"></div>
+<div class="au-paper-highlight"></div>
+</div>
+</div>
+</div>
+<div aria-label="Archway brochure controls" class="toolbar" role="navigation">
+<div class="toolbar-center">
+<img alt="Archway Programs" class="toolbar-logo" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Logo%20Mini.png"/>
+<a class="toolbar-home-link" href="https://archwayprograms.org/" rel="noopener noreferrer" target="_blank">archwayprograms.org</a>
+<a href="https://archwayprograms.org/careers/" rel="noopener noreferrer" target="_blank">Careers</a>
+<a href="https://archwayprograms.org/contact-us/" rel="noopener noreferrer" target="_blank">Contact Us</a>
+<a href="https://archwayprograms.org/archway-leadership/" rel="noopener noreferrer" target="_blank">Leadership</a>
+<a href="https://archwayprograms.org/referral-portal/" rel="noopener noreferrer" target="_blank">Referral Portal</a>
+<a href="https://archwayprograms.org/the-bridge-newsletter/" rel="noopener noreferrer" target="_blank">The Bridge Newsletter</a>
+<button class="print-button" onclick="printVectorPDF(this, false)" type="button">Print</button>
+<button class="secondary" onclick="printVectorPDF(this, true)" type="button">Save</button>
+</div>
 </div>
 <!-- OUTSIDE -->
 <section class="page outside-spread">
@@ -2978,26 +3021,26 @@ article.cover .cover-print-image,
         goals throughout life.
       </p>
 <div class="life-block">
-<img alt="Step By Step boots walking" class="larger-life-image life-image-xl life-image-xxl" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Step%20by%20Step%20Boots%20taking%20Step.png" style="position:relative;top:-10px;"/>
+<img alt="Step By Step boots walking" class="larger-life-image life-image-xl life-image-xxl" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Step%20by%20Step%20Boots%20taking%20Step.png" style="position:relative;top:-10px;">
 <div>
 <h3>Early Childhood</h3>
 <p>Step By Step provides early intervention services for infants and toddlers experiencing developmental delays, helping children strengthen communication, motor, cognitive, and social-emotional skills during the earliest years of growth. Early Learning offers a nurturing preschool environment where young children develop school readiness, confidence, creativity, and a lifelong love of learning through individualized instruction and play-based experiences.</p>
 </div>
-</div>
+</img></div>
 <div class="life-block reverse">
-<img alt="Just Kids bag and photo" class="larger-life-image life-image-xxl" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Just%20kid%20bag%20and%20pic.png"/>
+<img alt="Just Kids bag and photo" class="larger-life-image life-image-xxl" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Just%20kid%20bag%20and%20pic.png">
 <div>
 <h3>Childcare &amp; Family Support</h3>
 <p>Just Kids provides safe, engaging before- and after-school childcare in 31 schools across 16 South Jersey school districts. Through enriching activities, homework support, recreation, and caring supervision, children have opportunities to learn, explore, build friendships, and develop confidence in a fun and supportive environment. The program also provides dependable care that gives working families peace of mind while their children continue to grow beyond the school day.</p>
 </div>
-</div>
+</img></div>
 <div class="life-block">
-<img alt="Specialized Education" class="life-image-xl life-image-xxl" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Picture1.png"/>
+<img alt="Specialized Education" class="life-image-xl life-image-xxl" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Picture1.png"/>
 <div>
 <h3>Specialized Education</h3>
 <p>Across Archway’s specialized schools, students receive individualized academics combined with behavioral support, speech, occupational and physical therapy, counseling, communication development, transition planning, and life-skills instruction. Every educational program is designed to help students achieve academic success, build independence, strengthen social-emotional skills, and prepare for meaningful opportunities beyond the classroom.</p>
 </div>
-</div><div class="core-values-row"><div class="core-values-text"><h3>The Values That Guide Everything We Do</h3><p>At Archway Programs, our core values guide everything we do. We are committed to Safety, ensuring every individual feels secure and supported; Compassion, treating others with kindness, empathy, and respect; and Individuality, celebrating each person’s unique strengths and empowering them to reach their fullest potential.</p></div><img alt="Archway Programs Core Values" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Core%20Values.png"/></div>
+</div><div class="core-values-row"><div class="core-values-text"><h3>The Values That Guide Everything We Do</h3><p>At Archway Programs, our core values guide everything we do. We are committed to Safety, ensuring every individual feels secure and supported; Compassion, treating others with kindness, empathy, and respect; and Individuality, celebrating each person’s unique strengths and empowering them to reach their fullest potential.</p></div><img alt="Archway Programs Core Values" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Core%20Values.png"/></div>
 </div>
 </article>
 <!-- INSIDE FLAP -->
@@ -3006,11 +3049,11 @@ article.cover .cover-print-image,
 <div class="eyebrow">Creating Opportunities</div>
 <h2>From Creativity to Careers</h2>
 <div class="clearfix">
-<img alt="Advanced Abilities and Blue Violet collaboration" class="wrap-photo" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png" style="float:right !important;width:118px !important;height:auto !important;max-height:112px !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 0 8px 14px !important;shape-outside:url('https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png') !important;shape-image-threshold:.15 !important;shape-margin:9px !important;"/>
+<img alt="Advanced Abilities and Blue Violet collaboration" class="wrap-photo" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png" style="float:right !important;width:118px !important;height:auto !important;max-height:112px !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 0 8px 14px !important;shape-outside:url('https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png') !important;shape-image-threshold:.15 !important;shape-margin:9px !important;"/>
 <p>Every individual deserves the opportunity to discover their talents, build confidence, and contribute to their community. Through Blue Violet and ArchWear, Archway creates meaningful pathways where creativity becomes purpose and skills become opportunities.</p>
 </div>
 <div class="clearfix">
-<img alt="ArchWear Label" class="wrap-photo left" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archwear%20Lable%202.png" style="float:left !important;width:175px !important;height:auto !important;max-height:none !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 16px 8px 0 !important;"/>
+<img alt="ArchWear Label" class="wrap-photo left" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archwear%20Lable%202.png" style="float:left !important;width:175px !important;height:auto !important;max-height:none !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 16px 8px 0 !important;"/>
 <p>ArchWear provides custom apparel and promotional products while giving talented individuals meaningful opportunities to build workplace skills. Every project develops experience in production, customer service, order fulfillment, and retail operations, helping participants gain confidence, strengthen vocational abilities, and prepare for greater independence through meaningful employment experiences.</p>
 </div><h3>Together</h3><p>Together, Blue Violet and ArchWear demonstrate how creativity can become confidence, meaningful employment, and greater independence.</p>
 <div class="contact-highlight">
@@ -3023,28 +3066,28 @@ article.cover .cover-print-image,
 <p style="font-size:8.6px;margin-bottom:6px">Archway Programs is part of a connected network of health, education, behavioral health, and human services organizations.</p>
 </div>
 <div class="affiliates">
-<div class="affiliate"><img alt="Abilities Solutions" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilitie%20soultions.png"/><div class="affiliate-name">Abilities Solutions</div></div>
-<div class="affiliate"><img alt="Abilities of Northwest Jersey" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilities%20Of%20north%20west.png"/><div class="affiliate-name">Abilities of Northwest Jersey</div></div>
-<div class="affiliate"><img alt="Allies" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Allies%2C%20Inc.%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Allies</div></div>
-<div class="affiliate"><img alt="Brian's House" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Brian%E2%80%99s%20House%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Brian’s House</div></div>
-<div class="affiliate"><img alt="Bridgeway Behavioral Health Services" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Bridgeway%20Behavioral%20Health%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Bridgeway Behavioral Health Services</div></div>
-<div class="affiliate"><img alt="Legacy Treatment Services" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Legacy%20Treatment%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Legacy Treatment Services</div></div>
-<div class="affiliate"><img alt="Tabor Children's Services" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Tabor%20Children%E2%80%99s%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Tabor Children’s Services</div></div>
-<div class="affiliate"><img alt="The Medical Center at Woods" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20Medical%20Center.png"/><div class="affiliate-name">The Medical Center at Woods</div></div>
-<div class="affiliate"><img alt="The Center for Behavioral Health" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20ceneter%20for%20Bheavioral%20health.png"/><div class="affiliate-name">The Center for Behavioral Health</div></div>
-<div class="affiliate"><img alt="Woods Community Services" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/WCS%20WSOC.png"/><div class="affiliate-name">Woods Community Services</div></div>
-<div class="affiliate"><img alt="Woods Services" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Woods Services</div></div>
-<div class="affiliate"><img alt="Woods System of Care" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20System%20of%20Care%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Woods System of Care</div></div>
+<div class="affiliate"><img alt="Abilities Solutions" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilitie%20soultions.png"/><div class="affiliate-name">Abilities Solutions</div></div>
+<div class="affiliate"><img alt="Abilities of Northwest Jersey" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilities%20Of%20north%20west.png"/><div class="affiliate-name">Abilities of Northwest Jersey</div></div>
+<div class="affiliate"><img alt="Allies" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Allies%2C%20Inc.%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Allies</div></div>
+<div class="affiliate"><img alt="Brian's House" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Brian%E2%80%99s%20House%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Brian’s House</div></div>
+<div class="affiliate"><img alt="Bridgeway Behavioral Health Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Bridgeway%20Behavioral%20Health%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Bridgeway Behavioral Health Services</div></div>
+<div class="affiliate"><img alt="Legacy Treatment Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Legacy%20Treatment%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Legacy Treatment Services</div></div>
+<div class="affiliate"><img alt="Tabor Children's Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Tabor%20Children%E2%80%99s%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Tabor Children’s Services</div></div>
+<div class="affiliate"><img alt="The Medical Center at Woods" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20Medical%20Center.png"/><div class="affiliate-name">The Medical Center at Woods</div></div>
+<div class="affiliate"><img alt="The Center for Behavioral Health" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20ceneter%20for%20Bheavioral%20health.png"/><div class="affiliate-name">The Center for Behavioral Health</div></div>
+<div class="affiliate"><img alt="Woods Community Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/WCS%20WSOC.png"/><div class="affiliate-name">Woods Community Services</div></div>
+<div class="affiliate"><img alt="Woods Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Woods Services</div></div>
+<div class="affiliate"><img alt="Woods System of Care" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20System%20of%20Care%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Woods System of Care</div></div>
 </div>
 </div>
 </article>
 <!-- FRONT COVER -->
 <article class="panel cover">
-<img class="cover-print-image" alt="Archway Programs cover artwork" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20logo%20screen.png"/>
+<img alt="Archway Programs cover artwork" class="cover-print-image" decoding="async" fetchpriority="high" loading="eager" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20logo%20screen.png"/>
 <div class="cover-print-overlay"></div>
 <div>
 <div style="height:12px"></div>
-</div></div>
+</div>
 </article>
 </section>
 <!-- INSIDE -->
@@ -3058,12 +3101,12 @@ article.cover .cover-print-image,
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="Just Kids" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0003_Just-Kids.png"/></div>
+<div class="logo-frame"><img alt="Just Kids" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0003_Just-Kids.png"/></div>
 <div class="program-name">Just Kids</div>
 <div class="program-desc">Before &amp; after-school care • K–8</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Step By Step" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0002_Step-By-Step.png"/></div>
+<div class="logo-frame"><img alt="Step By Step" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0002_Step-By-Step.png"/></div>
 <div class="program-name">Step By Step</div>
 <div class="program-desc">Early childhood intervention • Birth–3</div>
 </div>
@@ -3075,32 +3118,32 @@ article.cover .cover-print-image,
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="Cooper's Poynt" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0008_Cooper%27s-Poynt-Camden.png"/></div>
+<div class="logo-frame"><img alt="Cooper's Poynt" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0008_Cooper%27s-Poynt-Camden.png"/></div>
 <div class="program-name">Cooper’s Poynt</div>
 <div class="program-desc">Camden • Ages 5–13</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Creative Achievement Academy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0007_Creative-Achievement-Academy.png"/></div>
+<div class="logo-frame"><img alt="Creative Achievement Academy" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0007_Creative-Achievement-Academy.png"/></div>
 <div class="program-name">Creative Achievement Academy</div>
 <div class="program-desc">Vineland • Ages 5–21</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Delaware Valley School" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0005_Delaware-valley-school.png"/></div>
+<div class="logo-frame"><img alt="Delaware Valley School" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0005_Delaware-valley-school.png"/></div>
 <div class="program-name">Delaware Valley School</div>
 <div class="program-desc">Hamilton • Ages 5–13</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Early Learning" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0004_Early-Learning-Atco.png"/></div>
+<div class="logo-frame"><img alt="Early Learning" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0004_Early-Learning-Atco.png"/></div>
 <div class="program-name">Early Learning</div>
 <div class="program-desc">Atco • Ages 3–5</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Lower School" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0010_Atco-Lower-School.png"/></div>
+<div class="logo-frame"><img alt="Lower School" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0010_Atco-Lower-School.png"/></div>
 <div class="program-name">Lower School</div>
 <div class="program-desc">Atco • Ages 3–21</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Upper School" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0000_Upper-School-Evesham.png"/></div>
+<div class="logo-frame"><img alt="Upper School" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0000_Upper-School-Evesham.png"/></div>
 <div class="program-name">Upper School</div>
 <div class="program-desc">Evesham • Ages 5–21</div>
 </div>
@@ -3115,12 +3158,12 @@ article.cover .cover-print-image,
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="ACT Partial Care" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0013_ACT-Partial-Care.png"/></div>
+<div class="logo-frame"><img alt="ACT Partial Care" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0013_ACT-Partial-Care.png"/></div>
 <div class="program-name">ACT Partial Care</div>
 <div class="program-desc">Behavioral health • Adults 18+</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Advanced Abilities" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0012_Advanced-Abilities-Day-Program.png"/></div>
+<div class="logo-frame"><img alt="Advanced Abilities" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0012_Advanced-Abilities-Day-Program.png"/></div>
 <div class="program-name">Advanced Abilities</div>
 <div class="program-desc">Life skills • Adults 21+</div>
 </div>
@@ -3132,28 +3175,28 @@ article.cover .cover-print-image,
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="ArchWear" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0011_Archwear.png"/></div>
+<div class="logo-frame"><img alt="ArchWear" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0011_Archwear.png"/></div>
 <div class="program-name">ArchWear</div>
 <div class="program-desc">Retail &amp; vocational training</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Blue Violet" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0009_Blue-Violet-Flowers-and-Gifts.png"/></div>
+<div class="logo-frame"><img alt="Blue Violet" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0009_Blue-Violet-Flowers-and-Gifts.png"/></div>
 <div class="program-name">Blue Violet</div>
 <div class="program-desc">Employment &amp; social enterprise</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Residential Services" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0006_DD-Services.png"/></div>
+<div class="logo-frame"><img alt="Residential Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0006_DD-Services.png"/></div>
 <div class="program-name">Residential Services</div>
 <div class="program-desc">Community homes for adults</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Supportive Living" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0001_Supportive-Living.png"/></div>
+<div class="logo-frame"><img alt="Supportive Living" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0001_Supportive-Living.png"/></div>
 <div class="program-name">Supportive Living</div>
 <div class="program-desc">Independent living support</div>
 </div>
 </div>
 <div class="anniversary-lockup">
-<img alt="Archway Programs 60 years" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/clean%2060.png"/>
+<img alt="Archway Programs 60 years" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/clean%2060.png"/>
 <span>Celebrating Over 60 Years of Service Across South Jersey Since 1965</span>
 </div>
 </article>
@@ -3165,100 +3208,99 @@ article.cover .cover-print-image,
 <div class="eyebrow">Support Through Adulthood</div>
 <h2>Building Independence, Wellness and Community</h2>
 <div class="story-section">
-<img alt="ACT Partial Care client photo collage" class="story-feature-image transparent-feature" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/ACT%20Stack%20of%20photos.png" style="float:right!important;width:165px!important;height:auto!important;margin:0 0 8px 14px!important;border:0!important;background:transparent!important;box-shadow:none!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><strong style="color:#5C2F92 !important;">Behavioral Health</strong>
+<img alt="ACT Partial Care client photo collage" class="story-feature-image transparent-feature" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/ACT%20Stack%20of%20photos.png" style="float:right!important;width:165px!important;height:auto!important;margin:0 0 8px 14px!important;border:0!important;background:transparent!important;box-shadow:none!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><strong style="color:#5C2F92 !important;">Behavioral Health</strong>
 <span>ACT Partial Care provides comprehensive behavioral health services that promote emotional wellness, recovery, personal growth, and community integration. Through individualized treatment, therapeutic programming, and skill development, participants are supported in building healthier, more independent lives.</span>
 </div>
 <div class="story-section">
 <strong style="color:#5C2F92 !important;">Adult Day Services</strong>
-<div class="service-image-row"><img alt="Advanced Abilities Day Program shirts" class="service-row-image" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Shirts.png"/><span>The Advanced Abilities Day Program empowers adults with intellectual and developmental disabilities through individualized supports, community participation, recreation, volunteer opportunities, life-skills development, and meaningful daily experiences that foster confidence, independence, and personal fulfillment.</span></div></div>
-<img alt="Blue Violet van" class="story-feature-image transparent-feature" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Blue%20violet%20Van.png" style="float:right!important;width:155px!important;height:auto!important;margin:0 0 8px 14px!important;border:0!important;background:transparent!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><div class="story-section">
+<div class="service-image-row"><img alt="Advanced Abilities Day Program shirts" class="service-row-image" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Shirts.png"/><span>The Advanced Abilities Day Program empowers adults with intellectual and developmental disabilities through individualized supports, community participation, recreation, volunteer opportunities, life-skills development, and meaningful daily experiences that foster confidence, independence, and personal fulfillment.</span></div></div>
+<img alt="Blue Violet van" class="story-feature-image transparent-feature" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Blue%20violet%20Van.png" style="float:right!important;width:155px!important;height:auto!important;margin:0 0 8px 14px!important;border:0!important;background:transparent!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><div class="story-section">
 <strong style="color:#00927C !important;">Employment &amp; Community Engagement</strong>
 <span>ArchWear and Blue Violet provide vocational training, employment experiences, creative expression, and retail opportunities where individuals develop workplace skills, gain hands-on experience, build confidence, and contribute through meaningful work in inclusive community settings.</span>
 </div>
 <div class="story-section">
 <strong style="color:#00927C !important;">Residential &amp; Independent Living</strong>
-<div class="service-image-row" style="display:grid!important;grid-template-columns:145px 1fr!important;gap:11px!important;align-items:center!important;margin-top:5px!important;"><img alt="Residential care" class="service-row-image" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Residential%20care.png" style="width:145px!important;height:108px!important;object-fit:contain!important;display:block!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:drop-shadow(0 5px 9px rgba(0,0,0,.16))!important;margin:0!important;"/><span>Residential Services and Supportive Living provide person-centered supports that help adults live safely, develop daily living skills, strengthen relationships, participate in their communities, and achieve greater independence while maintaining dignity, choice, and quality of life.</span></div><div class="learn-more-services"><div class="learn-more-copy"><h3>Learn More About Our Services Online</h3><p>Visit <a href="https://archwayprograms.org" rel="noopener" target="_blank">ArchwayPrograms.org</a> to explore our programs, services, resources, and the support we provide to individuals and families.</p></div><img alt="Archway Programs website displayed on a computer" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Computer.png"/></div></div>
+<div class="service-image-row" style="display:grid!important;grid-template-columns:145px 1fr!important;gap:11px!important;align-items:center!important;margin-top:5px!important;"><img alt="Residential care" class="service-row-image" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Residential%20care.png" style="width:145px!important;height:108px!important;object-fit:contain!important;display:block!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:drop-shadow(0 5px 9px rgba(0,0,0,.16))!important;margin:0!important;"/><span>Residential Services and Supportive Living provide person-centered supports that help adults live safely, develop daily living skills, strengthen relationships, participate in their communities, and achieve greater independence while maintaining dignity, choice, and quality of life.</span></div><div class="learn-more-services"><div class="learn-more-copy"><h3>Learn More About Our Services Online</h3><p>Visit <a href="https://archwayprograms.org" rel="noopener" target="_blank">ArchwayPrograms.org</a> to explore our programs, services, resources, and the support we provide to individuals and families.</p></div><img alt="Archway Programs website displayed on a computer" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Computer.png"/></div></div>
 </article>
 </section>
-
-<section id="organizationTimelineSection" aria-label="Woods System of Care organization ticker">
-  <div class="wsoc-widget">
-    <header class="wsoc-heading">
-      <h2>Explore the Woods System of Care</h2>
-      <p>Choose an organization to visit its website.</p>
-    </header>
-    <div class="ticker-window">
-      <div class="ticker-track" id="tickerTrack">
-        <div class="ticker-group" id="tickerGroup">
-          <a class="organization-card" href="https://alliesnj.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Allies%2C%20Inc.%20Rounded%20Square%20Icon.png" alt="Allies, Inc.">
+<section aria-label="Woods System of Care organization ticker" id="organizationTimelineSection">
+<div class="wsoc-widget">
+<header class="wsoc-heading">
+<h2>Explore the Woods System of Care</h2>
+<p>Choose an organization to visit its website.</p>
+</header>
+<div class="ticker-window">
+<div class="ticker-track" id="tickerTrack">
+<div class="ticker-group" id="tickerGroup">
+<a class="organization-card" href="https://alliesnj.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Allies, Inc." decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Allies%2C%20Inc.%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Allies, Inc.</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://archwayprograms.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Archway%20Programs%20Rounded%20Square%20Icon.png" alt="Archway Programs">
+<a class="organization-card" href="https://archwayprograms.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Archway Programs" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Archway%20Programs%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Archway Programs</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.brianshouse.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Brian%E2%80%99s%20House%20Rounded%20Square%20Icon.png" alt="Brian’s House">
+<a class="organization-card" href="https://www.brianshouse.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Brian’s House" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Brian%E2%80%99s%20House%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Brian’s House</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.bridgewaybhs.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Bridgeway%20Behavioral%20Health%20Services%20Rounded%20Square%20Icon.png" alt="Bridgeway Behavioral Health Services">
+<a class="organization-card" href="https://www.bridgewaybhs.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Bridgeway Behavioral Health Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Bridgeway%20Behavioral%20Health%20Services%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Bridgeway Behavioral Health Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.legacytreatment.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Legacy%20Treatment%20Services%20Rounded%20Square%20Icon.png" alt="Legacy Treatment Services">
+<a class="organization-card" href="https://www.legacytreatment.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Legacy Treatment Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Legacy%20Treatment%20Services%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Legacy Treatment Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://taborservicesinc.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Tabor%20Children%E2%80%99s%20Services%20Rounded%20Square%20Icon.png" alt="Tabor Children’s Services">
+<a class="organization-card" href="https://taborservicesinc.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Tabor Children’s Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Tabor%20Children%E2%80%99s%20Services%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Tabor Children’s Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://woodsservicespa.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20Services%20Rounded%20Square%20Icon.png" alt="Woods Services">
+<a class="organization-card" href="https://woodsservicespa.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Woods Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20Services%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Woods Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.woods.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20System%20of%20Care%20Rounded%20Square%20Icon.png" alt="Woods System of Care">
+<a class="organization-card" href="https://www.woods.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Woods System of Care" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20System%20of%20Care%20Rounded%20Square%20Icon.png"/>
 <span class="organization-name">Woods System of Care</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.woods.org/services/wcs/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/WCS%20WSOC.png" alt="Woods Community Services">
+<a class="organization-card" href="https://www.woods.org/services/wcs/" rel="noopener noreferrer" target="_blank">
+<img alt="Woods Community Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/WCS%20WSOC.png"/>
 <span class="organization-name">Woods Community Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://woodshealthcare.org/behavioral-care/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20ceneter%20for%20Bheavioral%20health.png" alt="The Center for Behavioral Health">
+<a class="organization-card" href="https://woodshealthcare.org/behavioral-care/" rel="noopener noreferrer" target="_blank">
+<img alt="The Center for Behavioral Health" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20ceneter%20for%20Bheavioral%20health.png"/>
 <span class="organization-name">The Center for Behavioral Health</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://woodshealthcare.org/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20Medical%20Center.png" alt="The Medical Center at Woods">
+<a class="organization-card" href="https://woodshealthcare.org/" rel="noopener noreferrer" target="_blank">
+<img alt="The Medical Center at Woods" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20Medical%20Center.png"/>
 <span class="organization-name">The Medical Center at Woods</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://abilitiesnw.com/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilities%20Of%20north%20west.png" alt="Abilities of Northwest Jersey">
+<a class="organization-card" href="https://abilitiesnw.com/" rel="noopener noreferrer" target="_blank">
+<img alt="Abilities of Northwest Jersey" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilities%20Of%20north%20west.png"/>
 <span class="organization-name">Abilities of Northwest Jersey</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.abilities4work.com/" target="_blank" rel="noopener noreferrer">
-<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilitie%20soultions.png" alt="Abilities Solutions">
+<a class="organization-card" href="https://www.abilities4work.com/" rel="noopener noreferrer" target="_blank">
+<img alt="Abilities Solutions" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilitie%20soultions.png"/>
 <span class="organization-name">Abilities Solutions</span>
 <span class="organization-action">Visit website →</span>
 </a>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <script id="v123-ticker-clone-script">
 (function(){
@@ -3274,7 +3316,6 @@ article.cover .cover-print-image,
   track.appendChild(duplicateGroup);
 })();
 </script>
-
 <script>
 document.querySelectorAll("img").forEach(img=>{
   img.addEventListener("error",()=>{
@@ -3385,61 +3426,11 @@ async function printVectorPDF(button, flipSecondPage) {
 }
 </script>
 
-<style id="v113-safe-depth">
-/* v113 — safe depth enhancement. Never applies filter/opacity to 3D leaves or faces. */
-#auIntro .au-ground-shadow{
-  height:10%;
-  bottom:-.5%;
-  background:radial-gradient(ellipse at center,
-    rgba(0,0,0,.56) 0%,
-    rgba(0,0,0,.30) 32%,
-    rgba(0,0,0,.12) 54%,
-    transparent 76%);
-  filter:blur(20px);
-}
-#auIntro .au-fold-shadow{
-  width:56px;
-  filter:blur(5px);
-}
-#auIntro .au-cover-fold-shadow{
-  background:linear-gradient(90deg,
-    transparent 0%,
-    rgba(0,0,0,.035) 28%,
-    rgba(0,0,0,.18) 72%,
-    rgba(0,0,0,.31) 100%);
-}
-#auIntro .au-lifetime-fold-shadow{
-  background:linear-gradient(90deg,
-    rgba(0,0,0,.30) 0%,
-    rgba(0,0,0,.17) 28%,
-    rgba(0,0,0,.035) 72%,
-    transparent 100%);
-}
-#auIntro .au-flex{
-  width:18px;
-  background:linear-gradient(90deg,
-    rgba(255,255,255,.22),
-    rgba(9,50,102,.10) 48%,
-    rgba(255,255,255,.14));
-}
-#auIntro .au-edge{
-  width:2px;
-  background:linear-gradient(180deg,
-    rgba(255,255,255,.98),
-    rgba(156,169,183,.70) 48%,
-    rgba(255,255,255,.92));
-  box-shadow:0 0 1px rgba(255,255,255,.75),0 0 3px rgba(0,0,0,.24);
-}
-#auIntro .au-face{
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.42),
-    inset 0 -1px 0 rgba(9,50,102,.10);
-}
-</style>
-
-
 <script id="archway-gif-intro-script">
 (function(){
+  if(window.__archwayBrandIntroStarted) return;
+  window.__archwayBrandIntroStarted=true;
+
   const intro=document.getElementById('brandGifIntro');
   const image=document.getElementById('brandGifImage');
   const brochureIntro=document.getElementById('auIntro');
@@ -3460,6 +3451,7 @@ async function printVectorPDF(button, flipSecondPage) {
     /* Remove the animated GIF itself first. The exact matching wood final-frame
        wallpaper is already beneath it, preventing any visible loop or flash. */
     intro.classList.add('is-freezing');
+    window.__archwayGifIntroFinished=true;
     if(brochureIntro){
       brochureIntro.classList.remove('awaiting-brand-intro');
       brochureIntro.classList.add('brand-intro-complete');
@@ -3467,7 +3459,6 @@ async function printVectorPDF(button, flipSecondPage) {
 
     setTimeout(()=>{
       intro.classList.add('is-finished');
-      window.__archwayGifIntroFinished=true;
       window.dispatchEvent(new Event('archway-gif-intro-finished'));
       setTimeout(()=>intro.remove(),600);
     },260);
@@ -3475,10 +3466,9 @@ async function printVectorPDF(button, flipSecondPage) {
 
   intro.querySelector('.brand-intro-skip').addEventListener('click',finishIntro);
 
-  /* GIF files have no browser "ended" event. This cutoff is intentionally
-     just before the source GIF begins its next cycle, while its final frame
-     visually matches the permanent wood background. */
-  const INTRO_PLAY_ONCE_MS=5900;
+  /* GIF files have no browser "ended" event. Allow the complete branded
+     animation to play before beginning the brochure unfold. */
+  const INTRO_PLAY_ONCE_MS=4850;
   function beginTimer(){
     if(timer || finished) return;
     timer=setTimeout(finishIntro,INTRO_PLAY_ONCE_MS);
@@ -3494,7 +3484,6 @@ async function printVectorPDF(button, flipSecondPage) {
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) finishIntro();
 })();
 </script>
-
 <script id="apple-unfold-script">
 (function(){
   const q=(s,r=document)=>r.querySelector(s);
@@ -3508,6 +3497,7 @@ async function printVectorPDF(button, flipSecondPage) {
     overlay.remove();
     document.documentElement.classList.remove('au-lock');
     document.body.classList.remove('au-lock');
+    window.dispatchEvent(new Event('archway-brochure-opened'));
     return;
   }
 
@@ -3520,6 +3510,7 @@ async function printVectorPDF(button, flipSecondPage) {
     overlay.remove();
     document.documentElement.classList.remove('au-lock');
     document.body.classList.remove('au-lock');
+    window.dispatchEvent(new Event('archway-brochure-opened'));
     return;
   }
 
@@ -3560,6 +3551,7 @@ async function printVectorPDF(button, flipSecondPage) {
     overlay.classList.add('au-done');
     document.documentElement.classList.remove('au-lock');
     document.body.classList.remove('au-lock');
+    window.dispatchEvent(new Event('archway-brochure-opened'));
     setTimeout(()=>overlay.remove(),760);
   }
   q('.au-skip').addEventListener('click',finish);
@@ -3572,7 +3564,7 @@ async function printVectorPDF(button, flipSecondPage) {
   }
 
   async function play(){
-    await wait(160);
+    await wait(100);
     kicker.animate([
       {opacity:0,transform:'translateX(-50%) translateY(-8px)'},
       {opacity:1,transform:'translateX(-50%) translateY(0)'}
@@ -3593,7 +3585,7 @@ async function printVectorPDF(button, flipSecondPage) {
       {opacity:1,transform:'translateY(0) rotateX(8.5deg) rotateZ(-.45deg) scale(.88)'}
     ],{duration:1550,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'}).finished;
 
-    await wait(420);
+    await wait(180);
 
     /* Cover opens left. Its reverse is the Children’s Services panel. */
     coverShadow.animate([{opacity:0},{opacity:.55,offset:.48},{opacity:.18}],{duration:1650,fill:'forwards',easing:'cubic-bezier(.4,0,.2,1)'});
@@ -3613,7 +3605,7 @@ async function printVectorPDF(button, flipSecondPage) {
     ]);
 
     /* Hold the Children’s Services / Lifetime spread long enough to read. */
-    await wait(1200);
+    await wait(700);
 
     /* Lifetime flap opens right, revealing Health in the center and Support on its reverse. */
     lifetimeShadow.animate([{opacity:0},{opacity:.58,offset:.48},{opacity:.16}],{duration:1750,fill:'forwards',easing:'cubic-bezier(.4,0,.2,1)'});
@@ -3646,13 +3638,13 @@ async function printVectorPDF(button, flipSecondPage) {
       shadow.style.visibility='hidden';
     }
 
-    highlight.animate([{transform:'translateX(-140%)'},{transform:'translateX(140%)'}],{duration:1050,fill:'forwards',easing:'cubic-bezier(.4,0,.2,1)'});
+    highlight.animate([{transform:'translateX(-140%)'},{transform:'translateX(140%)'}],{duration:760,fill:'forwards',easing:'cubic-bezier(.4,0,.2,1)'});
 
     if(!document.documentElement.classList.contains('is-safari')){
       shadow.animate([{opacity:.78,transform:'scale(1)'},{opacity:.32,transform:'scale(1.3)'}],{duration:880,fill:'forwards',easing:'ease-out'});
     }
 
-    await wait(1200);
+    await wait(550);
     finish();
   }
 
@@ -3666,8 +3658,6 @@ async function printVectorPDF(button, flipSecondPage) {
   }
 })();
 </script>
-
-
 <script id="v123-integrated-ticker-reveal-script">
 (function(){
   const section=document.getElementById('organizationTimelineSection');
@@ -3680,49 +3670,19 @@ async function printVectorPDF(button, flipSecondPage) {
     requestAnimationFrame(()=>requestAnimationFrame(()=>section.classList.add('is-visible')));
   }
 
-  function brochureAnimationFinished(){
+  window.addEventListener('archway-brochure-opened',revealTimeline,{once:true});
+  window.addEventListener('load',()=>{
     const intro=document.getElementById('auIntro');
-    return !intro || intro.classList.contains('au-done');
-  }
-
-  function check(){
-    if(brochureAnimationFinished()) revealTimeline();
-  }
-
-  window.addEventListener('load',check,{once:true});
-  const observer=new MutationObserver(()=>{
-    if(brochureAnimationFinished()){
-      observer.disconnect();
-      revealTimeline();
-    }
-  });
-  observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
-  check();
+    if(!intro || intro.classList.contains('au-done')) revealTimeline();
+  },{once:true});
 })();
 </script>
-
-
 <script id="v135-mobile-performance">
 (function(){
-  if(!window.matchMedia('(max-width:760px)').matches) return;
-
-  document.documentElement.classList.add('is-mobile');
-
-  function optimizeImages(){
-    document.querySelectorAll('img').forEach(function(img){
-      if(img.id === 'brandGifImage' || img.classList.contains('cover-print-image')) return;
-      img.loading = 'lazy';
-      img.decoding = 'async';
-    });
-  }
-
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', optimizeImages, {once:true});
-  }else{
-    optimizeImages();
+  if(window.matchMedia('(max-width:760px)').matches){
+    document.documentElement.classList.add('is-mobile');
   }
 })();
 </script>
-
 </body>
 </html>
