@@ -2896,6 +2896,28 @@ html.is-safari #auIntro .au-ground-shadow{
 }
 </style>
 
+
+<style id="v141-cover-dim-removed">
+/* Remove only the leftover dark cover overlay. */
+article.cover .cover-print-overlay,
+#auIntro article.cover .cover-print-overlay,
+#auIntro .au-cover-front .cover-print-overlay{
+  display:none !important;
+  visibility:hidden !important;
+  opacity:0 !important;
+  background:none !important;
+  background-image:none !important;
+}
+
+/* Ensure the actual cover artwork is shown at its original brightness. */
+article.cover .cover-print-image,
+#auIntro .au-cover-front .cover-print-image{
+  filter:none !important;
+  -webkit-filter:none !important;
+  opacity:1 !important;
+}
+</style>
+
 </head>
 <body>
 <div id="brandGifIntro" aria-label="Archway Programs introduction">
