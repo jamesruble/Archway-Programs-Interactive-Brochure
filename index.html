@@ -2961,16 +2961,7 @@ article.cover .cover-print-image,
 </script>
 
 
-<link rel="preload" as="image" href="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif" fetchpriority="high">
-<style id="intro-handoff-consolidated">
-/* =====================================================================
-   INTRO / GIF-HANDOFF STYLES  (was v151 through v159, now one block)
-   Rules are kept in their original cascade order so rendering is
-   unchanged; only the nine separate wrappers were merged. Later
-   sections intentionally override earlier ones.
-   ===================================================================== */
-
-/* ---- [1/9] v151-clean-gif-handoff ---- */
+<style id="v151-clean-gif-handoff">
 /* v151 — exact background match and a frame-clean GIF handoff. */
 html,body,#brandGifIntro,#auIntro{
   background-color:#705039 !important;
@@ -3007,8 +2998,9 @@ html,body{background-attachment:fixed !important;}
   -webkit-filter:none !important;
   transition:none !important;
 }
+</style>
 
-/* ---- [2/9] v152-locked-background-startup-fix ---- */
+<style id="v152-locked-background-startup-fix">
 /* v152 — keep the wood surface perfectly stationary from the first painted frame. */
 html,body{
   background-color:#705039 !important;
@@ -3043,8 +3035,9 @@ html,body{
   opacity:0 !important;
   visibility:hidden !important;
 }
+</style>
 
-/* ---- [3/9] v153-soft-gif-blend-faster-rise ---- */
+<style id="v153-soft-gif-blend-faster-rise">
 /* v153 — soften the visible GIF ending while preserving the locked wood surface. */
 #brandGifIntro{
   background-attachment:fixed !important;
@@ -3061,8 +3054,9 @@ html,body{
   background-image:none !important;
   pointer-events:none !important;
 }
+</style>
 
-/* ---- [4/9] v154-earlier-fade-black-loader ---- */
+<style id="v154-earlier-fade-black-loader">
 /* v154 — a deliberate black loading curtain only while the first GIF frame loads.
    Once ready, it reveals the matching wood/GIF scene and begins a slightly earlier,
    longer dissolve so the animation ending is less noticeable. */
@@ -3089,8 +3083,11 @@ html,body{
 #brandGifIntro.gif-ready.is-handoff #brandGifImage{
   transition:opacity 820ms cubic-bezier(.4,0,.2,1) !important;
 }
+</style>
 
-/* ---- [5/9] v155-fast-blurred-loader ---- */
+<link rel="preload" as="image" href="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif" fetchpriority="high">
+
+<style id="v155-fast-blurred-loader">
 /* v155 — show the locked wood surface immediately, softly blurred while the GIF
    decodes. The blur clears as soon as frame one is available; no black curtain. */
 #brandGifIntro:not(.gif-ready){
@@ -3112,8 +3109,9 @@ html,body{
 #brandGifImage{opacity:0;}
 #brandGifIntro.gif-ready #brandGifImage{opacity:1 !important;transition:opacity 120ms ease-out !important;}
 #brandGifIntro.gif-ready.is-handoff #brandGifImage{transition:opacity 820ms cubic-bezier(.4,0,.2,1) !important;}
+</style>
 
-/* ---- [6/9] v156-true-fixed-background-slower-motion ---- */
+<style id="v156-true-fixed-background-slower-motion">
 /* v156 — use a real viewport-fixed wallpaper layer so scrolling cannot move the
    background in Safari or Chromium. background-attachment:fixed alone is not
    reliable when transforms and full-screen overlays are active. */
@@ -3141,8 +3139,9 @@ body::before{
 #brandGifIntro,#auIntro{
   background-attachment:scroll !important;
 }
+</style>
 
-/* ---- [7/9] v157-refined-seamless-fade ---- */
+<style id="v157-refined-seamless-fade">
 /* v157 — preserve the exact locked wallpaper and use a shorter, more natural
    handoff curve. The GIF holds fully opaque at first, then eases away while the
    brochure is already beginning to rise beneath it. */
@@ -3154,8 +3153,8 @@ body::before{
   visibility:visible !important;
   transition:opacity 680ms cubic-bezier(.22,.61,.36,1) !important;
 }
-
-/* ---- [8/9] v158-seamless-one-second-breath ---- */
+</style>
+<style id="v158-seamless-one-second-breath">
 /* v158 — the GIF and page share the exact same locked wallpaper. After the GIF
    dissolves, leave that unchanged surface visible for one calm second before
    beginning the brochure rise; no darkening or visual background swap. */
@@ -3164,8 +3163,9 @@ body::before{
   backdrop-filter:none !important;
   -webkit-backdrop-filter:none !important;
 }
+</style>
 
-/* ---- [9/9] v159-restore-v141-transition-and-pop ---- */
+<style id="v159-restore-v141-transition-and-pop">
 /* Restore the softer v141 handoff while retaining the newer fixed viewport wallpaper. */
 #brandGifIntro{
   opacity:1 !important;
@@ -3205,6 +3205,104 @@ body::before{
   -webkit-filter:blur(0) !important;
 }
 </style>
+
+<style id="v160-mobile-image-scale-centered-gif">
+/* v160 — mobile-only centering and artwork scale refinements. Desktop and print are unchanged. */
+@media screen and (max-width:760px){
+  /* The source GIF's focal artwork sits slightly left when cropped on a phone. */
+  #brandGifIntro #brandGifImage{
+    object-position:48% 50% !important;
+  }
+
+  /* Give the three childhood/education illustrations a stronger visual presence. */
+  .lifetime-panel img[alt="Step By Step boots walking"],
+  .lifetime-panel img[alt="Just Kids bag and photo"],
+  .lifetime-panel img[alt="Specialized Education"]{
+    width:148px !important;
+    height:148px !important;
+    max-width:46vw !important;
+    flex:0 0 auto !important;
+    align-self:center !important;
+  }
+
+  .life-block,
+  .life-block.reverse,
+  .lifetime-panel .life-block:has(img.life-image-xl),
+  .lifetime-panel .life-block:has(img.life-image-xxl),
+  .lifetime-panel .life-block.reverse:has(img.life-image-xl),
+  .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
+    grid-template-columns:148px minmax(0,1fr) !important;
+    gap:16px !important;
+    align-items:center !important;
+  }
+
+  /* Make the Core Values feature read like a major section, not a small footer. */
+  .lifetime-panel .core-values-row{
+    gap:15px !important;
+    padding-top:18px !important;
+  }
+  .lifetime-panel .core-values-text h3{
+    font-size:18px !important;
+    line-height:1.2 !important;
+    margin-bottom:8px !important;
+  }
+  .lifetime-panel .core-values-text p{
+    font-size:15px !important;
+    line-height:1.5 !important;
+  }
+  .lifetime-panel .core-values-row img{
+    width:min(92%,320px) !important;
+    height:auto !important;
+    max-height:none !important;
+  }
+
+  /* Adult-service imagery: individually scaled for a fuller mobile composition. */
+  .inside-story img[alt="ACT Partial Care client photo collage"]{
+    width:min(96%,370px) !important;
+    max-height:280px !important;
+  }
+  .inside-story img[alt="Blue Violet van"]{
+    width:min(94%,360px) !important;
+    max-height:270px !important;
+  }
+  .inside-story img[alt="Residential care"]{
+    width:min(92%,340px) !important;
+    max-height:250px !important;
+  }
+}
+
+@media screen and (max-width:420px){
+  .life-block,
+  .life-block.reverse,
+  .lifetime-panel .life-block:has(img.life-image-xl),
+  .lifetime-panel .life-block:has(img.life-image-xxl),
+  .lifetime-panel .life-block.reverse:has(img.life-image-xl),
+  .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
+    display:flex !important;
+    flex-direction:column !important;
+    gap:12px !important;
+  }
+
+  .lifetime-panel img[alt="Step By Step boots walking"],
+  .lifetime-panel img[alt="Just Kids bag and photo"],
+  .lifetime-panel img[alt="Specialized Education"]{
+    width:158px !important;
+    height:158px !important;
+    max-width:58vw !important;
+  }
+
+  .lifetime-panel .core-values-row img{
+    width:min(100%,330px) !important;
+  }
+
+  .inside-story img[alt="ACT Partial Care client photo collage"],
+  .inside-story img[alt="Blue Violet van"],
+  .inside-story img[alt="Residential care"]{
+    width:min(100%,360px) !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <div aria-label="Archway Programs introduction" id="brandGifIntro">
@@ -3863,25 +3961,22 @@ async function printVectorPDF(button, flipSecondPage) {
     kicker.animate([
       {opacity:0,transform:'translateX(-50%) translateY(-8px)'},
       {opacity:1,transform:'translateX(-50%) translateY(0)'}
-    ],{duration:720,fill:'forwards',easing:EXPO});
+    ],{duration:720,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'});
 
     if(!document.documentElement.classList.contains('is-safari')){
       shadow.animate([
         {opacity:0,transform:'scale(.45)'},
         {opacity:.78,transform:'scale(1)'}
-      ],{duration:1500,fill:'forwards',easing:EXPO});
+      ],{duration:1500,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'});
     }
 
-    /* Rise with a subtle breath/overshoot, ending held at the pose the folds run
-       against and the settle picks up from. All three values (rotateX 8.5deg,
-       rotateZ -.45deg, scale .88) must match the settle's start keyframe. */
     await world.animate([
       {opacity:0,transform:'translateY(82vh) rotateX(13deg) rotateZ(-2deg) scale(.76)'},
       {opacity:1,offset:.10},
       {transform:'translateY(-2.2%) rotateX(8deg) rotateZ(-.8deg) scale(.89)',offset:.72},
       {transform:'translateY(.8%) rotateX(9deg) rotateZ(-.45deg) scale(.875)',offset:.90},
       {opacity:1,transform:'translateY(0) rotateX(8.5deg) rotateZ(-.45deg) scale(.88)'}
-    ],{duration:1550,fill:'forwards',easing:EXPO}).finished;
+    ],{duration:1550,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'}).finished;
 
     await wait(420);
 
@@ -3904,12 +3999,9 @@ async function printVectorPDF(button, flipSecondPage) {
       {transform:'translateX(140%)',opacity:0}
     ],{duration:900,easing:'ease-in-out'});
 
-    /* Start the settle from the EXACT pose the entrance/folds left the world in,
-       so it eases continuously to flat. (Previously it began from a different
-       pose and snapped on the first frame — that was the visible pop.) */
     await world.animate([
-      {transform:'translateY(0) rotateX(8.5deg) rotateZ(-.45deg) scale(.88)'},
-      {transform:'translateY(0) rotateX(0deg) rotateZ(0deg) scale(1)'}
+      {transform:'translateY(0) rotateX(2.6deg) scale(.955)'},
+      {transform:'translateY(0) rotateX(0deg) scale(1)'}
     ],{duration:760,fill:'forwards',easing:EXPO}).finished;
 
     if(document.documentElement.classList.contains('is-safari')){
@@ -3957,5 +4049,125 @@ async function printVectorPDF(button, flipSecondPage) {
   }
 })();
 </script>
+
+
+<style id="v161-mobile-order-compact-services-anniversary">
+/* v161 — mobile-only reading order, compact service cards, and larger anniversary mark. */
+@media screen and (max-width:760px){
+  /* The careers panel is moved after the inside spread by the companion script below. */
+  .mobile-careers-last{
+    width:calc(100% - 20px) !important;
+    max-width:560px !important;
+    margin:0 auto 24px !important;
+    border-radius:18px !important;
+    overflow:visible !important;
+  }
+
+  /* Smaller service buttons so three can sit together on most phones. */
+  .logo-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:7px !important;
+  }
+  .program-card{
+    min-height:118px !important;
+    padding:8px 5px !important;
+    border-radius:11px !important;
+  }
+  .logo-frame,
+  .logo-frame img{
+    width:58px !important;
+    height:58px !important;
+    min-height:58px !important;
+  }
+  .program-name{
+    margin-top:5px !important;
+    font-size:11px !important;
+    line-height:1.12 !important;
+  }
+  .program-desc{
+    margin-top:3px !important;
+    font-size:9px !important;
+    line-height:1.18 !important;
+  }
+
+  /* Make the 60-year emblem a stronger closing visual. */
+  .anniversary-lockup{
+    justify-content:center !important;
+    gap:15px !important;
+    padding-top:15px !important;
+  }
+  .anniversary-lockup img{
+    width:126px !important;
+    height:126px !important;
+    flex:0 0 126px !important;
+  }
+  .anniversary-lockup span{
+    font-size:14px !important;
+    line-height:1.35 !important;
+  }
+}
+
+@media screen and (max-width:430px){
+  /* Two across on narrow phones to preserve legibility and touch targets. */
+  .logo-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:8px !important;
+  }
+  .program-card{
+    min-height:124px !important;
+  }
+  .anniversary-lockup{
+    flex-direction:column !important;
+    text-align:center !important;
+  }
+  .anniversary-lockup img{
+    width:142px !important;
+    height:142px !important;
+    flex-basis:142px !important;
+  }
+  .anniversary-lockup span{
+    max-width:300px !important;
+    text-align:center !important;
+  }
+}
+</style>
+
+<script id="v161-mobile-careers-last">
+(function(){
+  var panel, originalParent, originalNext, insideSpread;
+
+  function setup(){
+    panel = document.querySelector('.outside-spread > .about-panel');
+    insideSpread = document.querySelector('.inside-spread');
+    if(!panel || !insideSpread) return;
+    originalParent = panel.parentNode;
+    originalNext = panel.nextSibling;
+    syncPosition();
+    window.addEventListener('resize', syncPosition, {passive:true});
+  }
+
+  function syncPosition(){
+    if(!panel || !insideSpread || !originalParent) return;
+    if(window.matchMedia('(max-width:760px)').matches){
+      panel.classList.add('mobile-careers-last');
+      insideSpread.insertAdjacentElement('afterend', panel);
+    }else{
+      panel.classList.remove('mobile-careers-last');
+      if(originalNext && originalNext.parentNode === originalParent){
+        originalParent.insertBefore(panel, originalNext);
+      }else{
+        originalParent.appendChild(panel);
+      }
+    }
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', setup, {once:true});
+  }else{
+    setup();
+  }
+})();
+</script>
+
 </body>
 </html>
