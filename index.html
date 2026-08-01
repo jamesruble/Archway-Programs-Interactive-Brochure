@@ -4661,5 +4661,93 @@ async function printVectorPDF(button, flipSecondPage) {
 }
 </style>
 
+
+<style id="v165-mobile-visible-fix">
+/* v165 — unmistakable mobile-only correction. */
+@media screen and (max-width:900px){
+  /* Full-screen GIF, centered without cropping. */
+  #brandGifIntro,
+  #brandGifIntro:not(.gif-ready),
+  #brandGifIntro.gif-ready,
+  #brandGifIntro.is-freezing{
+    position:fixed !important;
+    inset:0 !important;
+    width:100vw !important;
+    height:100dvh !important;
+    min-height:100dvh !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#705039 !important;
+    background-image:none !important;
+    overflow:hidden !important;
+  }
+  #brandGifIntro::before,
+  #brandGifIntro::after,
+  #brandGifIntro .brand-intro-loader{
+    display:none !important;
+    content:none !important;
+  }
+  #brandGifIntro #brandGifImage{
+    position:absolute !important;
+    inset:0 !important;
+    width:100vw !important;
+    height:100dvh !important;
+    min-width:100vw !important;
+    min-height:100dvh !important;
+    max-width:none !important;
+    max-height:none !important;
+    object-fit:contain !important;
+    object-position:50% 50% !important;
+    margin:0 !important;
+    transform:none !important;
+  }
+
+  /* Remove the low-resolution stretched wallpaper on every mobile service panel. */
+  section.inside-spread.page,
+  section.inside-spread.page > .panel,
+  section.inside-spread.page > article,
+  .inside-spread .section,
+  .inside-spread .inside-story{
+    background-image:none !important;
+    background-attachment:scroll !important;
+    backdrop-filter:none !important;
+    -webkit-backdrop-filter:none !important;
+  }
+  section.inside-spread.page{
+    background-color:#eee8dc !important;
+  }
+  section.inside-spread.page > .panel,
+  section.inside-spread.page > article{
+    background-color:#f7f3eb !important;
+  }
+
+  /* Make the final services callout obviously readable on a phone. */
+  .inside-story .learn-more-services{
+    display:block !important;
+    position:static !important;
+    top:auto !important;
+    margin:28px 0 8px !important;
+    padding:22px 0 0 !important;
+    border-top:2px solid rgba(9,50,102,.22) !important;
+  }
+  .inside-story .learn-more-copy h3{
+    font-size:22px !important;
+    line-height:1.16 !important;
+    margin:0 0 10px !important;
+  }
+  .inside-story .learn-more-copy p,
+  .inside-story .learn-more-copy a{
+    font-size:17px !important;
+    line-height:1.55 !important;
+  }
+  .inside-story .learn-more-services > img{
+    width:min(70%,260px) !important;
+    height:auto !important;
+    margin:18px auto 0 !important;
+  }
+}
+</style>
+
 </body>
 </html>
