@@ -4415,5 +4415,179 @@ async function printVectorPDF(button, flipSecondPage) {
 })();
 </script>
 
+
+
+<style id="v163-mobile-intro-wrap-rebuild">
+/* v163 — polished mobile startup and genuine magazine-style service wrapping.
+   Desktop and print are intentionally untouched. */
+@media screen and (max-width:760px){
+  /* A clean branded holding screen while the GIF's first frame downloads. */
+  #brandGifIntro{
+    isolation:isolate !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background-color:#705039 !important;
+    background-image:
+      linear-gradient(180deg,rgba(3,18,39,.08),rgba(3,18,39,.18)),
+      url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg") !important;
+    background-position:center !important;
+    background-size:cover !important;
+    overflow:hidden !important;
+  }
+
+  /* Replace the awkward progress/loading treatment with one restrained brand mark. */
+  #brandGifIntro .brand-intro-loader{
+    display:none !important;
+  }
+  #brandGifIntro::before{
+    content:"" !important;
+    display:block !important;
+    position:absolute !important;
+    left:50% !important;
+    top:50% !important;
+    width:min(68vw,270px) !important;
+    height:110px !important;
+    transform:translate(-50%,-58%) !important;
+    background:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Logo%20Mini.png") center/contain no-repeat !important;
+    filter:drop-shadow(0 8px 22px rgba(0,0,0,.28)) !important;
+    opacity:1 !important;
+    z-index:1 !important;
+    animation:mobileBrandBreathe 1.8s ease-in-out infinite !important;
+    transition:opacity .24s ease !important;
+  }
+  #brandGifIntro::after{
+    content:"A LIFETIME OF POSSIBILITIES" !important;
+    position:absolute !important;
+    left:20px !important;
+    right:20px !important;
+    top:calc(50% + 54px) !important;
+    color:rgba(255,255,255,.94) !important;
+    font:800 11px/1.2 -apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif !important;
+    letter-spacing:.18em !important;
+    text-align:center !important;
+    text-shadow:0 2px 8px rgba(0,0,0,.35) !important;
+    z-index:1 !important;
+    opacity:1 !important;
+    transition:opacity .24s ease !important;
+  }
+  #brandGifIntro.gif-ready::before,
+  #brandGifIntro.gif-ready::after{
+    opacity:0 !important;
+    animation:none !important;
+    pointer-events:none !important;
+  }
+  #brandGifIntro #brandGifImage{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    z-index:2 !important;
+  }
+  #brandGifIntro .brand-intro-skip{
+    position:absolute !important;
+    right:max(14px,env(safe-area-inset-right)) !important;
+    top:max(14px,env(safe-area-inset-top)) !important;
+    z-index:4 !important;
+    border:1px solid rgba(255,255,255,.28) !important;
+    background:rgba(5,23,47,.42) !important;
+    color:#fff !important;
+    box-shadow:0 5px 18px rgba(0,0,0,.16) !important;
+    backdrop-filter:blur(10px) !important;
+    -webkit-backdrop-filter:blur(10px) !important;
+  }
+
+  /* Real text wrapping for the three Lifetime service stories. */
+  .lifetime-panel .life-block,
+  .lifetime-panel .life-block.reverse,
+  .lifetime-panel .life-block:has(img.life-image-xl),
+  .lifetime-panel .life-block:has(img.life-image-xxl),
+  .lifetime-panel .life-block.reverse:has(img.life-image-xl),
+  .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
+    display:block !important;
+    overflow:visible !important;
+  }
+  .lifetime-panel .life-block::after{
+    content:"" !important;
+    display:block !important;
+    clear:both !important;
+  }
+  .lifetime-panel .life-block > div{
+    display:block !important;
+    width:auto !important;
+  }
+  .lifetime-panel img[alt="Step By Step boots walking"],
+  .lifetime-panel img[alt="Specialized Education"]{
+    float:left !important;
+    width:42% !important;
+    min-width:0 !important;
+    max-width:180px !important;
+    height:auto !important;
+    margin:2px 14px 8px 0 !important;
+  }
+  .lifetime-panel img[alt="Just Kids bag and photo"]{
+    float:right !important;
+    width:42% !important;
+    min-width:0 !important;
+    max-width:180px !important;
+    height:auto !important;
+    margin:2px 0 8px 14px !important;
+  }
+
+  /* Adult-service rows must be blocks, not the older vertical flex layout. */
+  .inside-story .service-image-row,
+  .inside-story .service-image-row[style],
+  .inside-story .residential-row{
+    display:block !important;
+    overflow:visible !important;
+    width:100% !important;
+  }
+  .inside-story .service-image-row::after,
+  .inside-story .residential-row::after,
+  .inside-story .story-section::after{
+    content:"" !important;
+    display:block !important;
+    clear:both !important;
+  }
+  .inside-story .service-image-row span,
+  .inside-story .residential-row span{
+    display:inline !important;
+    width:auto !important;
+    margin:0 !important;
+    text-align:left !important;
+  }
+  .inside-story img[alt="ACT Partial Care client photo collage"],
+  .inside-story img[alt="Blue Violet van"],
+  .inside-story img[alt="Residential care"]{
+    float:right !important;
+    width:42% !important;
+    min-width:0 !important;
+    max-width:185px !important;
+    height:auto !important;
+    max-height:none !important;
+    margin:2px 0 9px 14px !important;
+  }
+  .inside-story img[alt="Advanced Abilities Day Program shirts"]{
+    float:left !important;
+    width:42% !important;
+    min-width:0 !important;
+    max-width:185px !important;
+    height:auto !important;
+    max-height:none !important;
+    margin:2px 14px 9px 0 !important;
+  }
+  .inside-story .story-section strong{
+    clear:none !important;
+  }
+}
+
+@keyframes mobileBrandBreathe{
+  0%,100%{transform:translate(-50%,-58%) scale(.985);opacity:.84}
+  50%{transform:translate(-50%,-58%) scale(1);opacity:1}
+}
+</style>
+
 </body>
 </html>
