@@ -4171,105 +4171,122 @@ async function printVectorPDF(button, flipSecondPage) {
 </script>
 
 <style id="v162-mobile-issue-fixes">
-/* v162 — mobile-only corrections. Desktop (>=761px) and print are preserved. */
+/* v162 (rev) — mobile-only corrections. Desktop (>=761px) and print preserved. */
 
-/* Loader bar is hidden everywhere by default; shown only on phones below. */
+/* Loader bar hidden everywhere by default; shown only on phones below. */
 .brand-intro-loader{display:none;}
 
-/* ---- Desktop preservation for images whose inline layout was removed so mobile
-        could enlarge them. These reproduce the exact prior desktop rendering. ---- */
+/* ---- Desktop preservation for images whose inline layout was removed ---- */
 @media screen and (min-width:761px){
   .inside-story img[alt="ACT Partial Care client photo collage"]{
-    float:right !important;
-    width:165px !important;
-    height:auto !important;
-    margin:0 0 8px 14px !important;
+    float:right !important; width:165px !important; height:auto !important; margin:0 0 8px 14px !important;
   }
   .inside-story img[alt="Blue Violet van"]{
-    float:right !important;
-    width:155px !important;
-    height:auto !important;
-    margin:0 0 8px 14px !important;
+    float:right !important; width:155px !important; height:auto !important; margin:0 0 8px 14px !important;
   }
   .inside-story .residential-row{
-    display:grid !important;
-    grid-template-columns:145px 1fr !important;
+    display:grid !important; grid-template-columns:145px 1fr !important;
   }
   .inside-story img[alt="Residential care"]{
-    width:145px !important;
-    height:108px !important;
+    width:145px !important; height:108px !important;
   }
 }
 
 @media screen and (max-width:760px){
 
-  /* ===== GIF intro: reframe so it is no longer cropped ===== */
+  /* ===== GIF intro: reframe (no crop) with a CLEAN, non-blurry backdrop ===== */
   #brandGifIntro #brandGifImage{
     object-fit:contain !important;
     object-position:50% 50% !important;
   }
+  /* Remove the big blurred wallpaper layer that showed around the contained GIF. */
+  #brandGifIntro::before{
+    display:none !important;
+    content:none !important;
+  }
+  /* Fixed-attachment wood looks zoomed/soft on phones — use a clean sharp fill. */
+  #brandGifIntro,
+  #brandGifIntro:not(.gif-ready),
+  #brandGifIntro.gif-ready{
+    background-attachment:scroll !important;
+    background-position:center center !important;
+    background-size:cover !important;
+  }
 
-  /* ===== GIF intro: loading bar beneath the animation ===== */
+  /* ===== GIF intro: slim, calm loading bar ===== */
   .brand-intro-loader{
     display:block;
     position:absolute;
     left:50%;
     transform:translateX(-50%);
-    bottom:calc(env(safe-area-inset-bottom, 0px) + 76px);
-    width:min(64vw, 260px);
-    height:6px;
+    bottom:calc(env(safe-area-inset-bottom, 0px) + 88px);
+    width:148px;
+    height:3px;
     border-radius:99px;
-    background:rgba(255,255,255,.24);
+    background:rgba(255,255,255,.30);
     overflow:hidden;
     z-index:3;
-    box-shadow:0 1px 5px rgba(0,0,0,.4);
   }
   .brand-intro-loader-fill{
     display:block;
     width:0%;
     height:100%;
     border-radius:99px;
-    background:linear-gradient(90deg,#4f83c2,#ffffff);
-    box-shadow:0 0 8px rgba(255,255,255,.55);
+    background:#ffffff;
   }
-  /* Indeterminate shimmer while the first GIF frame is still decoding. */
-  #brandGifIntro:not(.gif-ready) .brand-intro-loader-fill{
-    width:42% !important;
-    animation:brandIntroIndeterminate 1.1s ease-in-out infinite;
+  /* While the first frame decodes: gentle pulse on the track (no sliding shimmer). */
+  #brandGifIntro:not(.gif-ready) .brand-intro-loader{
+    animation:brandIntroPulse 1.4s ease-in-out infinite;
   }
   .brand-intro-loader.is-done{
     opacity:0;
-    transition:opacity .35s ease;
+    transition:opacity .3s ease;
   }
 
-  /* ===== Lifetime panel: stack image above text and enlarge the artwork ===== */
+  /* ===== Lifetime panel: text wraps around the artwork (alternating sides) ===== */
   .lifetime-panel .life-block,
   .lifetime-panel .life-block.reverse,
   .lifetime-panel .life-block:has(img.life-image-xl),
   .lifetime-panel .life-block:has(img.life-image-xxl),
   .lifetime-panel .life-block.reverse:has(img.life-image-xl),
   .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    gap:14px !important;
+    display:block !important;
     grid-template-columns:none !important;
+    gap:0 !important;
+  }
+  .lifetime-panel .life-block::after{
+    content:"";
+    display:block;
+    clear:both;
   }
   .lifetime-panel .life-block > div{
-    width:100% !important;
+    width:auto !important;
   }
   .lifetime-panel img[alt="Step By Step boots walking"],
-  .lifetime-panel img[alt="Just Kids bag and photo"],
   .lifetime-panel img[alt="Specialized Education"]{
-    width:min(66vw, 250px) !important;
+    float:left !important;
+    width:47% !important;
+    max-width:210px !important;
+    min-width:150px !important;
     height:auto !important;
-    max-width:250px !important;
-    align-self:center !important;
+    margin:3px 15px 8px 0 !important;
     top:0 !important;
     position:relative !important;
+    align-self:auto !important;
+  }
+  .lifetime-panel img[alt="Just Kids bag and photo"]{
+    float:right !important;
+    width:47% !important;
+    max-width:210px !important;
+    min-width:150px !important;
+    height:auto !important;
+    margin:3px 0 8px 15px !important;
+    top:0 !important;
+    position:relative !important;
+    align-self:auto !important;
   }
 
-  /* ===== Core values: larger "Values That Guide Everything We Do" graphic ===== */
+  /* ===== Core values graphic: large, centered (no wrap needed) ===== */
   .lifetime-panel .core-values-row{
     display:flex !important;
     flex-direction:column !important;
@@ -4283,38 +4300,53 @@ async function printVectorPDF(button, flipSecondPage) {
     align-self:center !important;
   }
 
-  /* ===== Adult-service imagery: bigger Behavioral Health, Employment, Residential ===== */
-  .inside-story img[alt="ACT Partial Care client photo collage"]{
-    float:none !important;
-    width:min(94%, 380px) !important;
-    height:auto !important;
-    max-height:none !important;
-    margin:6px auto 14px !important;
-    display:block !important;
-  }
-  .inside-story img[alt="Blue Violet van"]{
-    float:none !important;
-    width:min(94%, 380px) !important;
-    height:auto !important;
-    max-height:none !important;
-    margin:6px auto 14px !important;
-    display:block !important;
-  }
+  /* ===== Adult services: text wraps around images (alternating sides) ===== */
+  .inside-story .service-image-row,
+  .inside-story .service-image-row[style],
   .inside-story .residential-row{
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    gap:12px !important;
+    display:block !important;
+    grid-template-columns:none !important;
+    align-items:initial !important;
+  }
+  .inside-story .service-image-row::after,
+  .inside-story .residential-row::after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+  .inside-story img[alt="ACT Partial Care client photo collage"],
+  .inside-story img[alt="Blue Violet van"]{
+    float:right !important;
+    width:46% !important;
+    max-width:200px !important;
+    min-width:145px !important;
+    height:auto !important;
+    max-height:none !important;
+    margin:3px 0 8px 14px !important;
+    display:block !important;
+  }
+  .inside-story img[alt="Advanced Abilities Day Program shirts"]{
+    float:left !important;
+    width:46% !important;
+    max-width:200px !important;
+    min-width:145px !important;
+    height:auto !important;
+    max-height:none !important;
+    margin:3px 14px 8px 0 !important;
+    align-self:auto !important;
   }
   .inside-story img[alt="Residential care"]{
-    width:min(94%, 380px) !important;
+    float:right !important;
+    width:46% !important;
+    max-width:200px !important;
+    min-width:145px !important;
     height:auto !important;
     max-height:none !important;
-    margin:0 auto !important;
-    align-self:center !important;
+    margin:3px 0 8px 14px !important;
+    align-self:auto !important;
   }
 
-  /* ===== Services section: restore the beige paper wallpaper underneath ===== */
+  /* ===== Services section: restore beige paper wallpaper underneath ===== */
   section.inside-spread.page{
     background-color:#efe9dd !important;
     background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/beige-abstract-background-with-paper-texture-2026-01-09-10-04-42-utc.jpg") !important;
@@ -4324,8 +4356,7 @@ async function printVectorPDF(button, flipSecondPage) {
     background-attachment:fixed !important;
   }
 
-  /* ===== Blue "About" page: restore the heading colors lost when the panel is
-           re-parented out of .outside-spread on mobile (was blue-on-blue) ===== */
+  /* ===== Blue "About" page: restore heading colors lost on re-parent ===== */
   .about-panel.mobile-careers-last{
     background:#093266 !important;
   }
@@ -4341,9 +4372,9 @@ async function printVectorPDF(button, flipSecondPage) {
   }
 }
 
-@keyframes brandIntroIndeterminate{
-  0%{transform:translateX(-120%)}
-  100%{transform:translateX(320%)}
+@keyframes brandIntroPulse{
+  0%,100%{opacity:.5}
+  50%{opacity:1}
 }
 </style>
 
@@ -4363,12 +4394,7 @@ async function printVectorPDF(button, flipSecondPage) {
   function startFill(){
     if(started) return;
     started=true;
-    /* Switch from indeterminate shimmer to a determinate fill that tracks the
-       remaining play time, so the bar reads as the intro "playing". */
-    loader.classList.add('is-active');
-    fill.style.animation='none';
     fill.style.width='0%';
-    /* force reflow so the transition below is honored */
     void fill.getBoundingClientRect();
     fill.style.transition='width '+DURATION+'ms linear';
     fill.style.width='100%';
@@ -4378,7 +4404,6 @@ async function printVectorPDF(button, flipSecondPage) {
     startFill();
   }else{
     window.addEventListener('archway-gif-ready', startFill, {once:true});
-    /* Fallback in case the ready event was already dispatched or is missed. */
     setTimeout(startFill, 1800);
   }
 
