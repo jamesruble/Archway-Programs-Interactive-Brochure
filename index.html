@@ -4,9 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Archway Programs — Clean Program Text Trifold</title><style id="archway-consolidated-styles">
-/* ===== Consolidated source: base ===== */
-
+<title>Archway Programs — Clean Program Text Trifold</title>
+<style>
 :root{
   --blue:#093266;
   --navy:#061d3b;
@@ -509,6 +508,45 @@ p{font-size:11px;line-height:1.38}
 
 
 
+/* v37 — navy backdrop across the full three-panel inside spread */
+.inside-spread{
+  background:#093266 !important;
+}
+.inside-spread > .panel{
+  background:#093266 !important;
+  color:#ffffff !important;
+  border-right-color:rgba(255,255,255,.24) !important;
+}
+.inside-spread .section-header h2,
+.inside-spread .inside-story h2,
+.inside-spread .inside-story h2 span{
+  color:#ffffff !important;
+}
+.inside-spread .section-header p,
+.inside-spread .inside-story > p{
+  color:#e7eef7 !important;
+}
+.inside-spread .inside-story .eyebrow{
+  color:#b9cce4 !important;
+}
+.inside-spread .story-section{
+  border-bottom-color:rgba(255,255,255,.18) !important;
+}
+.inside-spread .story-section span{
+  color:#eef3f8 !important;
+}
+.inside-spread .program-card{
+  background:#ffffff !important;
+  border-color:rgba(255,255,255,.55) !important;
+}
+.inside-spread .anniversary-lockup{
+  border-top-color:rgba(255,255,255,.25) !important;
+}
+.inside-spread .anniversary-lockup span{
+  color:#ffffff !important;
+}
+
+
 /* v38 — beige abstract paper texture across the full inside spread */
 .inside-spread{
   background:
@@ -612,9 +650,8 @@ p{font-size:11px;line-height:1.38}
   z-index:1;
 }
 
-
-
-
+</style>
+<style>
 .program-desc{
   font-size:8.2px !important;
   line-height:1.15 !important;
@@ -627,9 +664,8 @@ p{font-size:11px;line-height:1.38}
 .program-desc .sub{
   display:none !important;
 }
-
-
-
+</style>
+<style>
 /* v52 CLEAN FIX — whole About panel is solid Archway Blue */
 .outside-spread{
   background:
@@ -699,9 +735,7 @@ article.about-panel::after{
     center/cover no-repeat,
     linear-gradient(145deg,#0c427f,#071b38) !important;
 }
-
-
-
+</style><style>
 /* v57 — cleaner NeoOffice-style text wrapping around transparent PNGs */
 article.about-panel .clearfix{
   display:block !important;
@@ -738,9 +772,7 @@ article.about-panel img.wrap-photo{
     shape-outside:margin-box !important;
   }
 }
-
-
-
+</style><style>
 /* v60 — move the first half of the lifetime story to the formerly empty back panel */
 .outside-spread > article.back{
   display:block !important;
@@ -820,9 +852,7 @@ article.about-panel img.wrap-photo{
 .inside-story.story-copy .story-section{
   padding:6px 0 !important;
 }
-
-
-
+</style><style>
 /* v61 — transparent program imagery and featured Core Values */
 .outside-spread > article.back{
   padding:.22in !important;
@@ -895,15 +925,11 @@ article.about-panel img.wrap-photo{
   border-radius:0 !important;
   box-shadow:none !important;
 }
-
-
-
+</style><style>
 article.inside-story .story-section::after{content:"";display:block;clear:both;}
 article.inside-story .story-section span{display:block;}
 .core-values-feature{margin-top:10px!important}
-
-
-
+</style><style>
 /* v65 — Adult Day Services and Residential image/text rows */
 .inside-story .service-image-row{
   display:grid !important;
@@ -928,17 +954,13 @@ article.inside-story .story-section span{display:block;}
   display:block !important;
   margin:0 !important;
 }
-
-
-
+</style><style>
 article.inside-story .story-section::after{
   content:"";
   display:block;
   clear:both;
 }
-
-
-
+</style><style>
 /* Larger Early Childhood and Just Kids artwork on the lifetime panel only */
 .lifetime-panel .life-block:has(img.larger-life-image){
   grid-template-columns:92px 1fr !important;
@@ -951,9 +973,7 @@ article.inside-story .story-section::after{
   height:92px !important;
   object-fit:contain !important;
 }
-
-
-
+</style><style>
 /* v70 — remove Core Values and enlarge Early Childhood + Specialized Education art */
 .lifetime-panel .life-block:has(img.life-image-xl){
   grid-template-columns:112px 1fr !important;
@@ -967,9 +987,7 @@ article.inside-story .story-section::after{
   height:112px !important;
   object-fit:contain !important;
 }
-
-
-
+</style><style>
 /* v71 — online services callout beneath Residential & Independent Living */
 .inside-story .learn-more-services{
   display:grid !important;
@@ -1009,18 +1027,14 @@ article.inside-story .story-section::after{
   box-shadow:none !important;
   filter:drop-shadow(0 5px 9px rgba(0,0,0,.16)) !important;
 }
-
-
-
+</style><style>
 /* v72 — lower the online-services callout to align more closely with the 60-year message */
 .inside-story .learn-more-services{
   position:relative !important;
   top:18px !important;
   margin-top:12px !important;
 }
-
-
-
+</style><style>
 /* v73 — match the Lifetime panel wallpaper to the Children’s and Health/Family panels */
 .outside-spread > article.back{
   background:
@@ -1029,9 +1043,7 @@ article.inside-story .story-section::after{
     center center / cover no-repeat !important;
   background-color:transparent !important;
 }
-
-
-
+</style><style>
 /* v74 — larger lifetime-panel imagery */
 .lifetime-panel .life-block:has(img.life-image-xxl){
   grid-template-columns:128px 1fr !important;
@@ -1045,9 +1057,7 @@ article.inside-story .story-section::after{
   height:128px !important;
   object-fit:contain !important;
 }
-
-
-
+</style><style>
 /* v76 — restore blue About panel and add Core Values below Specialized Education */
 .outside-spread > article.about-panel{
   background:#093266 !important;
@@ -1096,9 +1106,7 @@ article.inside-story .story-section::after{
   box-shadow:none !important;
   filter:drop-shadow(0 5px 9px rgba(9,50,102,.14)) !important;
 }
-
-
-
+</style><style>
 .lifetime-panel .core-values-row img{
  width:150px!important;
  height:130px!important;
@@ -1106,9 +1114,7 @@ article.inside-story .story-section::after{
 .lifetime-panel .core-values-row{
  grid-template-columns:minmax(0,1fr) 150px!important;
 }
-
-
-
+</style><style>
 /* v81 - enlarge ArchWear label artwork */
 .about-panel .clearfix img[alt="ArchWear Label"]{
     width:155px !important;
@@ -1118,9 +1124,7 @@ article.inside-story .story-section::after{
     margin:2px 18px 8px 0 !important;
     filter:drop-shadow(0 5px 10px rgba(0,0,0,.18)) !important;
 }
-
-
-
+</style><style>
 /* v85 - improve affiliate layout */
 .about-panel .affiliates{
   grid-template-columns:repeat(4,1fr)!important;
@@ -1134,9 +1138,19 @@ article.inside-story .story-section::after{
   font-size:7.2px!important;
   line-height:1.15!important;
 }
-
-
-
+.about-panel .wsoc-affiliate-graphic{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  margin:3px auto 0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  object-fit:contain !important;
+  box-shadow:none !important;
+  filter:none !important;
+}
+</style><style>
 /* v87 — exact image-based PDF export + improved contact callout */
 .contact-highlight{
   margin:11px 0 13px !important;
@@ -1183,9 +1197,7 @@ body.exporting .page{
     print-color-adjust:exact !important;
   }
 }
-
-
-
+</style><style>
 /* v88 — preserve image aspect ratios in exact PDF export */
 img{
   max-width:100%;
@@ -1221,9 +1233,8 @@ img{
 body.exporting img{
   image-rendering:auto;
 }
-
-
-
+</style>
+<style>
 /* v92 — native browser print/PDF: preserves vector text instead of screenshotting */
 @page { size: 11in 8.5in; margin: 0; }
 @media print {
@@ -1280,9 +1291,9 @@ body.exporting img{
     print-color-adjust: exact !important;
   }
 }
+</style>
 
-
-
+<style>
 /* v96 — preserve the working v94 layout; only make the cover image printable */
 .cover{
   background:#071b38 !important;
@@ -1319,9 +1330,10 @@ body.exporting img{
     opacity:1 !important;
   }
 }
+</style>
 
 
-
+<style>
 /* v97 — remove every old cover background and force the intended artwork full bleed */
 .outside-spread > article.cover,
 article.cover,
@@ -1368,9 +1380,10 @@ article.cover,
   margin:.33in !important;
   margin-top:auto !important;
 }
+</style>
 
 
-
+<style>
 /* v98 — overscan the cover artwork so it completely fills the panel */
 article.cover{
   position:relative !important;
@@ -1399,9 +1412,10 @@ article.cover .cover-print-overlay{
   width:100% !important;
   height:100% !important;
 }
+</style>
 
 
-
+<style id="apple-unfold-styles">
 html.au-lock,body.au-lock{overflow:hidden!important}
 #auIntro{
   position:fixed;inset:0;z-index:999999;display:grid;place-items:center;overflow:hidden;
@@ -1437,7 +1451,8 @@ html.au-lock,body.au-lock{overflow:hidden!important}
 .au-fold-shadow{position:absolute;top:0;bottom:0;width:42px;pointer-events:none;z-index:45;opacity:0}
 .au-cover-fold-shadow{left:33.333333%;transform:translateX(-100%);background:linear-gradient(90deg,transparent,rgba(0,0,0,.25))}
 .au-lifetime-fold-shadow{left:66.666667%;background:linear-gradient(90deg,rgba(0,0,0,.24),transparent)}
-.au-paper-highlight{position:absolute;inset:0;z-index:60;pointer-events:none;background:linear-gradient(108deg,transparent 28%,rgba(255,255,255,.22) 48%,transparent 67%);transform:translateX(-140%);mix-blend-mode:screen}
+.au-paper-highlight{position:absolute;inset:0;z-index:60;pointer-events:none;overflow:hidden;border-radius:inherit}
+.au-paper-highlight .au-paper-shine{position:absolute;inset:0;background:linear-gradient(108deg,transparent 28%,rgba(255,255,255,.22) 48%,transparent 67%);transform:translateX(-140%);mix-blend-mode:screen;will-change:transform}
 .au-flex{position:absolute;top:0;bottom:0;width:16px;z-index:55;pointer-events:none;opacity:0;background:linear-gradient(90deg,rgba(255,255,255,.3),rgba(9,50,102,.11),rgba(255,255,255,.18))}
 .au-flex-left{left:33.333333%;transform:translateX(-50%)}.au-flex-right{left:66.666667%;transform:translateX(-50%)}
 
@@ -1460,9 +1475,10 @@ html.au-lock,body.au-lock{overflow:hidden!important}
 @media(max-width:760px){.au-stage{width:98vw}.au-kicker{top:3.5vh}.au-skip{top:12px;right:12px}}
 @media(prefers-reduced-motion:reduce){#auIntro{display:none!important}}
 @media print{#auIntro{display:none!important}}
+</style>
 
 
-
+<style id="v107-lifetime-intro-render-fix">
 /* Ensure the heading and opening paragraph on the physical Lifetime flap are
    painted above its textured paper face in Safari and Chromium. */
 #auIntro .au-lifetime-front{
@@ -1510,9 +1526,9 @@ html.au-lock,body.au-lock{overflow:hidden!important}
   position:relative !important;
   z-index:4 !important;
 }
+</style>
 
-
-
+<style id="v108-motion-stability">
 #auIntro .au-world,#auIntro .au-leaf,#auIntro .au-face{
   will-change:transform,opacity;
   -webkit-font-smoothing:antialiased;
@@ -1520,9 +1536,10 @@ html.au-lock,body.au-lock{overflow:hidden!important}
 #auIntro .au-face{
   transform-origin:center center;
 }
+</style>
 
 
-
+<style id="v114-print-orientation-fix">
 /* v114 — duplex-safe brochure orientation.
    The reverse/inside spread is intentionally rotated in print so ordinary
    landscape duplex printing (the common long-edge default) folds right-side-up.
@@ -1533,9 +1550,10 @@ html.au-lock,body.au-lock{overflow:hidden!important}
     transform-origin: center center !important;
   }
 }
+</style>
 
 
-
+<style id="v115-cross-browser-animation-fix">
 /* Chrome/Edge: keep 3D faces in the compositor without opacity-animation dropouts. */
 #auIntro .au-leaf,
 #auIntro .au-paper-base{
@@ -1561,10 +1579,29 @@ html.au-lock,body.au-lock{overflow:hidden!important}
   visibility:hidden !important;
   pointer-events:none !important;
 }
+</style>
+<script id="v115-safari-cover-loader">
+(function(){
+  const run=()=>{
+    const cover=document.querySelector('.cover-print-image');
+    if(!cover) return;
+    cover.removeAttribute('crossorigin');
+    const original=cover.getAttribute('src');
+    const retry=()=>{
+      if(cover.naturalWidth) return;
+      const sep=original.includes('?')?'&':'?';
+      cover.src=original+sep+'safari_reload=1';
+    };
+    if(cover.complete) retry();
+    else cover.addEventListener('error',retry,{once:true});
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true});
+  else run();
+})();
+</script>
 
 
-/* ===== Consolidated source: wood-page-background ===== */
-
+<style id="wood-page-background">
 /* v116 — wood wallpaper behind the brochure only */
 html, body{
   background:
@@ -1576,9 +1613,9 @@ html, body{
     background:#fff !important;
   }
 }
+</style>
 
-
-
+<style id="archway-gif-intro-styles">
 /* v117 — play the branded GIF before the brochure-unfold animation. */
 #brandGifIntro{
   position:fixed;
@@ -1618,9 +1655,9 @@ html, body{
 @media print, (prefers-reduced-motion:reduce){
   #brandGifIntro{display:none !important;}
 }
+</style>
 
-
-
+<style id="v118-wood-animation-background">
 /* v118 — keep the same wood surface beneath both the GIF and the brochure animation. */
 #brandGifIntro,
 #auIntro{
@@ -1635,9 +1672,9 @@ html, body{
 @media print{
   #brandGifIntro,#auIntro{display:none !important;}
 }
+</style>
 
-
-
+<style id="v119-gif-plays-once">
 /* v119 — one-shot GIF handoff. The matching wood frame remains underneath,
    so removing the animated image before a second cycle is seamless. */
 #brandGifIntro img{
@@ -1656,9 +1693,91 @@ html, body{
   filter:blur(0);
 }
 @media print{#brandGifIntro{display:none !important;}}
+</style>
 
+<style id="arch-loader-styles">
+/* v140 — lightweight pre-intro loading screen.
+   Holds the whole sequence until the large intro GIF and the brochure
+   animation assets are genuinely loaded, so the big GIF can never play
+   hidden behind it and always begins from frame one. */
+#archLoader{
+  position:fixed;
+  inset:0;
+  z-index:2147483000;              /* above #brandGifIntro (1000000) */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+  padding:24px;
+  background:
+    radial-gradient(120% 120% at 50% 28%, #ffffff 0%, #eef3f8 52%, #dde6f1 100%);
+  opacity:1;
+  transition:opacity .42s ease;
+  -webkit-font-smoothing:antialiased;
+}
+#archLoader.arch-loader-hidden{
+  opacity:0;
+  pointer-events:none;
+}
+#archLoader .arch-loader-spin{
+  width:172px;
+  height:172px;
+  object-fit:contain;
+  display:block;
+  filter:drop-shadow(0 10px 22px rgba(9,50,102,.20));
+}
+#archLoader .arch-loader-track{
+  position:relative;
+  width:min(320px,72vw);
+  height:12px;
+  border-radius:999px;
+  overflow:hidden;
+  background:#d7e0ea;
+  box-shadow:inset 0 1px 3px rgba(9,50,102,.18);
+}
+#archLoader .arch-loader-fill{
+  position:absolute;
+  top:0;bottom:0;left:0;
+  width:0%;
+  border-radius:999px;
+  /* Archway gradient — Safety Red -> Compassion Purple -> Individuality Teal */
+  background:linear-gradient(90deg,#CD163F 0%, #5C2F92 50%, #00927C 100%);
+  /* Keep the complete gradient fixed to the full track width. As the fill
+     grows, it reveals the true gradient instead of sliding colors underneath. */
+  background-size:min(320px,72vw) 100%;
+  background-repeat:no-repeat;
+  transition:none;
+}
+#archLoader .arch-loader-fill::after{
+  content:none;
+}
+#archLoader .arch-loader-msg{
+  min-height:1.25em;
+  font:700 14px/1.35 Arial,Helvetica,sans-serif;
+  letter-spacing:.01em;
+  color:#093266;
+  text-align:center;
+  max-width:80vw;
+  opacity:0;
+  transform:translateY(4px);
+  transition:opacity .4s ease, transform .4s ease;
+}
+#archLoader .arch-loader-msg.is-in{
+  opacity:1;
+  transform:translateY(0);
+}
+@media(max-width:760px){
+  #archLoader{gap:24px;}
+  #archLoader .arch-loader-spin{width:132px;height:132px;}
+  #archLoader .arch-loader-msg{font-size:13px;}
+}
+@media print, (prefers-reduced-motion:reduce){
+  #archLoader{display:none !important;}
+}
+</style>
 
-
+<style id="v120-fixed-wood-background">
 /* v125 — keep the proven wood wallpaper, without a negative-z-index duplicate layer */
 html{
   background-color:#705039 !important;
@@ -1676,9 +1795,10 @@ body{
 @media print{
   html,body{background:#fff !important;}
 }
+</style>
 
 
-
+<style id="v123-integrated-organization-ticker">
 /* v123 — compact, transparent Woods System of Care ticker integrated into the wood surface */
 #organizationTimelineSection{
   width:min(1056px,calc(100vw - 32px));
@@ -1844,9 +1964,9 @@ body{
 @media print{
   #organizationTimelineSection{display:none!important}
 }
+</style>
 
-
-
+<style id="v124-toolbar-navigation">
 /* v124 — branded navigation banner with separate Print and Save controls */
 .toolbar{
   position:sticky !important;
@@ -1960,9 +2080,10 @@ body{
     transform-origin:center center !important;
   }
 }
+</style>
 
 
-
+<style id="v125-background-handoff-fix">
 /* Keep the wood layer still. Blur only the brochure stage during the GIF handoff,
    rather than filtering the entire full-screen background. */
 #auIntro{
@@ -2005,9 +2126,10 @@ body{
 @media print{
   #brandGifIntro,#auIntro{display:none !important;}
 }
+</style>
 
 
-
+<style id="v126-expanded-navigation">
 @media (min-width:981px) and (max-width:1280px){
   .toolbar{
     align-items:flex-start !important;
@@ -2023,9 +2145,10 @@ body{
     font-size:11px !important;
   }
 }
+</style>
 
 
-
+<style id="v127-refined-top-bar">
 .toolbar-brand{
   gap:7px !important;
 }
@@ -2048,9 +2171,10 @@ body{
     flex-wrap:nowrap;
   }
 }
+</style>
 
 
-
+<style id="v128-centered-top-bar">
 .toolbar{
   justify-content:center !important;
   align-items:center !important;
@@ -2098,10 +2222,17 @@ body{
     justify-content:center;
   }
 }
+</style>
 
 
-/* ===== Consolidated source: v130-chrome-correct-physical-faces ===== */
-
+<script id="v130-chromium-detection">
+(function(){
+  const ua=navigator.userAgent;
+  const isChromium=/Chrome|Chromium|Edg\//.test(ua) && !/OPR\//.test(ua);
+  if(isChromium) document.documentElement.classList.add('is-chromium');
+})();
+</script>
+<style id="v130-chrome-correct-physical-faces">
 /* Chrome uses the timed physical face handoff instead of asking Blink to
    decide which nested 3D face should paint. Only one side is renderable at
    any moment, so the left and right flaps always show their assigned panels. */
@@ -2135,12 +2266,13 @@ html.is-chromium #auIntro .au-paper-base{
   transform-style:preserve-3d !important;
 }
 
-html.is-chromium #auIntro .au-paper-highlight{
+html.is-chromium #auIntro .au-paper-highlight .au-paper-shine{
   mix-blend-mode:normal !important;
 }
+</style>
 
 
-
+<style id="v131-realistic-shadow-blue-affiliate-footer">
 /* v131 — stronger paper depth and a solid Archway-blue affiliate footer */
 
 /* Deeper, layered contact shadow while the brochure rises and unfolds. */
@@ -2269,9 +2401,10 @@ html.is-chromium #auIntro .au-paper-highlight{
     box-shadow:none !important;
   }
 }
+</style>
 
 
-
+<style id="v132-safari-shadow-compositing-fix">
 /* Safari can rasterize a filtered preserve-3d container as one large dark rectangle.
    Keep the realistic ground shadow, but remove the unsafe whole-world filter only
    in Safari. Chrome continues using the layered drop shadows from v131. */
@@ -2311,10 +2444,24 @@ html.is-safari #auIntro.au-done .au-stage{
   filter:none !important;
   -webkit-filter:none !important;
 }
+</style>
+<script id="v132-safari-detection">
+(function(){
+  var ua = navigator.userAgent || "";
+  var vendor = navigator.vendor || "";
+  var isSafari =
+    /Safari/i.test(ua) &&
+    /Apple Computer/i.test(vendor) &&
+    !/Chrome|CriOS|Chromium|Edg|OPR|FxiOS/i.test(ua);
+
+  if (isSafari) {
+    document.documentElement.classList.add("is-safari");
+  }
+})();
+</script>
 
 
-/* ===== Consolidated source: v133-safari-pre-shine-shadow-fix ===== */
-
+<style id="v133-safari-pre-shine-shadow-fix">
 html.is-safari #auIntro .au-ground-shadow{
   will-change:opacity,transform !important;
 }
@@ -2323,9 +2470,10 @@ html.is-safari #auIntro.au-done .au-ground-shadow{
   opacity:0 !important;
   visibility:hidden !important;
 }
+</style>
 
 
-
+<style id="v134-safari-shadow-flash-removal">
 /* Safari intermittently flashes the blurred ground-shadow compositor after the
    folds settle. Remove that one layer entirely in Safari; panel shadows still
    provide depth and Chrome retains the full ground shadow. */
@@ -2338,9 +2486,10 @@ html.is-safari #auIntro .au-ground-shadow{
   animation:none !important;
   transition:none !important;
 }
+</style>
 
 
-
+<style id="v135-mobile-optimized">
 /* v135 — true mobile reading mode. Desktop and print remain unchanged. */
 @media screen and (max-width:760px){
   html,
@@ -2840,9 +2989,10 @@ html.is-safari #auIntro .au-ground-shadow{
     height:112px !important;
   }
 }
+</style>
 
 
-
+<style id="v141-cover-dim-removed">
 /* Remove only the leftover dark cover overlay. */
 article.cover .cover-print-overlay,
 #auIntro article.cover .cover-print-overlay,
@@ -2861,510 +3011,160 @@ article.cover .cover-print-image,
   -webkit-filter:none !important;
   opacity:1 !important;
 }
-
-
-/* ===== Consolidated source: v113-safe-depth ===== */
-
-/* v113 — safe depth enhancement. Never applies filter/opacity to 3D leaves or faces. */
-#auIntro .au-ground-shadow{
-  height:10%;
-  bottom:-.5%;
-  background:radial-gradient(ellipse at center,
-    rgba(0,0,0,.56) 0%,
-    rgba(0,0,0,.30) 32%,
-    rgba(0,0,0,.12) 54%,
-    transparent 76%);
-  filter:blur(20px);
-}
-#auIntro .au-fold-shadow{
-  width:56px;
-  filter:blur(5px);
-}
-#auIntro .au-cover-fold-shadow{
-  background:linear-gradient(90deg,
-    transparent 0%,
-    rgba(0,0,0,.035) 28%,
-    rgba(0,0,0,.18) 72%,
-    rgba(0,0,0,.31) 100%);
-}
-#auIntro .au-lifetime-fold-shadow{
-  background:linear-gradient(90deg,
-    rgba(0,0,0,.30) 0%,
-    rgba(0,0,0,.17) 28%,
-    rgba(0,0,0,.035) 72%,
-    transparent 100%);
-}
-#auIntro .au-flex{
-  width:18px;
-  background:linear-gradient(90deg,
-    rgba(255,255,255,.22),
-    rgba(9,50,102,.10) 48%,
-    rgba(255,255,255,.14));
-}
-#auIntro .au-edge{
-  width:2px;
-  background:linear-gradient(180deg,
-    rgba(255,255,255,.98),
-    rgba(156,169,183,.70) 48%,
-    rgba(255,255,255,.92));
-  box-shadow:0 0 1px rgba(255,255,255,.75),0 0 3px rgba(0,0,0,.24);
-}
-#auIntro .au-face{
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.42),
-    inset 0 -1px 0 rgba(9,50,102,.10);
-}
-
 </style>
 
-<script id="v115-safari-cover-loader">
-(function(){
-  const run=()=>{
-    const cover=document.querySelector('.cover-print-image');
-    if(!cover) return;
-    cover.removeAttribute('crossorigin');
-    const original=cover.getAttribute('src');
-    const retry=()=>{
-      if(cover.naturalWidth) return;
-      const sep=original.includes('?')?'&':'?';
-      cover.src=original+sep+'safari_reload=1';
-    };
-    if(cover.complete) retry();
-    else cover.addEventListener('error',retry,{once:true});
-  };
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true});
-  else run();
-})();
-</script>
-
-<script id="v130-chromium-detection">
-(function(){
-  const ua=navigator.userAgent;
-  const isChromium=/Chrome|Chromium|Edg\//.test(ua) && !/OPR\//.test(ua);
-  if(isChromium) document.documentElement.classList.add('is-chromium');
-})();
-</script>
-
-<script id="v132-safari-detection">
-(function(){
-  var ua = navigator.userAgent || "";
-  var vendor = navigator.vendor || "";
-  var isSafari =
-    /Safari/i.test(ua) &&
-    /Apple Computer/i.test(vendor) &&
-    !/Chrome|CriOS|Chromium|Edg|OPR|FxiOS/i.test(ua);
-
-  if (isSafari) {
-    document.documentElement.classList.add("is-safari");
+<style id="v151-readability-and-wsoc-order">
+/* Readability refinements for the two text-rich brochure panels. Headings and
+   artwork remain unchanged; only supporting copy is enlarged on desktop. */
+@media(min-width:761px){
+  .lifetime-panel .lifetime-intro{
+    font-size:8.75px !important;
+    line-height:1.30 !important;
   }
-})();
-</script>
-
-
-<style id="v151-clean-gif-handoff">
-/* v151 — exact background match and a frame-clean GIF handoff. */
-html,body,#brandGifIntro,#auIntro{
-  background-color:#705039 !important;
-  background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg") !important;
-  background-position:center center !important;
-  background-size:cover !important;
-  background-repeat:no-repeat !important;
-}
-html,body{background-attachment:fixed !important;}
-#brandGifIntro{
-  opacity:1 !important;
-  transition:none !important;
-}
-#brandGifIntro.is-freezing,
-#brandGifIntro.is-finished{
-  opacity:1 !important;
-  transition:none !important;
-}
-#brandGifIntro img{
-  opacity:1 !important;
-  transition:none !important;
-}
-#brandGifIntro.is-freezing img{
-  opacity:0 !important;
-  visibility:hidden !important;
-}
-#auIntro,
-#auIntro .au-stage,
-#auIntro.awaiting-brand-intro,
-#auIntro.awaiting-brand-intro .au-stage,
-#auIntro.brand-intro-complete,
-#auIntro.brand-intro-complete .au-stage{
-  filter:none !important;
-  -webkit-filter:none !important;
-  transition:none !important;
-}
-</style>
-
-<style id="v152-locked-background-startup-fix">
-/* v152 — keep the wood surface perfectly stationary from the first painted frame. */
-html,body{
-  background-color:#705039 !important;
-  background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg") !important;
-  background-position:50% 50% !important;
-  background-size:cover !important;
-  background-repeat:no-repeat !important;
-  background-attachment:fixed !important;
-}
-#brandGifIntro,#auIntro{
-  position:fixed !important;
-  inset:0 !important;
-  width:100vw !important;
-  height:100vh !important;
-  background-color:#705039 !important;
-  background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg") !important;
-  background-position:50% 50% !important;
-  background-size:cover !important;
-  background-repeat:no-repeat !important;
-  background-attachment:fixed !important;
-}
-/* Never show the transparent placeholder as a full-screen black frame. */
-#brandGifImage{
-  opacity:0 !important;
-  visibility:hidden !important;
-}
-#brandGifIntro.gif-ready #brandGifImage{
-  opacity:1 !important;
-  visibility:visible !important;
-}
-#brandGifIntro.is-freezing #brandGifImage{
-  opacity:0 !important;
-  visibility:hidden !important;
-}
-</style>
-
-<style id="v153-soft-gif-blend-faster-rise">
-/* v153 — soften the visible GIF ending while preserving the locked wood surface. */
-#brandGifIntro{
-  background-attachment:fixed !important;
-}
-#brandGifImage{
-  transition:opacity 560ms cubic-bezier(.4,0,.2,1) !important;
-}
-#brandGifIntro.is-handoff #brandGifImage{
-  opacity:0 !important;
-  visibility:visible !important;
-}
-#brandGifIntro.is-handoff{
-  background-color:transparent !important;
-  background-image:none !important;
-  pointer-events:none !important;
-}
-</style>
-
-<style id="v154-earlier-fade-black-loader">
-/* v154 — a deliberate black loading curtain only while the first GIF frame loads.
-   Once ready, it reveals the matching wood/GIF scene and begins a slightly earlier,
-   longer dissolve so the animation ending is less noticeable. */
-#brandGifIntro:not(.gif-ready){
-  background:#000 !important;
-}
-#brandGifIntro{
-  transition:background-color 220ms ease, background-image 220ms ease !important;
-}
-#brandGifImage{
-  transition:opacity 820ms cubic-bezier(.4,0,.2,1) !important;
-}
-#brandGifIntro.gif-ready{
-  background-color:#705039 !important;
-  background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg") !important;
-  background-position:50% 50% !important;
-  background-size:cover !important;
-  background-repeat:no-repeat !important;
-  background-attachment:fixed !important;
-}
-#brandGifIntro.gif-ready #brandGifImage{
-  transition:opacity 180ms ease-out !important;
-}
-#brandGifIntro.gif-ready.is-handoff #brandGifImage{
-  transition:opacity 820ms cubic-bezier(.4,0,.2,1) !important;
-}
-</style>
-
-<link rel="preload" as="image" href="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif" fetchpriority="high">
-
-<style id="v155-fast-blurred-loader">
-/* v155 — show the locked wood surface immediately, softly blurred while the GIF
-   decodes. The blur clears as soon as frame one is available; no black curtain. */
-#brandGifIntro:not(.gif-ready){
-  background-color:#705039 !important;
-  background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg") !important;
-  background-position:50% 50% !important;
-  background-size:cover !important;
-  background-repeat:no-repeat !important;
-  background-attachment:fixed !important;
-}
-#brandGifIntro::before{
-  content:""; position:absolute; inset:-18px; z-index:0; pointer-events:none;
-  background:inherit; background-position:50% 50%; background-size:cover;
-  filter:blur(14px); transform:scale(1.035); opacity:1;
-  transition:filter 240ms ease, opacity 240ms ease;
-}
-#brandGifIntro.gif-ready::before{filter:blur(0);opacity:0;}
-#brandGifImage,.brand-intro-skip{position:relative;z-index:1;}
-#brandGifImage{opacity:0;}
-#brandGifIntro.gif-ready #brandGifImage{opacity:1 !important;transition:opacity 120ms ease-out !important;}
-#brandGifIntro.gif-ready.is-handoff #brandGifImage{transition:opacity 820ms cubic-bezier(.4,0,.2,1) !important;}
-</style>
-
-<style id="v156-true-fixed-background-slower-motion">
-/* v156 — use a real viewport-fixed wallpaper layer so scrolling cannot move the
-   background in Safari or Chromium. background-attachment:fixed alone is not
-   reliable when transforms and full-screen overlays are active. */
-html{
-  background:#705039 !important;
-}
-body{
-  position:relative !important;
-  isolation:isolate !important;
-  background:none !important;
-}
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:-1;
-  pointer-events:none;
-  background-color:#705039;
-  background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg");
-  background-position:50% 50%;
-  background-size:cover;
-  background-repeat:no-repeat;
-  transform:translateZ(0);
-}
-#brandGifIntro,#auIntro{
-  background-attachment:scroll !important;
-}
-</style>
-
-<style id="v157-refined-seamless-fade">
-/* v157 — preserve the exact locked wallpaper and use a shorter, more natural
-   handoff curve. The GIF holds fully opaque at first, then eases away while the
-   brochure is already beginning to rise beneath it. */
-#brandGifIntro.is-handoff{
-  background:transparent !important;
-}
-#brandGifIntro.gif-ready.is-handoff #brandGifImage{
-  opacity:0 !important;
-  visibility:visible !important;
-  transition:opacity 680ms cubic-bezier(.22,.61,.36,1) !important;
-}
-</style>
-<style id="v158-seamless-one-second-breath">
-/* v158 — the GIF and page share the exact same locked wallpaper. After the GIF
-   dissolves, leave that unchanged surface visible for one calm second before
-   beginning the brochure rise; no darkening or visual background swap. */
-#brandGifIntro.is-handoff{
-  background:transparent !important;
-  backdrop-filter:none !important;
-  -webkit-backdrop-filter:none !important;
-}
-</style>
-
-<style id="v159-restore-v141-transition-and-pop">
-/* Restore the softer v141 handoff while retaining the newer fixed viewport wallpaper. */
-#brandGifIntro{
-  opacity:1 !important;
-  transition:opacity .55s ease !important;
-}
-#brandGifIntro.is-freezing{
-  opacity:1 !important;
-}
-#brandGifIntro.is-finished{
-  opacity:0 !important;
-  pointer-events:none !important;
-}
-#brandGifIntro #brandGifImage{
-  transition:opacity .28s ease !important;
-}
-#brandGifIntro.is-freezing #brandGifImage{
-  opacity:0 !important;
-  visibility:visible !important;
-}
-#auIntro,
-#auIntro .au-stage,
-#auIntro.awaiting-brand-intro,
-#auIntro.awaiting-brand-intro .au-stage,
-#auIntro.brand-intro-complete,
-#auIntro.brand-intro-complete .au-stage{
-  transition:filter .55s ease !important;
-  -webkit-transition:-webkit-filter .55s ease !important;
-}
-#auIntro.awaiting-brand-intro,
-#auIntro.awaiting-brand-intro .au-stage{
-  filter:blur(7px) !important;
-  -webkit-filter:blur(7px) !important;
-}
-#auIntro.brand-intro-complete,
-#auIntro.brand-intro-complete .au-stage{
-  filter:blur(0) !important;
-  -webkit-filter:blur(0) !important;
-}
-</style>
-
-<style id="v160-mobile-image-scale-centered-gif">
-/* v160 — mobile-only centering and artwork scale refinements. Desktop and print are unchanged. */
-@media screen and (max-width:760px){
-  /* The source GIF's focal artwork sits slightly left when cropped on a phone. */
-  #brandGifIntro #brandGifImage{
-    object-position:48% 50% !important;
-  }
-
-  /* Give the three childhood/education illustrations a stronger visual presence. */
-  .lifetime-panel img[alt="Step By Step boots walking"],
-  .lifetime-panel img[alt="Just Kids bag and photo"],
-  .lifetime-panel img[alt="Specialized Education"]{
-    width:148px !important;
-    height:148px !important;
-    max-width:46vw !important;
-    flex:0 0 auto !important;
-    align-self:center !important;
-  }
-
-  .life-block,
-  .life-block.reverse,
-  .lifetime-panel .life-block:has(img.life-image-xl),
-  .lifetime-panel .life-block:has(img.life-image-xxl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
-    grid-template-columns:148px minmax(0,1fr) !important;
-    gap:16px !important;
-    align-items:center !important;
-  }
-
-  /* Make the Core Values feature read like a major section, not a small footer. */
-  .lifetime-panel .core-values-row{
-    gap:15px !important;
-    padding-top:18px !important;
-  }
-  .lifetime-panel .core-values-text h3{
-    font-size:18px !important;
-    line-height:1.2 !important;
-    margin-bottom:8px !important;
+  .lifetime-panel .life-block p{
+    font-size:8.30px !important;
+    line-height:1.25 !important;
   }
   .lifetime-panel .core-values-text p{
-    font-size:15px !important;
-    line-height:1.5 !important;
+    font-size:7.85px !important;
+    line-height:1.23 !important;
   }
-  .lifetime-panel .core-values-row img{
-    width:min(92%,320px) !important;
-    height:auto !important;
-    max-height:none !important;
+  .inside-story.story-copy .story-section span{
+    font-size:9.15px !important;
+    line-height:1.30 !important;
   }
-
-  /* Adult-service imagery: individually scaled for a fuller mobile composition. */
-  .inside-story img[alt="ACT Partial Care client photo collage"]{
-    width:min(96%,370px) !important;
-    max-height:280px !important;
-  }
-  .inside-story img[alt="Blue Violet van"]{
-    width:min(94%,360px) !important;
-    max-height:270px !important;
-  }
-  .inside-story img[alt="Residential care"]{
-    width:min(92%,340px) !important;
-    max-height:250px !important;
+  .inside-story.story-copy .learn-more-copy p{
+    font-size:8.80px !important;
+    line-height:1.30 !important;
   }
 }
+.about-panel .wsoc-affiliate-graphic + .wsoc-title{
+  margin:9px 0 0 !important;
+}
 
-@media screen and (max-width:420px){
-  .life-block,
-  .life-block.reverse,
-  .lifetime-panel .life-block:has(img.life-image-xl),
-  .lifetime-panel .life-block:has(img.life-image-xxl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
+/* Let the two program-directory panels use the full brochure height instead
+   of clustering their cards near the top. */
+@media(min-width:761px){
+  .inside-spread > article.section:nth-of-type(1),
+  .inside-spread > article.section:nth-of-type(2){
     display:flex !important;
     flex-direction:column !important;
-    gap:12px !important;
+    height:100% !important;
+    padding-bottom:.36in !important;
+  }
+  .inside-spread > article.section:nth-of-type(1),
+  .inside-spread > article.section:nth-of-type(2){
+    padding-top:.25in !important;
   }
 
-  .lifetime-panel img[alt="Step By Step boots walking"],
-  .lifetime-panel img[alt="Just Kids bag and photo"],
-  .lifetime-panel img[alt="Specialized Education"]{
-    width:158px !important;
-    height:158px !important;
-    max-width:58vw !important;
+  .inside-spread > article.section:nth-of-type(1) > .logo-grid,
+  .inside-spread > article.section:nth-of-type(2) > .logo-grid{
+    gap:10px !important;
   }
 
-  .lifetime-panel .core-values-row img{
-    width:min(100%,330px) !important;
+  .inside-spread > article.section:nth-of-type(1) > .logo-grid:nth-of-type(2) .program-card,
+  .inside-spread > article.section:nth-of-type(2) .program-card{
+    height:126px !important;
   }
 
-  .inside-story img[alt="ACT Partial Care client photo collage"],
-  .inside-story img[alt="Blue Violet van"],
-  .inside-story img[alt="Residential care"]{
-    width:min(100%,360px) !important;
+  .inside-spread > article.section:nth-of-type(1) > .section-header.red,
+  .inside-spread > article.section:nth-of-type(2) > .section-header.teal{
+    margin-top:17px !important;
+  }
+
+  .inside-spread > article.section:nth-of-type(1) > .logo-grid:last-child{
+    flex:0 0 auto !important;
+    grid-template-rows:repeat(3,126px) !important;
+    row-gap:10px !important;
+    margin-bottom:18px !important;
+  }
+  .inside-spread > article.section:nth-of-type(1) > .logo-grid:last-child .program-card{
+    height:126px !important;
+    min-height:126px !important;
+  }
+  .inside-spread > article.section:nth-of-type(2) > .logo-grid{
+    gap:10px !important;
+  }
+  .inside-spread > article.section:nth-of-type(2) > .anniversary-lockup{
+    position:relative !important;
+    top:0 !important;
+    margin-top:auto !important;
+    margin-bottom:30px !important;
+    padding-top:24px !important;
+    padding-bottom:4px !important;
+  }
+
+  .inside-story.story-copy .learn-more-services{
+    top:0 !important;
+    margin-top:7px !important;
   }
 }
 </style>
 
 </head>
 <body>
-<div aria-label="Archway Programs introduction" id="brandGifIntro">
-<img alt="Archway Programs animated introduction" decoding="async" fetchpriority="high" id="brandGifImage" loading="eager" data-src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="/>
-<script id="archway-gif-frame-zero-loader">
-(function(){
-  const image=document.getElementById('brandGifImage');
-  const intro=document.getElementById('brandGifIntro');
-  if(!image || !intro) return;
-  const source=image.getAttribute('data-src');
+<div id="archLoader" role="status" aria-live="polite" aria-label="Loading the Archway Programs experience">
+  <img class="arch-loader-spin" alt="Archway loading" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Arch%20Spin.gif">
+  <div class="arch-loader-track"><div class="arch-loader-fill"></div></div>
+  <div class="arch-loader-msg">Preparing the programs…</div>
+</div>
 
-  /* The stationary wood background paints immediately. Reveal the GIF only
-     after its first frame is available, eliminating the black startup flash. */
-  image.addEventListener('load',function(){
-    requestAnimationFrame(function(){
-      intro.classList.add('gif-ready');
-      window.dispatchEvent(new Event('archway-gif-ready'));
-    });
-  },{once:true});
-  image.src=source;
-})();
-</script>
-<div class="brand-intro-loader" aria-hidden="true"><span class="brand-intro-loader-fill"></span></div>
-<button class="brand-intro-skip" type="button">Skip Intro</button>
+<div id="brandGifIntro" aria-label="Archway Programs introduction">
+  <img id="brandGifImage" alt="Archway Programs animated introduction" data-gif-src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif">
+  <button class="brand-intro-skip" type="button">Skip Intro</button>
 </div>
-<div aria-label="Archway brochure opening animation" class="awaiting-brand-intro" id="auIntro">
-<button class="au-skip" type="button">Skip</button>
-<div class="au-kicker">Archway Programs</div>
-<div class="au-stage">
-<div class="au-ground-shadow"></div>
-<div class="au-world">
-<div class="au-paper-base"><div class="au-face au-health-base inside-spread"></div></div>
-<div class="au-leaf au-lifetime-leaf">
-<div class="au-face au-lifetime-front outside-spread"></div>
-<div class="au-face au-lifetime-back inside-spread"></div>
-<div class="au-edge au-lifetime-edge"></div>
+
+
+<div id="auIntro" class="awaiting-brand-intro" aria-label="Archway brochure opening animation">
+  <button class="au-skip" type="button">Skip</button>
+  <div class="au-kicker">Archway Programs</div>
+  <div class="au-stage">
+    <div class="au-ground-shadow"></div>
+    <div class="au-world">
+      <div class="au-paper-base"><div class="au-face au-health-base inside-spread"></div></div>
+      <div class="au-leaf au-lifetime-leaf">
+        <div class="au-face au-lifetime-front outside-spread"></div>
+        <div class="au-face au-lifetime-back inside-spread"></div>
+        <div class="au-edge au-lifetime-edge"></div>
+      </div>
+      <div class="au-leaf au-cover-leaf">
+        <div class="au-face au-cover-front outside-spread"></div>
+        <div class="au-face au-cover-back inside-spread"></div>
+        <div class="au-edge au-cover-edge"></div>
+      </div>
+      <div class="au-fold-shadow au-cover-fold-shadow"></div>
+      <div class="au-fold-shadow au-lifetime-fold-shadow"></div>
+      <div class="au-flex au-flex-left"></div>
+      <div class="au-flex au-flex-right"></div>
+      <div class="au-paper-highlight"><div class="au-paper-shine"></div></div>
+    </div>
+  </div>
 </div>
-<div class="au-leaf au-cover-leaf">
-<div class="au-face au-cover-front outside-spread"></div>
-<div class="au-face au-cover-back inside-spread"></div>
-<div class="au-edge au-cover-edge"></div>
-</div>
-<div class="au-fold-shadow au-cover-fold-shadow"></div>
-<div class="au-fold-shadow au-lifetime-fold-shadow"></div>
-<div class="au-flex au-flex-left"></div>
-<div class="au-flex au-flex-right"></div>
-<div class="au-paper-highlight"></div>
-</div>
-</div>
-</div>
-<div aria-label="Archway brochure controls" class="toolbar" role="navigation">
-<div class="toolbar-center">
-<img alt="Archway Programs" class="toolbar-logo" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Logo%20Mini.png"/>
-<a class="toolbar-home-link" href="https://archwayprograms.org/" rel="noopener noreferrer" target="_blank">archwayprograms.org</a>
-<a href="https://archwayprograms.org/careers/" rel="noopener noreferrer" target="_blank">Careers</a>
-<a href="https://archwayprograms.org/contact-us/" rel="noopener noreferrer" target="_blank">Contact Us</a>
-<a href="https://archwayprograms.org/archway-leadership/" rel="noopener noreferrer" target="_blank">Leadership</a>
-<a href="https://archwayprograms.org/referral-portal/" rel="noopener noreferrer" target="_blank">Referral Portal</a>
-<a href="https://archwayprograms.org/the-bridge-newsletter/" rel="noopener noreferrer" target="_blank">The Bridge Newsletter</a>
-<button class="print-button" onclick="printVectorPDF(this, false)" type="button">Print</button>
-<button class="secondary" onclick="printVectorPDF(this, true)" type="button">Save</button>
-</div>
+
+<div class="toolbar" role="navigation" aria-label="Archway brochure controls">
+  <div class="toolbar-center">
+    <img
+      class="toolbar-logo"
+      src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Logo%20Mini.png"
+      alt="Archway Programs"
+    >
+
+    <a
+      class="toolbar-home-link"
+      href="https://archwayprograms.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >archwayprograms.org</a>
+
+    <a href="https://archwayprograms.org/careers/" target="_blank" rel="noopener noreferrer">Careers</a>
+    <a href="https://archwayprograms.org/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us</a>
+    <a href="https://archwayprograms.org/archway-leadership/" target="_blank" rel="noopener noreferrer">Leadership</a>
+    <a href="https://archwayprograms.org/referral-portal/" target="_blank" rel="noopener noreferrer">Referral Portal</a>
+    <a href="https://archwayprograms.org/the-bridge-newsletter/" target="_blank" rel="noopener noreferrer">The Bridge Newsletter</a>
+
+    <button type="button" class="print-button" onclick="printVectorPDF(this, false)">Print</button>
+    <button type="button" class="secondary" onclick="printVectorPDF(this, true)">Save</button>
+  </div>
 </div>
 <!-- OUTSIDE -->
 <section class="page outside-spread">
@@ -3383,26 +3183,26 @@ body::before{
         goals throughout life.
       </p>
 <div class="life-block">
-<img alt="Step By Step boots walking" class="larger-life-image life-image-xl life-image-xxl" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Step%20by%20Step%20Boots%20taking%20Step.png" style="position:relative;top:-10px;">
+<img alt="Step By Step boots walking" class="larger-life-image life-image-xl life-image-xxl" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Step%20by%20Step%20Boots%20taking%20Step.png" style="position:relative;top:-10px;"/>
 <div>
 <h3>Early Childhood</h3>
 <p>Step By Step provides early intervention services for infants and toddlers experiencing developmental delays, helping children strengthen communication, motor, cognitive, and social-emotional skills during the earliest years of growth. Early Learning offers a nurturing preschool environment where young children develop school readiness, confidence, creativity, and a lifelong love of learning through individualized instruction and play-based experiences.</p>
 </div>
-</img></div>
+</div>
 <div class="life-block reverse">
-<img alt="Just Kids bag and photo" class="larger-life-image life-image-xxl" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Just%20kid%20bag%20and%20pic.png">
+<img alt="Just Kids bag and photo" class="larger-life-image life-image-xxl" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Just%20kid%20bag%20and%20pic.png"/>
 <div>
 <h3>Childcare &amp; Family Support</h3>
 <p>Just Kids provides safe, engaging before- and after-school childcare in 31 schools across 16 South Jersey school districts. Through enriching activities, homework support, recreation, and caring supervision, children have opportunities to learn, explore, build friendships, and develop confidence in a fun and supportive environment. The program also provides dependable care that gives working families peace of mind while their children continue to grow beyond the school day.</p>
 </div>
-</img></div>
+</div>
 <div class="life-block">
-<img alt="Specialized Education" class="life-image-xl life-image-xxl" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Picture1.png"/>
+<img alt="Specialized Education" class="life-image-xl life-image-xxl" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Picture1.png"/>
 <div>
 <h3>Specialized Education</h3>
 <p>Across Archway’s specialized schools, students receive individualized academics combined with behavioral support, speech, occupational and physical therapy, counseling, communication development, transition planning, and life-skills instruction. Every educational program is designed to help students achieve academic success, build independence, strengthen social-emotional skills, and prepare for meaningful opportunities beyond the classroom.</p>
 </div>
-</div><div class="core-values-row"><div class="core-values-text"><h3>The Values That Guide Everything We Do</h3><p>At Archway Programs, our core values guide everything we do. We are committed to Safety, ensuring every individual feels secure and supported; Compassion, treating others with kindness, empathy, and respect; and Individuality, celebrating each person’s unique strengths and empowering them to reach their fullest potential.</p></div><img alt="Archway Programs Core Values" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Core%20Values.png"/></div>
+</div><div class="core-values-row"><div class="core-values-text"><h3>The Values That Guide Everything We Do</h3><p>At Archway Programs, our core values guide everything we do. We are committed to Safety, ensuring every individual feels secure and supported; Compassion, treating others with kindness, empathy, and respect; and Individuality, celebrating each person’s unique strengths and empowering them to reach their fullest potential.</p></div><img alt="Archway Programs Core Values" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Core%20Values.png"/></div>
 </div>
 </article>
 <!-- INSIDE FLAP -->
@@ -3411,11 +3211,11 @@ body::before{
 <div class="eyebrow">Creating Opportunities</div>
 <h2>From Creativity to Careers</h2>
 <div class="clearfix">
-<img alt="Advanced Abilities and Blue Violet collaboration" class="wrap-photo" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png" style="float:right !important;width:118px !important;height:auto !important;max-height:112px !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 0 8px 14px !important;shape-outside:url('https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png') !important;shape-image-threshold:.15 !important;shape-margin:9px !important;"/>
+<img alt="Advanced Abilities and Blue Violet collaboration" class="wrap-photo" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png" style="float:right !important;width:118px !important;height:auto !important;max-height:112px !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 0 8px 14px !important;shape-outside:url('https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Promo%20with%20Blue%20violet%20Selling%20Plants%20they%20grow%20and%20cards%20with%20artwork%20they%20hand%20created.png') !important;shape-image-threshold:.15 !important;shape-margin:9px !important;"/>
 <p>Every individual deserves the opportunity to discover their talents, build confidence, and contribute to their community. Through Blue Violet and ArchWear, Archway creates meaningful pathways where creativity becomes purpose and skills become opportunities.</p>
 </div>
 <div class="clearfix">
-<img alt="ArchWear Label" class="wrap-photo left" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archwear%20Lable%202.png" style="float:left !important;width:175px !important;height:auto !important;max-height:none !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 16px 8px 0 !important;"/>
+<img alt="ArchWear Label" class="wrap-photo left" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archwear%20Lable%202.png" style="float:left !important;width:175px !important;height:auto !important;max-height:none !important;object-fit:contain !important;display:block !important;background:transparent !important;border:0 !important;box-shadow:none !important;margin:2px 16px 8px 0 !important;"/>
 <p>ArchWear provides custom apparel and promotional products while giving talented individuals meaningful opportunities to build workplace skills. Every project develops experience in production, customer service, order fulfillment, and retail operations, helping participants gain confidence, strengthen vocational abilities, and prepare for greater independence through meaningful employment experiences.</p>
 </div><h3>Together</h3><p>Together, Blue Violet and ArchWear demonstrate how creativity can become confidence, meaningful employment, and greater independence.</p>
 <div class="contact-highlight">
@@ -3423,34 +3223,20 @@ body::before{
 <p class="contact-highlight-line">280 Jackson Road, Atco, NJ 08004 • (856) 767-5757 • <strong>ArchwayPrograms.org</strong></p>
 </div>
 <div class="affiliates-wrap">
+<img class="wsoc-affiliate-graphic" alt="Woods System of Care and affiliated organizations" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Woods%20System%20of%20Care%20Graphic%20%28all%20Affiates%29.png"/>
 <div class="wsoc-title">
 <div class="eyebrow">Part of Woods System of Care</div>
 <p style="font-size:8.6px;margin-bottom:6px">Archway Programs is part of a connected network of health, education, behavioral health, and human services organizations.</p>
-</div>
-<div class="affiliates">
-<div class="affiliate"><img alt="Abilities Solutions" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilitie%20soultions.png"/><div class="affiliate-name">Abilities Solutions</div></div>
-<div class="affiliate"><img alt="Abilities of Northwest Jersey" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilities%20Of%20north%20west.png"/><div class="affiliate-name">Abilities of Northwest Jersey</div></div>
-<div class="affiliate"><img alt="Allies" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Allies%2C%20Inc.%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Allies</div></div>
-<div class="affiliate"><img alt="Brian's House" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Brian%E2%80%99s%20House%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Brian’s House</div></div>
-<div class="affiliate"><img alt="Bridgeway Behavioral Health Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Bridgeway%20Behavioral%20Health%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Bridgeway Behavioral Health Services</div></div>
-<div class="affiliate"><img alt="Legacy Treatment Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Legacy%20Treatment%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Legacy Treatment Services</div></div>
-<div class="affiliate"><img alt="Tabor Children's Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Tabor%20Children%E2%80%99s%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Tabor Children’s Services</div></div>
-<div class="affiliate"><img alt="The Medical Center at Woods" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20Medical%20Center.png"/><div class="affiliate-name">The Medical Center at Woods</div></div>
-<div class="affiliate"><img alt="The Center for Behavioral Health" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20ceneter%20for%20Bheavioral%20health.png"/><div class="affiliate-name">The Center for Behavioral Health</div></div>
-<div class="affiliate"><img alt="Woods Community Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/WCS%20WSOC.png"/><div class="affiliate-name">Woods Community Services</div></div>
-<div class="affiliate"><img alt="Woods Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20Services%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Woods Services</div></div>
-<div class="affiliate"><img alt="Woods System of Care" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20System%20of%20Care%20Rounded%20Square%20Icon.png"/><div class="affiliate-name">Woods System of Care</div></div>
 </div>
 </div>
 </article>
 <!-- FRONT COVER -->
 <article class="panel cover">
-<img alt="Archway Programs cover artwork" class="cover-print-image" decoding="async" fetchpriority="high" loading="eager" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20logo%20screen.png"/>
-<img alt="Archway Programs animated introduction" class="mobile-cover-gif" decoding="async" loading="eager" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif"/>
+<img class="cover-print-image" alt="Archway Programs cover artwork" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20logo%20screen.png"/>
 <div class="cover-print-overlay"></div>
 <div>
 <div style="height:12px"></div>
-</div>
+</div></div>
 </article>
 </section>
 <!-- INSIDE -->
@@ -3464,12 +3250,12 @@ body::before{
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="Just Kids" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0003_Just-Kids.png"/></div>
+<div class="logo-frame"><img alt="Just Kids" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0003_Just-Kids.png"/></div>
 <div class="program-name">Just Kids</div>
 <div class="program-desc">Before &amp; after-school care • K–8</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Step By Step" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0002_Step-By-Step.png"/></div>
+<div class="logo-frame"><img alt="Step By Step" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0002_Step-By-Step.png"/></div>
 <div class="program-name">Step By Step</div>
 <div class="program-desc">Early childhood intervention • Birth–3</div>
 </div>
@@ -3481,32 +3267,32 @@ body::before{
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="Cooper's Poynt" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0008_Cooper%27s-Poynt-Camden.png"/></div>
+<div class="logo-frame"><img alt="Cooper's Poynt" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0008_Cooper%27s-Poynt-Camden.png"/></div>
 <div class="program-name">Cooper’s Poynt</div>
 <div class="program-desc">Camden • Ages 5–13</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Creative Achievement Academy" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0007_Creative-Achievement-Academy.png"/></div>
+<div class="logo-frame"><img alt="Creative Achievement Academy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0007_Creative-Achievement-Academy.png"/></div>
 <div class="program-name">Creative Achievement Academy</div>
 <div class="program-desc">Vineland • Ages 5–21</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Delaware Valley School" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0005_Delaware-valley-school.png"/></div>
+<div class="logo-frame"><img alt="Delaware Valley School" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0005_Delaware-valley-school.png"/></div>
 <div class="program-name">Delaware Valley School</div>
 <div class="program-desc">Hamilton • Ages 5–13</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Early Learning" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0004_Early-Learning-Atco.png"/></div>
+<div class="logo-frame"><img alt="Early Learning" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0004_Early-Learning-Atco.png"/></div>
 <div class="program-name">Early Learning</div>
 <div class="program-desc">Atco • Ages 3–5</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Lower School" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0010_Atco-Lower-School.png"/></div>
+<div class="logo-frame"><img alt="Lower School" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0010_Atco-Lower-School.png"/></div>
 <div class="program-name">Lower School</div>
 <div class="program-desc">Atco • Ages 3–21</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Upper School" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0000_Upper-School-Evesham.png"/></div>
+<div class="logo-frame"><img alt="Upper School" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0000_Upper-School-Evesham.png"/></div>
 <div class="program-name">Upper School</div>
 <div class="program-desc">Evesham • Ages 5–21</div>
 </div>
@@ -3521,12 +3307,12 @@ body::before{
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="ACT Partial Care" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0013_ACT-Partial-Care.png"/></div>
+<div class="logo-frame"><img alt="ACT Partial Care" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0013_ACT-Partial-Care.png"/></div>
 <div class="program-name">ACT Partial Care</div>
 <div class="program-desc">Behavioral health • Adults 18+</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Advanced Abilities" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0012_Advanced-Abilities-Day-Program.png"/></div>
+<div class="logo-frame"><img alt="Advanced Abilities" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0012_Advanced-Abilities-Day-Program.png"/></div>
 <div class="program-name">Advanced Abilities</div>
 <div class="program-desc">Life skills • Adults 21+</div>
 </div>
@@ -3538,28 +3324,28 @@ body::before{
 </div>
 <div class="logo-grid">
 <div class="program-card">
-<div class="logo-frame"><img alt="ArchWear" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0011_Archwear.png"/></div>
+<div class="logo-frame"><img alt="ArchWear" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0011_Archwear.png"/></div>
 <div class="program-name">ArchWear</div>
 <div class="program-desc">Retail &amp; vocational training</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Blue Violet" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0009_Blue-Violet-Flowers-and-Gifts.png"/></div>
+<div class="logo-frame"><img alt="Blue Violet" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0009_Blue-Violet-Flowers-and-Gifts.png"/></div>
 <div class="program-name">Blue Violet</div>
 <div class="program-desc">Employment &amp; social enterprise</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Residential Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0006_DD-Services.png"/></div>
+<div class="logo-frame"><img alt="Residential Services" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0006_DD-Services.png"/></div>
 <div class="program-name">Residential Services</div>
 <div class="program-desc">Community homes for adults</div>
 </div>
 <div class="program-card">
-<div class="logo-frame"><img alt="Supportive Living" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0001_Supportive-Living.png"/></div>
+<div class="logo-frame"><img alt="Supportive Living" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled-3_0001_Supportive-Living.png"/></div>
 <div class="program-name">Supportive Living</div>
 <div class="program-desc">Independent living support</div>
 </div>
 </div>
 <div class="anniversary-lockup">
-<img alt="Archway Programs 60 years" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/clean%2060.png"/>
+<img alt="Archway Programs 60 years" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/clean%2060.png"/>
 <span>Celebrating Over 60 Years of Service Across South Jersey Since 1965</span>
 </div>
 </article>
@@ -3571,99 +3357,100 @@ body::before{
 <div class="eyebrow">Support Through Adulthood</div>
 <h2>Building Independence, Wellness and Community</h2>
 <div class="story-section">
-<img alt="ACT Partial Care client photo collage" class="story-feature-image transparent-feature" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/ACT%20Stack%20of%20photos.png" style="border:0!important;background:transparent!important;box-shadow:none!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><strong style="color:#5C2F92 !important;">Behavioral Health</strong>
+<img alt="ACT Partial Care client photo collage" class="story-feature-image transparent-feature" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/ACT%20Stack%20of%20photos.png" style="float:right!important;width:165px!important;height:auto!important;margin:0 0 8px 14px!important;border:0!important;background:transparent!important;box-shadow:none!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><strong style="color:#5C2F92 !important;">Behavioral Health</strong>
 <span>ACT Partial Care provides comprehensive behavioral health services that promote emotional wellness, recovery, personal growth, and community integration. Through individualized treatment, therapeutic programming, and skill development, participants are supported in building healthier, more independent lives.</span>
 </div>
 <div class="story-section">
 <strong style="color:#5C2F92 !important;">Adult Day Services</strong>
-<div class="service-image-row"><img alt="Advanced Abilities Day Program shirts" class="service-row-image" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Shirts.png"/><span>The Advanced Abilities Day Program empowers adults with intellectual and developmental disabilities through individualized supports, community participation, recreation, volunteer opportunities, life-skills development, and meaningful daily experiences that foster confidence, independence, and personal fulfillment.</span></div></div>
-<img alt="Blue Violet van" class="story-feature-image transparent-feature" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Blue%20violet%20Van.png" style="border:0!important;background:transparent!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><div class="story-section">
+<div class="service-image-row"><img alt="Advanced Abilities Day Program shirts" class="service-row-image" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/AADP%20Shirts.png"/><span>The Advanced Abilities Day Program empowers adults with intellectual and developmental disabilities through individualized supports, community participation, recreation, volunteer opportunities, life-skills development, and meaningful daily experiences that foster confidence, independence, and personal fulfillment.</span></div></div>
+<img alt="Blue Violet van" class="story-feature-image transparent-feature" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Blue%20violet%20Van.png" style="float:right!important;width:155px!important;height:auto!important;margin:0 0 8px 14px!important;border:0!important;background:transparent!important;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))!important;"/><div class="story-section">
 <strong style="color:#00927C !important;">Employment &amp; Community Engagement</strong>
 <span>ArchWear and Blue Violet provide vocational training, employment experiences, creative expression, and retail opportunities where individuals develop workplace skills, gain hands-on experience, build confidence, and contribute through meaningful work in inclusive community settings.</span>
 </div>
 <div class="story-section">
 <strong style="color:#00927C !important;">Residential &amp; Independent Living</strong>
-<div class="service-image-row residential-row" style="gap:11px!important;align-items:center!important;margin-top:5px!important;"><img alt="Residential care" class="service-row-image" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Residential%20care.png" style="object-fit:contain!important;display:block!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:drop-shadow(0 5px 9px rgba(0,0,0,.16))!important;"/><span>Residential Services and Supportive Living provide person-centered supports that help adults live safely, develop daily living skills, strengthen relationships, participate in their communities, and achieve greater independence while maintaining dignity, choice, and quality of life.</span></div><div class="learn-more-services"><div class="learn-more-copy"><h3>Learn More About Our Services Online</h3><p>Visit <a href="https://archwayprograms.org" rel="noopener" target="_blank">ArchwayPrograms.org</a> to explore our programs, services, resources, and the support we provide to individuals and families.</p></div><img alt="Archway Programs website displayed on a computer" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Computer.png"/></div></div>
+<div class="service-image-row" style="display:grid!important;grid-template-columns:145px 1fr!important;gap:11px!important;align-items:center!important;margin-top:5px!important;"><img alt="Residential care" class="service-row-image" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Residential%20care.png" style="width:145px!important;height:108px!important;object-fit:contain!important;display:block!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:drop-shadow(0 5px 9px rgba(0,0,0,.16))!important;margin:0!important;"/><span>Residential Services and Supportive Living provide person-centered supports that help adults live safely, develop daily living skills, strengthen relationships, participate in their communities, and achieve greater independence while maintaining dignity, choice, and quality of life.</span></div><div class="learn-more-services"><div class="learn-more-copy"><h3>Learn More About Our Services Online</h3><p>Visit <a href="https://archwayprograms.org" rel="noopener" target="_blank">ArchwayPrograms.org</a> to explore our programs, services, resources, and the support we provide to individuals and families.</p></div><img alt="Archway Programs website displayed on a computer" src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Computer.png"/></div></div>
 </article>
 </section>
-<section aria-label="Woods System of Care organization ticker" id="organizationTimelineSection">
-<div class="wsoc-widget">
-<header class="wsoc-heading">
-<h2>Explore the Woods System of Care</h2>
-<p>Choose an organization to visit its website.</p>
-</header>
-<div class="ticker-window">
-<div class="ticker-track" id="tickerTrack">
-<div class="ticker-group" id="tickerGroup">
-<a class="organization-card" href="https://alliesnj.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Allies, Inc." decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Allies%2C%20Inc.%20Rounded%20Square%20Icon.png"/>
+
+<section id="organizationTimelineSection" aria-label="Woods System of Care organization ticker">
+  <div class="wsoc-widget">
+    <header class="wsoc-heading">
+      <h2>Explore the Woods System of Care</h2>
+      <p>Choose an organization to visit its website.</p>
+    </header>
+    <div class="ticker-window">
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-group" id="tickerGroup">
+          <a class="organization-card" href="https://alliesnj.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Allies%2C%20Inc.%20Rounded%20Square%20Icon.png" alt="Allies, Inc.">
 <span class="organization-name">Allies, Inc.</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://archwayprograms.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Archway Programs" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Archway%20Programs%20Rounded%20Square%20Icon.png"/>
+<a class="organization-card" href="https://archwayprograms.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Archway%20Programs%20Rounded%20Square%20Icon.png" alt="Archway Programs">
 <span class="organization-name">Archway Programs</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.brianshouse.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Brian’s House" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Brian%E2%80%99s%20House%20Rounded%20Square%20Icon.png"/>
+<a class="organization-card" href="https://www.brianshouse.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Brian%E2%80%99s%20House%20Rounded%20Square%20Icon.png" alt="Brian’s House">
 <span class="organization-name">Brian’s House</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.bridgewaybhs.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Bridgeway Behavioral Health Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Bridgeway%20Behavioral%20Health%20Services%20Rounded%20Square%20Icon.png"/>
+<a class="organization-card" href="https://www.bridgewaybhs.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Bridgeway%20Behavioral%20Health%20Services%20Rounded%20Square%20Icon.png" alt="Bridgeway Behavioral Health Services">
 <span class="organization-name">Bridgeway Behavioral Health Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.legacytreatment.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Legacy Treatment Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Legacy%20Treatment%20Services%20Rounded%20Square%20Icon.png"/>
+<a class="organization-card" href="https://www.legacytreatment.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Legacy%20Treatment%20Services%20Rounded%20Square%20Icon.png" alt="Legacy Treatment Services">
 <span class="organization-name">Legacy Treatment Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://taborservicesinc.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Tabor Children’s Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Tabor%20Children%E2%80%99s%20Services%20Rounded%20Square%20Icon.png"/>
+<a class="organization-card" href="https://taborservicesinc.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Tabor%20Children%E2%80%99s%20Services%20Rounded%20Square%20Icon.png" alt="Tabor Children’s Services">
 <span class="organization-name">Tabor Children’s Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://woodsservicespa.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Woods Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20Services%20Rounded%20Square%20Icon.png"/>
+<a class="organization-card" href="https://woodsservicespa.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20Services%20Rounded%20Square%20Icon.png" alt="Woods Services">
 <span class="organization-name">Woods Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.woods.org/" rel="noopener noreferrer" target="_blank">
-<img alt="Woods System of Care" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20System%20of%20Care%20Rounded%20Square%20Icon.png"/>
+<a class="organization-card" href="https://www.woods.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Woods%20System%20of%20Care%20Rounded%20Square%20Icon.png" alt="Woods System of Care">
 <span class="organization-name">Woods System of Care</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.woods.org/services/wcs/" rel="noopener noreferrer" target="_blank">
-<img alt="Woods Community Services" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/WCS%20WSOC.png"/>
+<a class="organization-card" href="https://www.woods.org/services/wcs/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/WCS%20WSOC.png" alt="Woods Community Services">
 <span class="organization-name">Woods Community Services</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://woodshealthcare.org/behavioral-care/" rel="noopener noreferrer" target="_blank">
-<img alt="The Center for Behavioral Health" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20ceneter%20for%20Bheavioral%20health.png"/>
+<a class="organization-card" href="https://woodshealthcare.org/behavioral-care/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20ceneter%20for%20Bheavioral%20health.png" alt="The Center for Behavioral Health">
 <span class="organization-name">The Center for Behavioral Health</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://woodshealthcare.org/" rel="noopener noreferrer" target="_blank">
-<img alt="The Medical Center at Woods" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20Medical%20Center.png"/>
+<a class="organization-card" href="https://woodshealthcare.org/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/The%20Medical%20Center.png" alt="The Medical Center at Woods">
 <span class="organization-name">The Medical Center at Woods</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://abilitiesnw.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Abilities of Northwest Jersey" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilities%20Of%20north%20west.png"/>
+<a class="organization-card" href="https://abilitiesnw.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilities%20Of%20north%20west.png" alt="Abilities of Northwest Jersey">
 <span class="organization-name">Abilities of Northwest Jersey</span>
 <span class="organization-action">Visit website →</span>
 </a>
-<a class="organization-card" href="https://www.abilities4work.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Abilities Solutions" decoding="async" loading="lazy" src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilitie%20soultions.png"/>
+<a class="organization-card" href="https://www.abilities4work.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://raw.githubusercontent.com/jim122298/WSOC-Portal-Assets/main/Square%20Icons%20with%20shadow/Abilitie%20soultions.png" alt="Abilities Solutions">
 <span class="organization-name">Abilities Solutions</span>
 <span class="organization-action">Visit website →</span>
 </a>
-</div>
-</div>
-</div>
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <script id="v123-ticker-clone-script">
 (function(){
@@ -3679,6 +3466,7 @@ body::before{
   track.appendChild(duplicateGroup);
 })();
 </script>
+
 <script>
 document.querySelectorAll("img").forEach(img=>{
   img.addEventListener("error",()=>{
@@ -3687,7 +3475,7 @@ document.querySelectorAll("img").forEach(img=>{
   });
 });
 </script>
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script><script>
 async function waitForBrochureImagesNative() {
   const images = Array.from(document.images);
   await Promise.all(images.map(img => {
@@ -3789,6 +3577,59 @@ async function printVectorPDF(button, flipSecondPage) {
 }
 </script>
 
+<style id="v113-safe-depth">
+/* v113 — safe depth enhancement. Never applies filter/opacity to 3D leaves or faces. */
+#auIntro .au-ground-shadow{
+  height:10%;
+  bottom:-.5%;
+  background:radial-gradient(ellipse at center,
+    rgba(0,0,0,.56) 0%,
+    rgba(0,0,0,.30) 32%,
+    rgba(0,0,0,.12) 54%,
+    transparent 76%);
+  filter:blur(20px);
+}
+#auIntro .au-fold-shadow{
+  width:56px;
+  filter:blur(5px);
+}
+#auIntro .au-cover-fold-shadow{
+  background:linear-gradient(90deg,
+    transparent 0%,
+    rgba(0,0,0,.035) 28%,
+    rgba(0,0,0,.18) 72%,
+    rgba(0,0,0,.31) 100%);
+}
+#auIntro .au-lifetime-fold-shadow{
+  background:linear-gradient(90deg,
+    rgba(0,0,0,.30) 0%,
+    rgba(0,0,0,.17) 28%,
+    rgba(0,0,0,.035) 72%,
+    transparent 100%);
+}
+#auIntro .au-flex{
+  width:18px;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.22),
+    rgba(9,50,102,.10) 48%,
+    rgba(255,255,255,.14));
+}
+#auIntro .au-edge{
+  width:2px;
+  background:linear-gradient(180deg,
+    rgba(255,255,255,.98),
+    rgba(156,169,183,.70) 48%,
+    rgba(255,255,255,.92));
+  box-shadow:0 0 1px rgba(255,255,255,.75),0 0 3px rgba(0,0,0,.24);
+}
+#auIntro .au-face{
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    inset 0 -1px 0 rgba(9,50,102,.10);
+}
+</style>
+
+
 <script id="archway-gif-intro-script">
 (function(){
   const intro=document.getElementById('brandGifIntro');
@@ -3845,6 +3686,7 @@ async function printVectorPDF(button, flipSecondPage) {
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) finishIntro();
 })();
 </script>
+
 <script id="apple-unfold-script">
 (function(){
   const q=(s,r=document)=>r.querySelector(s);
@@ -3858,7 +3700,6 @@ async function printVectorPDF(button, flipSecondPage) {
     overlay.remove();
     document.documentElement.classList.remove('au-lock');
     document.body.classList.remove('au-lock');
-    window.dispatchEvent(new Event('archway-brochure-opened'));
     return;
   }
 
@@ -3871,7 +3712,6 @@ async function printVectorPDF(button, flipSecondPage) {
     overlay.remove();
     document.documentElement.classList.remove('au-lock');
     document.body.classList.remove('au-lock');
-    window.dispatchEvent(new Event('archway-brochure-opened'));
     return;
   }
 
@@ -3897,6 +3737,7 @@ async function printVectorPDF(button, flipSecondPage) {
   const flexLeft=q('.au-flex-left');
   const flexRight=q('.au-flex-right');
   const highlight=q('.au-paper-highlight');
+  const shine=q('.au-paper-highlight .au-paper-shine')||highlight;
   const coverFront=q('.au-cover-front');
   const coverBack=q('.au-cover-back');
   const lifetimeFront=q('.au-lifetime-front');
@@ -3912,23 +3753,15 @@ async function printVectorPDF(button, flipSecondPage) {
     overlay.classList.add('au-done');
     document.documentElement.classList.remove('au-lock');
     document.body.classList.remove('au-lock');
-    window.dispatchEvent(new Event('archway-brochure-opened'));
     setTimeout(()=>overlay.remove(),760);
   }
   q('.au-skip').addEventListener('click',finish);
 
-  /* Shared easings. EXPO is the soft "Apple" settle; HINGE drives the paper folds
-     with a gentle start, quick middle, and no hard stop at the end. */
+  /* Brochure hinge behavior transplanted from index 2: each leaf reaches the
+     physically edge-on position before its printed face is switched. */
   const EXPO='cubic-bezier(.16,1,.3,1)';
-  const HINGE='cubic-bezier(.42,0,.18,1)';
   const FOLD_MS=1570;
 
-  /* v150 — edge-locked face handoff.
-     The previous animation changed the printed artwork at a percentage of time,
-     which did not reliably equal the physical 90-degree position because of the
-     easing curve. Each leaf now travels to the edge first, swaps while effectively
-     invisible, and then completes the turn. The viewer therefore sees one
-     continuous physical sheet instead of a picture changing halfway through. */
   async function foldLeaf(leaf,front,back,creaseShadow,flex,toDeg){
     const direction=toDeg < 0 ? -1 : 1;
     const firstHalf=Math.round(FOLD_MS*.53);
@@ -3946,8 +3779,6 @@ async function printVectorPDF(button, flipSecondPage) {
       {transform:'rotateY('+(direction*89.85)+'deg)'}
     ],{duration:firstHalf,fill:'forwards',easing:'cubic-bezier(.42,0,.62,1)'}).finished;
 
-    /* The panel is thinner than a pixel here, so this is the only believable
-       moment for the reverse printing to become active. */
     front.classList.add('au-face-hidden');
     back.classList.remove('au-face-hidden');
     leaf.style.transform='rotateY('+(direction*90.15)+'deg)';
@@ -3963,13 +3794,13 @@ async function printVectorPDF(button, flipSecondPage) {
     kicker.animate([
       {opacity:0,transform:'translateX(-50%) translateY(-8px)'},
       {opacity:1,transform:'translateX(-50%) translateY(0)'}
-    ],{duration:720,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'});
+    ],{duration:720,fill:'forwards',easing:EXPO});
 
     if(!document.documentElement.classList.contains('is-safari')){
       shadow.animate([
         {opacity:0,transform:'scale(.45)'},
         {opacity:.78,transform:'scale(1)'}
-      ],{duration:1500,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'});
+      ],{duration:1500,fill:'forwards',easing:EXPO});
     }
 
     await world.animate([
@@ -3978,40 +3809,35 @@ async function printVectorPDF(button, flipSecondPage) {
       {transform:'translateY(-2.2%) rotateX(8deg) rotateZ(-.8deg) scale(.89)',offset:.72},
       {transform:'translateY(.8%) rotateX(9deg) rotateZ(-.45deg) scale(.875)',offset:.90},
       {opacity:1,transform:'translateY(0) rotateX(8.5deg) rotateZ(-.45deg) scale(.88)'}
-    ],{duration:1550,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'}).finished;
+    ],{duration:1550,fill:'forwards',easing:EXPO}).finished;
 
     await wait(420);
 
-    /* First flap opens on its left hinge. */
     const coverDone=foldLeaf(cover,coverFront,coverBack,coverShadow,flexLeft,-180);
-
-    /* Begin the second flap slightly before the first has fully seated. The small
-       overlap removes the old dead pause and reads as one flowing motion instead
-       of two separate clicks. */
     await wait(FOLD_MS*0.76);
     const lifetimeDone=foldLeaf(lifetime,lifetimeFront,lifetimeBack,lifetimeShadow,flexRight,180);
-
     await Promise.all([coverDone,lifetimeDone]);
 
-    /* Settle flat, and sweep a soft specular highlight across the open spread —
-       the finishing "premium" touch as the paper comes to rest. */
-    highlight.animate([
-      {transform:'translateX(-140%)',opacity:0},
-      {opacity:.9,offset:.5},
-      {transform:'translateX(140%)',opacity:0}
-    ],{duration:900,easing:'ease-in-out'});
-
     await world.animate([
-      {transform:'translateY(0) rotateX(2.6deg) scale(.955)'},
-      {transform:'translateY(0) rotateX(0deg) scale(1)'}
+      {transform:'translateY(0) rotateX(8.5deg) rotateZ(-.45deg) scale(.88)'},
+      {transform:'translateY(0) rotateX(0deg) rotateZ(0deg) scale(1)'}
     ],{duration:760,fill:'forwards',easing:EXPO}).finished;
 
+    /* Safari: hard-remove every pending ground-shadow compositor before shine. */
     if(document.documentElement.classList.contains('is-safari')){
       shadow.getAnimations().forEach(function(animation){ animation.cancel(); });
       shadow.style.display='none';
+      shadow.style.opacity='0';
+      shadow.style.visibility='hidden';
     }
 
-    await wait(260);
+    shine.animate([{transform:'translateX(-140%)'},{transform:'translateX(140%)'}],{duration:1050,fill:'forwards',easing:'cubic-bezier(.4,0,.2,1)'});
+
+    if(!document.documentElement.classList.contains('is-safari')){
+      shadow.animate([{opacity:.78,transform:'scale(1)'},{opacity:.32,transform:'scale(1.3)'}],{duration:880,fill:'forwards',easing:'ease-out'});
+    }
+
+    await wait(1200);
     finish();
   }
 
@@ -4025,6 +3851,8 @@ async function printVectorPDF(button, flipSecondPage) {
   }
 })();
 </script>
+
+
 <script id="v123-integrated-ticker-reveal-script">
 (function(){
   const section=document.getElementById('organizationTimelineSection');
@@ -4037,810 +3865,218 @@ async function printVectorPDF(button, flipSecondPage) {
     requestAnimationFrame(()=>requestAnimationFrame(()=>section.classList.add('is-visible')));
   }
 
-  window.addEventListener('archway-brochure-opened',revealTimeline,{once:true});
-  window.addEventListener('load',()=>{
+  function brochureAnimationFinished(){
     const intro=document.getElementById('auIntro');
-    if(!intro || intro.classList.contains('au-done')) revealTimeline();
-  },{once:true});
+    return !intro || intro.classList.contains('au-done');
+  }
+
+  function check(){
+    if(brochureAnimationFinished()) revealTimeline();
+  }
+
+  window.addEventListener('load',check,{once:true});
+  const observer=new MutationObserver(()=>{
+    if(brochureAnimationFinished()){
+      observer.disconnect();
+      revealTimeline();
+    }
+  });
+  observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['class']});
+  check();
 })();
 </script>
+
+
 <script id="v135-mobile-performance">
 (function(){
-  if(window.matchMedia('(max-width:760px)').matches){
-    document.documentElement.classList.add('is-mobile');
-  }
-})();
-</script>
+  if(!window.matchMedia('(max-width:760px)').matches) return;
 
+  document.documentElement.classList.add('is-mobile');
 
-<style id="v161-mobile-order-compact-services-anniversary">
-/* v161 — mobile-only reading order, compact service cards, and larger anniversary mark. */
-@media screen and (max-width:760px){
-  /* The careers panel is moved after the inside spread by the companion script below. */
-  .mobile-careers-last{
-    width:calc(100% - 20px) !important;
-    max-width:560px !important;
-    margin:0 auto 24px !important;
-    border-radius:18px !important;
-    overflow:visible !important;
-  }
-
-  /* Smaller service buttons so three can sit together on most phones. */
-  .logo-grid{
-    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
-    gap:7px !important;
-  }
-  .program-card{
-    min-height:118px !important;
-    padding:8px 5px !important;
-    border-radius:11px !important;
-  }
-  .logo-frame,
-  .logo-frame img{
-    width:58px !important;
-    height:58px !important;
-    min-height:58px !important;
-  }
-  .program-name{
-    margin-top:5px !important;
-    font-size:11px !important;
-    line-height:1.12 !important;
-  }
-  .program-desc{
-    margin-top:3px !important;
-    font-size:9px !important;
-    line-height:1.18 !important;
-  }
-
-  /* Make the 60-year emblem a stronger closing visual. */
-  .anniversary-lockup{
-    justify-content:center !important;
-    gap:15px !important;
-    padding-top:15px !important;
-  }
-  .anniversary-lockup img{
-    width:126px !important;
-    height:126px !important;
-    flex:0 0 126px !important;
-  }
-  .anniversary-lockup span{
-    font-size:14px !important;
-    line-height:1.35 !important;
-  }
-}
-
-@media screen and (max-width:430px){
-  /* Two across on narrow phones to preserve legibility and touch targets. */
-  .logo-grid{
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    gap:8px !important;
-  }
-  .program-card{
-    min-height:124px !important;
-  }
-  .anniversary-lockup{
-    flex-direction:column !important;
-    text-align:center !important;
-  }
-  .anniversary-lockup img{
-    width:142px !important;
-    height:142px !important;
-    flex-basis:142px !important;
-  }
-  .anniversary-lockup span{
-    max-width:300px !important;
-    text-align:center !important;
-  }
-}
-</style>
-
-<script id="v161-mobile-careers-last">
-(function(){
-  var panel, originalParent, originalNext, insideSpread;
-
-  function setup(){
-    panel = document.querySelector('.outside-spread > .about-panel');
-    insideSpread = document.querySelector('.inside-spread');
-    if(!panel || !insideSpread) return;
-    originalParent = panel.parentNode;
-    originalNext = panel.nextSibling;
-    syncPosition();
-    window.addEventListener('resize', syncPosition, {passive:true});
-  }
-
-  function syncPosition(){
-    if(!panel || !insideSpread || !originalParent) return;
-    if(window.matchMedia('(max-width:760px)').matches){
-      panel.classList.add('mobile-careers-last');
-      insideSpread.insertAdjacentElement('afterend', panel);
-    }else{
-      panel.classList.remove('mobile-careers-last');
-      if(originalNext && originalNext.parentNode === originalParent){
-        originalParent.insertBefore(panel, originalNext);
-      }else{
-        originalParent.appendChild(panel);
-      }
-    }
+  function optimizeImages(){
+    document.querySelectorAll('img').forEach(function(img){
+      if(img.id === 'brandGifImage' || img.classList.contains('cover-print-image')) return;
+      img.loading = 'lazy';
+      img.decoding = 'async';
+    });
   }
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', setup, {once:true});
+    document.addEventListener('DOMContentLoaded', optimizeImages, {once:true});
   }else{
-    setup();
+    optimizeImages();
   }
 })();
 </script>
 
-<style id="v162-mobile-issue-fixes">
-/* v162 (rev) — mobile-only corrections. Desktop (>=761px) and print preserved. */
-
-/* Loader bar hidden everywhere by default; shown only on phones below. */
-.brand-intro-loader{display:none;}
-
-/* ---- Desktop preservation for images whose inline layout was removed ---- */
-@media screen and (min-width:761px){
-  .inside-story img[alt="ACT Partial Care client photo collage"]{
-    float:right !important; width:165px !important; height:auto !important; margin:0 0 8px 14px !important;
-  }
-  .inside-story img[alt="Blue Violet van"]{
-    float:right !important; width:155px !important; height:auto !important; margin:0 0 8px 14px !important;
-  }
-  .inside-story .residential-row{
-    display:grid !important; grid-template-columns:145px 1fr !important;
-  }
-  .inside-story img[alt="Residential care"]{
-    width:145px !important; height:108px !important;
-  }
-}
-
-@media screen and (max-width:760px){
-
-  /* ===== GIF intro: reframe (no crop) with a CLEAN, non-blurry backdrop ===== */
-  #brandGifIntro #brandGifImage{
-    object-fit:contain !important;
-    object-position:50% 50% !important;
-  }
-  /* Remove the big blurred wallpaper layer that showed around the contained GIF. */
-  #brandGifIntro::before{
-    display:none !important;
-    content:none !important;
-  }
-  /* Fixed-attachment wood looks zoomed/soft on phones — use a clean sharp fill. */
-  #brandGifIntro,
-  #brandGifIntro:not(.gif-ready),
-  #brandGifIntro.gif-ready{
-    background-attachment:scroll !important;
-    background-position:center center !important;
-    background-size:cover !important;
-  }
-
-  /* ===== GIF intro: slim, calm loading bar ===== */
-  .brand-intro-loader{
-    display:block;
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:calc(env(safe-area-inset-bottom, 0px) + 88px);
-    width:148px;
-    height:3px;
-    border-radius:99px;
-    background:rgba(255,255,255,.30);
-    overflow:hidden;
-    z-index:3;
-  }
-  .brand-intro-loader-fill{
-    display:block;
-    width:0%;
-    height:100%;
-    border-radius:99px;
-    background:#ffffff;
-  }
-  /* While the first frame decodes: gentle pulse on the track (no sliding shimmer). */
-  #brandGifIntro:not(.gif-ready) .brand-intro-loader{
-    animation:brandIntroPulse 1.4s ease-in-out infinite;
-  }
-  .brand-intro-loader.is-done{
-    opacity:0;
-    transition:opacity .3s ease;
-  }
-
-  /* ===== Lifetime panel: text wraps around the artwork (alternating sides) ===== */
-  .lifetime-panel .life-block,
-  .lifetime-panel .life-block.reverse,
-  .lifetime-panel .life-block:has(img.life-image-xl),
-  .lifetime-panel .life-block:has(img.life-image-xxl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
-    display:block !important;
-    grid-template-columns:none !important;
-    gap:0 !important;
-  }
-  .lifetime-panel .life-block::after{
-    content:"";
-    display:block;
-    clear:both;
-  }
-  .lifetime-panel .life-block > div{
-    width:auto !important;
-  }
-  .lifetime-panel img[alt="Step By Step boots walking"],
-  .lifetime-panel img[alt="Specialized Education"]{
-    float:left !important;
-    width:47% !important;
-    max-width:210px !important;
-    min-width:150px !important;
-    height:auto !important;
-    margin:3px 15px 8px 0 !important;
-    top:0 !important;
-    position:relative !important;
-    align-self:auto !important;
-  }
-  .lifetime-panel img[alt="Just Kids bag and photo"]{
-    float:right !important;
-    width:47% !important;
-    max-width:210px !important;
-    min-width:150px !important;
-    height:auto !important;
-    margin:3px 0 8px 15px !important;
-    top:0 !important;
-    position:relative !important;
-    align-self:auto !important;
-  }
-
-  /* ===== Core values graphic: large, centered (no wrap needed) ===== */
-  .lifetime-panel .core-values-row{
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-  }
-  .lifetime-panel .core-values-row img{
-    width:min(100%, 390px) !important;
-    max-width:100% !important;
-    height:auto !important;
-    max-height:none !important;
-    align-self:center !important;
-  }
-
-  /* ===== Adult services: text wraps around images (alternating sides) ===== */
-  .inside-story .service-image-row,
-  .inside-story .service-image-row[style],
-  .inside-story .residential-row{
-    display:block !important;
-    grid-template-columns:none !important;
-    align-items:initial !important;
-  }
-  .inside-story .service-image-row::after,
-  .inside-story .residential-row::after{
-    content:"";
-    display:block;
-    clear:both;
-  }
-  .inside-story img[alt="ACT Partial Care client photo collage"],
-  .inside-story img[alt="Blue Violet van"]{
-    float:right !important;
-    width:46% !important;
-    max-width:200px !important;
-    min-width:145px !important;
-    height:auto !important;
-    max-height:none !important;
-    margin:3px 0 8px 14px !important;
-    display:block !important;
-  }
-  .inside-story img[alt="Advanced Abilities Day Program shirts"]{
-    float:left !important;
-    width:46% !important;
-    max-width:200px !important;
-    min-width:145px !important;
-    height:auto !important;
-    max-height:none !important;
-    margin:3px 14px 8px 0 !important;
-    align-self:auto !important;
-  }
-  .inside-story img[alt="Residential care"]{
-    float:right !important;
-    width:46% !important;
-    max-width:200px !important;
-    min-width:145px !important;
-    height:auto !important;
-    max-height:none !important;
-    margin:3px 0 8px 14px !important;
-    align-self:auto !important;
-  }
-
-  /* ===== Services section: restore beige paper wallpaper underneath ===== */
-  section.inside-spread.page{
-    background-color:#efe9dd !important;
-    background-image:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/beige-abstract-background-with-paper-texture-2026-01-09-10-04-42-utc.jpg") !important;
-    background-size:cover !important;
-    background-position:center center !important;
-    background-repeat:no-repeat !important;
-    background-attachment:fixed !important;
-  }
-
-  /* ===== Blue "About" page: restore heading colors lost on re-parent ===== */
-  .about-panel.mobile-careers-last{
-    background:#093266 !important;
-  }
-  .about-panel.mobile-careers-last .eyebrow,
-  .about-panel.mobile-careers-last h2,
-  .about-panel.mobile-careers-last h3,
-  .about-panel.mobile-careers-last p,
-  .about-panel.mobile-careers-last strong,
-  .about-panel.mobile-careers-last a,
-  .about-panel.mobile-careers-last .affiliate-name,
-  .about-panel.mobile-careers-last .wsoc-title .eyebrow{
-    color:#ffffff !important;
-  }
-}
-
-@keyframes brandIntroPulse{
-  0%,100%{opacity:.5}
-  50%{opacity:1}
-}
-</style>
-
-<script id="v162-mobile-gif-loader">
+<script id="arch-loader-script">
+/* v140 — real loading screen that gates the intro sequence.
+   Sequence per refresh:
+     Arch Spin loader (real preloading)
+       -> large intro GIF assigned from a preloaded blob, plays once from frame 1
+       -> existing brochure unfold animation.
+   The large GIF has no src until handoff, so it can never play behind the
+   loader, never double-play, and never skip its opening frame. */
 (function(){
-  if(!window.matchMedia('(max-width:760px)').matches) return;
-  var intro=document.getElementById('brandGifIntro');
-  if(!intro) return;
-  var loader=intro.querySelector('.brand-intro-loader');
-  var fill=intro.querySelector('.brand-intro-loader-fill');
-  if(!loader || !fill) return;
+  var loader=document.getElementById('archLoader');
+  if(!loader) return;
 
-  /* Matches INTRO_PLAY_ONCE_MS in the GIF intro controller. */
-  var DURATION=5900;
-  var started=false;
+  var image=document.getElementById('brandGifImage');
+  var gifSrc=image ? (image.getAttribute('data-gif-src')||'') : '';
 
-  function startFill(){
-    if(started) return;
-    started=true;
-    fill.style.width='0%';
-    void fill.getBoundingClientRect();
-    fill.style.transition='width '+DURATION+'ms linear';
-    fill.style.width='100%';
+  var mq=window.matchMedia||function(){return{matches:false};};
+  var reduce=mq('(prefers-reduced-motion:reduce)').matches;
+  var isPrint=mq('print').matches;
+
+  /* Reduced motion / print: no animated intro at all — remove the loader and
+     let the existing reduced-motion path in the GIF script take over. */
+  if(reduce||isPrint){
+    loader.parentNode&&loader.remove();
+    return;
   }
 
-  if(intro.classList.contains('gif-ready')){
-    startFill();
-  }else{
-    window.addEventListener('archway-gif-ready', startFill, {once:true});
-    setTimeout(startFill, 1800);
+  var fill=loader.querySelector('.arch-loader-fill');
+  var msgEl=loader.querySelector('.arch-loader-msg');
+
+  /* Rotating positive messages about Archway and its programs. */
+  var messages=[
+    'Preparing the programs…',
+    'Building possibilities…',
+    'Connecting services…',
+    'Opening doors for every journey…',
+    'Getting your Archway experience ready…'
+  ];
+  var mi=0;
+  requestAnimationFrame(function(){ msgEl.classList.add('is-in'); });
+  var msgTimer=setInterval(function(){
+    msgEl.classList.remove('is-in');
+    setTimeout(function(){
+      mi=(mi+1)%messages.length;
+      msgEl.textContent=messages[mi];
+      msgEl.classList.add('is-in');
+    },380);
+  },1700);
+
+  /* Assemble the genuine asset list: the large intro GIF, the shared wood
+     surface, the cover art, and every image that appears in the brochure
+     spreads the unfold animation clones. */
+  var urls=[];
+  function add(u){ if(u && urls.indexOf(u)===-1) urls.push(u); }
+  if(gifSrc) add(gifSrc);
+  add('https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg');
+  add('https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/COverr.png');
+  document.querySelectorAll('.outside-spread img, .inside-spread img').forEach(function(img){
+    add(img.currentSrc||img.getAttribute('src'));
+  });
+
+  var MIN_VISIBLE_MS=5500;            /* quick opening, measured final approach */
+  var startTime=Date.now();
+  var total=urls.length||1;
+  var done=0;
+  var assetFrac=0;
+  var displayedFrac=0;
+  var assetsAreReady=false;
+  var handed=false;
+
+  function setProgress(frac){
+    if(frac>1) frac=1;
+    if(frac<0) frac=0;
+    fill.style.width=(frac*100).toFixed(1)+'%';
+  }
+  /* Always paint a genuinely empty bar first. Cached assets may report as
+     loaded immediately, but the visible fill should still progress normally. */
+  setProgress(0);
+  function tick(){
+    done++;
+    assetFrac=Math.min(done/total,1);
+    if(done>=total) assetsDone();
+  }
+  function assetsDone(){ assetsAreReady=true; maybeFinish(); }
+
+  /* Three-stage progress rhythm: rush confidently to the middle, ease through
+     “almost ready,” then hold just below complete until the assets are ready. */
+  var barFrame=0;
+  function smoothstep(n){ return n*n*(3-2*n); }
+  function progressCurve(n){
+    if(n<=.24){
+      var opening=n/.24;
+      return .52*(1-Math.pow(1-opening,3));
+    }
+    if(n<=.82){
+      var middle=(n-.24)/.58;
+      return .52+(.36*smoothstep(middle));
+    }
+    var finalApproach=(n-.82)/.18;
+    return .88+(.06*smoothstep(finalApproach));
+  }
+  function animateBar(){
+    if(handed) return;
+    var timeFrac=Math.min((Date.now()-startTime)/MIN_VISIBLE_MS,1);
+    var target=progressCurve(timeFrac);
+    displayedFrac=target;
+    setProgress(displayedFrac);
+    maybeFinish();
+    barFrame=requestAnimationFrame(animateBar);
+  }
+  barFrame=requestAnimationFrame(animateBar);
+
+  function maybeFinish(){
+    if(handed) return;
+    if(assetsAreReady && (Date.now()-startTime)>=MIN_VISIBLE_MS) completeNow();
   }
 
-  window.addEventListener('archway-gif-intro-finished', function(){
-    fill.style.transition='width .25s ease-out';
-    fill.style.width='100%';
-    loader.classList.add('is-done');
-  }, {once:true});
-})();
-</script>
-
-
-
-<style id="v163-mobile-intro-wrap-rebuild">
-/* v163 — polished mobile startup and genuine magazine-style service wrapping.
-   Desktop and print are intentionally untouched. */
-@media screen and (max-width:760px){
-  /* A clean branded holding screen while the GIF's first frame downloads. */
-  #brandGifIntro{
-    isolation:isolate !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    background-color:#705039 !important;
-    background-image:
-      linear-gradient(180deg,rgba(3,18,39,.08),rgba(3,18,39,.18)),
-      url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Untitled%20Project%2022.jpg") !important;
-    background-position:center !important;
-    background-size:cover !important;
-    overflow:hidden !important;
+  /* Preload the large GIF as a blob so the frame-one handoff is instantaneous
+     and cannot land mid-cycle. Falls back to the direct URL if fetch is
+     blocked (it will still start from frame one on assignment). */
+  var gifReadySrc=gifSrc;
+  var gifCounted=false;
+  function countGifOnce(){ if(!gifCounted){ gifCounted=true; tick(); } }
+  if(gifSrc && window.fetch){
+    fetch(gifSrc,{cache:'force-cache'})
+      .then(function(r){ return r.ok ? r.blob() : Promise.reject(); })
+      .then(function(b){ gifReadySrc=URL.createObjectURL(b); })
+      .catch(function(){ /* keep direct URL */ })
+      .then(countGifOnce);
+  }else if(gifSrc){
+    var g=new Image();
+    g.onload=countGifOnce; g.onerror=countGifOnce; g.src=gifSrc;
+    if(g.complete) countGifOnce();
   }
 
-  /* Replace the awkward progress/loading treatment with one restrained brand mark. */
-  #brandGifIntro .brand-intro-loader{
-    display:none !important;
-  }
-  #brandGifIntro::before{
-    content:"" !important;
-    display:block !important;
-    position:absolute !important;
-    left:50% !important;
-    top:50% !important;
-    width:min(68vw,270px) !important;
-    height:110px !important;
-    transform:translate(-50%,-58%) !important;
-    background:url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Logo%20Mini.png") center/contain no-repeat !important;
-    filter:drop-shadow(0 8px 22px rgba(0,0,0,.28)) !important;
-    opacity:1 !important;
-    z-index:1 !important;
-    animation:mobileBrandBreathe 1.8s ease-in-out infinite !important;
-    transition:opacity .24s ease !important;
-  }
-  #brandGifIntro::after{
-    content:"A LIFETIME OF POSSIBILITIES" !important;
-    position:absolute !important;
-    left:20px !important;
-    right:20px !important;
-    top:calc(50% + 54px) !important;
-    color:rgba(255,255,255,.94) !important;
-    font:800 11px/1.2 -apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif !important;
-    letter-spacing:.18em !important;
-    text-align:center !important;
-    text-shadow:0 2px 8px rgba(0,0,0,.35) !important;
-    z-index:1 !important;
-    opacity:1 !important;
-    transition:opacity .24s ease !important;
-  }
-  #brandGifIntro.gif-ready::before,
-  #brandGifIntro.gif-ready::after{
-    opacity:0 !important;
-    animation:none !important;
-    pointer-events:none !important;
-  }
-  #brandGifIntro #brandGifImage{
-    position:absolute !important;
-    inset:0 !important;
-    width:100% !important;
-    height:100% !important;
-    object-fit:contain !important;
-    object-position:center center !important;
-    z-index:2 !important;
-  }
-  #brandGifIntro .brand-intro-skip{
-    position:absolute !important;
-    right:max(14px,env(safe-area-inset-right)) !important;
-    top:max(14px,env(safe-area-inset-top)) !important;
-    z-index:4 !important;
-    border:1px solid rgba(255,255,255,.28) !important;
-    background:rgba(5,23,47,.42) !important;
-    color:#fff !important;
-    box-shadow:0 5px 18px rgba(0,0,0,.16) !important;
-    backdrop-filter:blur(10px) !important;
-    -webkit-backdrop-filter:blur(10px) !important;
+  urls.forEach(function(u){
+    if(u===gifSrc) return; /* handled by the blob/image preload above */
+    var im=new Image();
+    var settled=false;
+    function ok(){ if(!settled){ settled=true; tick(); } }
+    im.onload=ok; im.onerror=ok; im.src=u;
+    if(im.complete) ok();
+  });
+
+  /* Backstop so one slow or broken asset can never trap the loader forever.
+     12s > the 7s minimum, so this also satisfies the minimum window. */
+  var backstop=setTimeout(function(){ assetsAreReady=true; completeNow(); },12000);
+
+  function completeNow(){
+    if(handed) return;
+    handed=true;
+    cancelAnimationFrame(barFrame);
+    clearTimeout(backstop);
+    clearInterval(msgTimer);
+    fill.style.transition='width .3s cubic-bezier(.22,1,.36,1)';
+    setProgress(1);
+    /* A short beat at 100%, then hand off. */
+    setTimeout(doHandoff,320);
   }
 
-  /* Real text wrapping for the three Lifetime service stories. */
-  .lifetime-panel .life-block,
-  .lifetime-panel .life-block.reverse,
-  .lifetime-panel .life-block:has(img.life-image-xl),
-  .lifetime-panel .life-block:has(img.life-image-xxl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xl),
-  .lifetime-panel .life-block.reverse:has(img.life-image-xxl){
-    display:block !important;
-    overflow:visible !important;
+  function doHandoff(){
+    /* Assigning the src here is what actually starts the large intro GIF —
+       from frame one, exactly once — which then triggers the brochure unfold. */
+    if(image && gifReadySrc && !image.getAttribute('src')){
+      image.setAttribute('src',gifReadySrc);
+    }
+    loader.classList.add('arch-loader-hidden');
+    setTimeout(function(){ loader.parentNode&&loader.remove(); },460);
   }
-  .lifetime-panel .life-block::after{
-    content:"" !important;
-    display:block !important;
-    clear:both !important;
-  }
-  .lifetime-panel .life-block > div{
-    display:block !important;
-    width:auto !important;
-  }
-  .lifetime-panel img[alt="Step By Step boots walking"],
-  .lifetime-panel img[alt="Specialized Education"]{
-    float:left !important;
-    width:42% !important;
-    min-width:0 !important;
-    max-width:180px !important;
-    height:auto !important;
-    margin:2px 14px 8px 0 !important;
-  }
-  .lifetime-panel img[alt="Just Kids bag and photo"]{
-    float:right !important;
-    width:42% !important;
-    min-width:0 !important;
-    max-width:180px !important;
-    height:auto !important;
-    margin:2px 0 8px 14px !important;
-  }
-
-  /* Adult-service rows must be blocks, not the older vertical flex layout. */
-  .inside-story .service-image-row,
-  .inside-story .service-image-row[style],
-  .inside-story .residential-row{
-    display:block !important;
-    overflow:visible !important;
-    width:100% !important;
-  }
-  .inside-story .service-image-row::after,
-  .inside-story .residential-row::after,
-  .inside-story .story-section::after{
-    content:"" !important;
-    display:block !important;
-    clear:both !important;
-  }
-  .inside-story .service-image-row span,
-  .inside-story .residential-row span{
-    display:inline !important;
-    width:auto !important;
-    margin:0 !important;
-    text-align:left !important;
-  }
-  .inside-story img[alt="ACT Partial Care client photo collage"],
-  .inside-story img[alt="Blue Violet van"],
-  .inside-story img[alt="Residential care"]{
-    float:right !important;
-    width:42% !important;
-    min-width:0 !important;
-    max-width:185px !important;
-    height:auto !important;
-    max-height:none !important;
-    margin:2px 0 9px 14px !important;
-  }
-  .inside-story img[alt="Advanced Abilities Day Program shirts"]{
-    float:left !important;
-    width:42% !important;
-    min-width:0 !important;
-    max-width:185px !important;
-    height:auto !important;
-    max-height:none !important;
-    margin:2px 14px 9px 0 !important;
-  }
-  .inside-story .story-section strong{
-    clear:none !important;
-  }
-}
-
-@keyframes mobileBrandBreathe{
-  0%,100%{transform:translate(-50%,-58%) scale(.985);opacity:.84}
-  50%{transform:translate(-50%,-58%) scale(1);opacity:1}
-}
-</style>
-
-<style id="v164-mobile-fullscreen-gif-sharp-services">
-/* v164 — mobile only: full-screen centered GIF, crisp service paper, larger online-services copy. */
-@media screen and (max-width:760px){
-  /* Let the GIF itself be the entire loading experience. */
-  #brandGifIntro{
-    display:block !important;
-    width:100vw !important;
-    height:100svh !important;
-    min-height:100svh !important;
-    background:#705039 !important;
-    background-image:none !important;
-    overflow:hidden !important;
-  }
-  #brandGifIntro::before,
-  #brandGifIntro::after,
-  #brandGifIntro .brand-intro-loader{
-    display:none !important;
-    content:none !important;
-    animation:none !important;
-  }
-  #brandGifIntro #brandGifImage{
-    position:absolute !important;
-    inset:0 !important;
-    width:100vw !important;
-    height:100svh !important;
-    max-width:none !important;
-    max-height:none !important;
-    object-fit:cover !important;
-    object-position:center center !important;
-    transform:none !important;
-    margin:0 !important;
-  }
-
-  /* Keep the paper texture at its natural visual scale instead of stretching it
-     over the full, very tall services spread. */
-  section.inside-spread.page{
-    background:#efe9dd !important;
-    background-image:none !important;
-    background-attachment:scroll !important;
-  }
-  section.inside-spread.page > .panel{
-    background-color:rgba(255,255,255,.46) !important;
-    background-image:
-      linear-gradient(rgba(255,255,255,.12),rgba(255,255,255,.12)),
-      url("https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/beige-abstract-background-with-paper-texture-2026-01-09-10-04-42-utc.jpg") !important;
-    background-size:auto 900px !important;
-    background-position:center top !important;
-    background-repeat:repeat-y !important;
-    background-attachment:scroll !important;
-    backdrop-filter:none !important;
-    -webkit-backdrop-filter:none !important;
-  }
-
-  /* Give the final online-services callout the same readable scale as the stories. */
-  .inside-story .learn-more-services{
-    margin-top:22px !important;
-    padding-top:18px !important;
-    gap:14px !important;
-  }
-  .inside-story .learn-more-copy h3{
-    font-size:19px !important;
-    line-height:1.2 !important;
-    margin-bottom:8px !important;
-  }
-  .inside-story .learn-more-copy p,
-  .inside-story .learn-more-copy a{
-    font-size:15.5px !important;
-    line-height:1.5 !important;
-  }
-}
-</style>
-
-
-<style id="v165-mobile-visible-fix">
-/* v165 — unmistakable mobile-only correction. */
-@media screen and (max-width:900px){
-  /* Full-screen GIF, centered without cropping. */
-  #brandGifIntro,
-  #brandGifIntro:not(.gif-ready),
-  #brandGifIntro.gif-ready,
-  #brandGifIntro.is-freezing{
-    position:fixed !important;
-    inset:0 !important;
-    width:100vw !important;
-    height:100dvh !important;
-    min-height:100dvh !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    background:#705039 !important;
-    background-image:none !important;
-    overflow:hidden !important;
-  }
-  #brandGifIntro::before,
-  #brandGifIntro::after,
-  #brandGifIntro .brand-intro-loader{
-    display:none !important;
-    content:none !important;
-  }
-  #brandGifIntro #brandGifImage{
-    position:absolute !important;
-    inset:0 !important;
-    width:100vw !important;
-    height:100dvh !important;
-    min-width:100vw !important;
-    min-height:100dvh !important;
-    max-width:none !important;
-    max-height:none !important;
-    object-fit:contain !important;
-    object-position:50% 50% !important;
-    margin:0 !important;
-    transform:none !important;
-  }
-
-  /* Remove the low-resolution stretched wallpaper on every mobile service panel. */
-  section.inside-spread.page,
-  section.inside-spread.page > .panel,
-  section.inside-spread.page > article,
-  .inside-spread .section,
-  .inside-spread .inside-story{
-    background-image:none !important;
-    background-attachment:scroll !important;
-    backdrop-filter:none !important;
-    -webkit-backdrop-filter:none !important;
-  }
-  section.inside-spread.page{
-    background-color:#eee8dc !important;
-  }
-  section.inside-spread.page > .panel,
-  section.inside-spread.page > article{
-    background-color:#f7f3eb !important;
-  }
-
-  /* Make the final services callout obviously readable on a phone. */
-  .inside-story .learn-more-services{
-    display:block !important;
-    position:static !important;
-    top:auto !important;
-    margin:28px 0 8px !important;
-    padding:22px 0 0 !important;
-    border-top:2px solid rgba(9,50,102,.22) !important;
-  }
-  .inside-story .learn-more-copy h3{
-    font-size:22px !important;
-    line-height:1.16 !important;
-    margin:0 0 10px !important;
-  }
-  .inside-story .learn-more-copy p,
-  .inside-story .learn-more-copy a{
-    font-size:17px !important;
-    line-height:1.55 !important;
-  }
-  .inside-story .learn-more-services > img{
-    width:min(70%,260px) !important;
-    height:auto !important;
-    margin:18px auto 0 !important;
-  }
-}
-</style>
-
-<style id="v166-mobile-inline-gif-crisp-paper-text">
-.mobile-cover-gif{display:none;}
-@media screen and (max-width:900px){
-  /* No separate loading overlay on mobile: the animation now lives on the first brochure page. */
-  #brandGifIntro,#auIntro{display:none !important;visibility:hidden !important;opacity:0 !important;pointer-events:none !important;}
-  html,body{overflow-y:auto !important;}
-  html.au-lock,body.au-lock{overflow-y:auto !important;overflow-x:hidden !important;}
-
-  /* Replace the original first picture with the animated GIF, on the paper page. */
-  article.cover{
-    min-height:auto !important;
-    padding:18px !important;
-    background-color:#f7f1e7 !important;
-    background-image:
-      radial-gradient(circle at 18% 22%,rgba(120,91,54,.055) 0 1px,transparent 1.4px),
-      radial-gradient(circle at 76% 68%,rgba(255,255,255,.72) 0 1px,transparent 1.5px),
-      linear-gradient(96deg,rgba(122,91,50,.025),transparent 36%,rgba(122,91,50,.018)) !important;
-    background-size:17px 19px,23px 21px,100% 100% !important;
-    box-shadow:none !important;
-  }
-  article.cover .cover-print-image,
-  article.cover .cover-print-overlay,
-  article.cover > div{display:none !important;}
-  article.cover .mobile-cover-gif{
-    display:block !important;
-    position:relative !important;
-    inset:auto !important;
-    width:100% !important;
-    height:auto !important;
-    min-width:0 !important;
-    min-height:0 !important;
-    max-width:100% !important;
-    max-height:none !important;
-    object-fit:contain !important;
-    object-position:center !important;
-    margin:0 auto !important;
-    border-radius:22px !important;
-    overflow:hidden !important;
-    box-shadow:0 12px 30px rgba(37,28,18,.18),0 1px 0 rgba(255,255,255,.78) inset !important;
-  }
-
-  /* Crisp CSS-built paper texture; never stretches or blurs. */
-  section.inside-spread.page,
-  section.inside-spread.page > .panel,
-  section.inside-spread.page > article,
-  .inside-spread .section,
-  .inside-spread .inside-story{
-    background-color:#f7f1e7 !important;
-    background-image:
-      radial-gradient(circle at 16% 20%,rgba(120,91,54,.052) 0 1px,transparent 1.35px),
-      radial-gradient(circle at 82% 74%,rgba(255,255,255,.76) 0 1px,transparent 1.45px),
-      linear-gradient(98deg,rgba(108,79,43,.024),transparent 42%,rgba(108,79,43,.018)) !important;
-    background-size:17px 19px,23px 21px,100% 100% !important;
-    background-repeat:repeat,repeat,no-repeat !important;
-    background-attachment:scroll !important;
-    backdrop-filter:none !important;
-    -webkit-backdrop-filter:none !important;
-  }
-
-  /* Make all service narrative copy comfortably readable on phones. */
-  .inside-spread .section-header p{font-size:16px !important;line-height:1.48 !important;}
-  .inside-story.story-copy > h2{font-size:28px !important;line-height:1.12 !important;}
-  .inside-story .story-section strong{font-size:20px !important;line-height:1.22 !important;margin-bottom:7px !important;}
-  .inside-story .story-section span,
-  .inside-story .service-image-row span{font-size:17px !important;line-height:1.55 !important;}
-  .inside-story .learn-more-services{
-    display:block !important;position:static !important;top:auto !important;
-    margin:32px 0 10px !important;padding:24px 0 0 !important;
-    border-top:2px solid rgba(9,50,102,.24) !important;
-  }
-  .inside-story .learn-more-copy h3{font-size:25px !important;line-height:1.16 !important;margin:0 0 12px !important;}
-  .inside-story .learn-more-copy p,
-  .inside-story .learn-more-copy a{font-size:19px !important;line-height:1.58 !important;}
-  .inside-story .learn-more-services > img{width:min(78%,300px) !important;height:auto !important;margin:20px auto 0 !important;}
-}
-@media print{.mobile-cover-gif{display:none !important;}}
-</style>
-<script id="v166-disable-mobile-intro">
-(function(){
-  function disableMobileIntro(){
-    if(!window.matchMedia('(max-width:900px)').matches) return;
-    document.documentElement.classList.remove('au-lock');
-    document.body && document.body.classList.remove('au-lock');
-    var brand=document.getElementById('brandGifIntro');
-    var intro=document.getElementById('auIntro');
-    if(brand){brand.hidden=true;brand.setAttribute('aria-hidden','true');}
-    if(intro){intro.hidden=true;intro.setAttribute('aria-hidden','true');}
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',disableMobileIntro,{once:true});
-  else disableMobileIntro();
-  window.addEventListener('load',disableMobileIntro,{once:true});
 })();
 </script>
 
