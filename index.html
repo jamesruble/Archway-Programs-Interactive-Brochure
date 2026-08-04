@@ -3101,6 +3101,122 @@ article.cover .cover-print-image,
 }
 </style>
 
+
+<style id="v-spacing-alignment-fix">
+/* Align the two program-directory panels without resizing or stretching content. */
+@media (min-width:761px){
+  /* Every directory card uses the original 132px card size. */
+  .inside-spread > article.section:nth-of-type(1) .program-card,
+  .inside-spread > article.section:nth-of-type(2) .program-card{
+    height:132px !important;
+    min-height:132px !important;
+  }
+
+  /* Keep all grid spacing consistent across Children, Education, Health and Community. */
+  .inside-spread > article.section:nth-of-type(1) > .logo-grid,
+  .inside-spread > article.section:nth-of-type(2) > .logo-grid{
+    column-gap:10px !important;
+    row-gap:10px !important;
+  }
+
+  /* Drop Schools and Early Learning a few pixels for better visual balance. */
+  .inside-spread > article.section:nth-of-type(1) > .section-header.red{
+    margin-top:22px !important;
+  }
+
+  /* Preserve three equal Education rows at the full card size. */
+  .inside-spread > article.section:nth-of-type(1) > .logo-grid:last-child{
+    grid-template-rows:repeat(3,132px) !important;
+    margin-bottom:0 !important;
+  }
+
+  /* Keep the second directory panel visually anchored to the same lower edge. */
+  .inside-spread > article.section:nth-of-type(2) > .anniversary-lockup{
+    margin-bottom:0 !important;
+    padding-bottom:4px !important;
+  }
+}
+</style>
+
+
+<style id="v-anniversary-context-position-fix">
+/* Keep the anniversary lockup identical in size, but position it separately
+   on the live/PDF spread and inside the cloned animation face. */
+@media (min-width:761px){
+  /* Live brochure and printed/PDF page: raise the lockup slightly. */
+  body > .inside-spread > article.section:nth-of-type(2) > .anniversary-lockup{
+    position:relative !important;
+    top:auto !important;
+    margin-top:auto !important;
+    margin-bottom:18px !important;
+    padding-top:18px !important;
+    padding-bottom:4px !important;
+  }
+
+  /* Animation clone: this panel is the only article inside .au-health-base,
+     so nth-of-type(2) does not match it. Anchor it lower explicitly. */
+  #auIntro .au-health-base > article.section{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+  #auIntro .au-health-base > article.section > .anniversary-lockup{
+    position:relative !important;
+    top:auto !important;
+    margin-top:auto !important;
+    margin-bottom:8px !important;
+    padding-top:18px !important;
+    padding-bottom:4px !important;
+  }
+}
+</style>
+
+
+<style id="v-anniversary-final-position-fix">
+/* Final explicit correction: PDF/live moves UP; animation moves DOWN.
+   Transform changes position only and does not resize or distort the lockup. */
+@media (min-width:761px){
+  body > .inside-spread > article.section:nth-of-type(2) > .anniversary-lockup{
+    transform:translateY(-22px) !important;
+    margin-bottom:0 !important;
+  }
+
+  #auIntro .au-health-base > article.section > .anniversary-lockup{
+    transform:translateY(-2px) !important;
+    margin-bottom:0 !important;
+  }
+}
+
+@media print{
+  body > .inside-spread > article.section:nth-of-type(2) > .anniversary-lockup{
+    transform:translateY(-22px) !important;
+    margin-bottom:0 !important;
+  }
+}
+</style>
+
+
+<style id="v-animation-anniversary-spacing-tune">
+/* Animation-only alignment: preserve the finished PDF placement. */
+@media (min-width:761px){
+  #auIntro .au-health-base > article.section > .anniversary-lockup{
+    transform:translateY(-8px) !important;
+    padding-top:9px !important;
+    margin-bottom:0 !important;
+  }
+}
+</style>
+
+<style id="v-animation-community-content-flow-fix">
+/* Animation only: bring the Community Supports heading and program grid
+   down slightly so the space above the anniversary lockup is proportional.
+   No cards, logos, text, or images are resized. */
+@media (min-width:761px){
+  #auIntro .au-health-base > article.section > .section-header,
+  #auIntro .au-health-base > article.section > .logo-grid{
+    transform:translateY(14px) !important;
+  }
+}
+</style>
 </head>
 <body>
 <div id="archLoader" role="status" aria-live="polite" aria-label="Loading the Archway Programs experience">
@@ -3110,7 +3226,7 @@ article.cover .cover-print-image,
 </div>
 
 <div id="brandGifIntro" aria-label="Archway Programs introduction">
-  <img id="brandGifImage" alt="Archway Programs animated introduction" data-gif-src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20%20Intro.gif">
+  <img id="brandGifImage" alt="Archway Programs animated introduction" data-gif-src="https://raw.githubusercontent.com/jamesruble/Archway-Programs-Logo-Repository/main/Archway%20Programs%20Intro.gif">
   <button class="brand-intro-skip" type="button">Skip Intro</button>
 </div>
 
