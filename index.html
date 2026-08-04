@@ -3217,6 +3217,29 @@ article.cover .cover-print-image,
   }
 }
 </style>
+
+<style id="v-pdf-learn-more-micro-alignment">
+/* Actual brochure/PDF only: lower the online-services block by the smallest
+   visible amount so its top divider aligns with the anniversary divider.
+   The animation clone is explicitly excluded. */
+body > .page .inside-story .learn-more-services{
+  transform:translateY(3px) !important;
+}
+#auIntro .inside-story .learn-more-services{
+  transform:none !important;
+}
+</style>
+
+<style id="v-pdf-learn-more-copy-only-offset">
+/* Actual brochure/PDF only: keep the computer image fixed and lower only
+   the Learn More heading and paragraph by 2px. */
+body > .page .inside-story .learn-more-copy{
+  transform:translateY(2px) !important;
+}
+#auIntro .inside-story .learn-more-copy{
+  transform:none !important;
+}
+</style>
 </head>
 <body>
 <div id="archLoader" role="status" aria-live="polite" aria-label="Loading the Archway Programs experience">
